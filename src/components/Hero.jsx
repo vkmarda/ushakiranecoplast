@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom'
+
 const heroProducts = [
   {
     id: 'garbage-bags',
@@ -36,8 +38,8 @@ const trustItems = [
   { val: 'ISO', lab: 'Certified facility' },
 ]
 
-export default function Hero({ setPage }) {
-
+export default function Hero({ setPage, openQuote }) {
+  const navigate = useNavigate()
   function goToProduct(id) {
     setPage('products')
     setTimeout(() => {
@@ -48,50 +50,35 @@ export default function Hero({ setPage }) {
   return (
     <section className="hero" id="home">
       <div className="hero-left">
-        <div className="hero-badge">100% Recycled Plastic Products</div>
-        <h1>Turning Waste Into <em>Products</em> That Work.</h1>
+        <div className="hero-badge">100% Recycled & Recyclable Plastic Products</div>
+        <h1>Turning Waste into <em>Products</em> Of Use.</h1>
         <p className="hero-sub">
           USHAKIRAN ECOPLAST manufactures high-quality, eco-friendly plastic bags
-          and packaging from recycled material for industries across India.
+          and packaging material from recycled material for industries across India.
         </p>
         <div className="hero-btns">
-          <a href="#products" className="btn-primary">Explore Products</a>
-          <a href="#contact" className="btn-outline">Get a Quote</a>
+          <button
+          className="btn-primary"
+          onClick={() => {
+            navigate('/products')
+            window.scrollTo({ top: 0 })
+          }}
+        >
+          Explore Products →
+        </button>
+          <button className="btn-outline" onClick={openQuote}>Get a Quote</button>
         </div>
-        <div className="hero-trust">
-          {trustItems.map((item, i) => (
-            <div key={item.val} style={{ display: 'contents' }}>
-              <div className="trust-item">
-                <span className="trust-val">{item.val}</span>
-                <span className="trust-lab">{item.lab}</span>
-              </div>
-              {i < trustItems.length - 1 && <div className="trust-div" />}
-            </div>
-          ))}
-        </div>
+         
+      </div>
+      <div className="hero-right">
+        <img
+          src="/images/hero-products-lineup.PNG"
+          alt="UKEP Product Range"
+          className="hero-lineup-img"
+          loading="eager"
+        />
       </div>
 
-      <div className="hero-right">
-        <div className="hero-bg-img" />
-        <div className="hero-caption">From waste to product</div>
-        <div className="hero-products">
-          {heroProducts.map((p) => (
-            <div
-              className="hp-card"
-              key={p.title}
-              onClick={() => goToProduct(p.id)}
-              style={{ cursor: 'pointer' }}
-            >
-              <img src={p.img} alt={p.title} />
-              <div className="hp-card-body">
-                <h4>{p.title}</h4>
-                <p>{p.desc}</p>
-                <span className="hp-tag">{p.tag}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   )
 }

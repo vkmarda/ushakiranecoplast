@@ -1,0 +1,134 @@
+/* ── INDUSTRY PAGE ── */
+.ip-page { background: var(--bg); min-height: 100vh; }
+
+/* Breadcrumb */
+.ip-breadcrumb { display: flex; align-items: center; gap: 8px; padding: 14px 60px; background: #fff; border-bottom: 1px solid var(--green-pale); flex-wrap: wrap; }
+.ip-breadcrumb button { background: none; border: none; cursor: pointer; font-size: 13px; color: var(--muted); font-family: 'DM Sans', sans-serif; padding: 0; transition: color .2s; }
+.ip-breadcrumb button:hover { color: var(--green); }
+.ip-breadcrumb span { font-size: 13px; color: #d1d5db; }
+.ip-breadcrumb span:last-child { color: var(--dark); font-weight: 600; }
+
+/* Hero */
+.ip-hero { position: relative; padding: 100px 60px 80px; min-height: 60vh; display: flex; align-items: center; overflow: hidden; }
+.ip-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.ip-hero-content { position: relative; z-index: 2; max-width: 720px; display: flex; flex-direction: column; gap: 20px; }
+.ip-hero-eyebrow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ip-hero-icon { font-size: 2rem; }
+.ip-hero-badge { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 14px; border-radius: 50px; }
+.ip-hero-tagline { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+.ip-hero-tagline::before { content: ''; width: 28px; height: 2px; background: currentColor; border-radius: 2px; }
+.ip-hero-content h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3.4rem); color: #fff; line-height: 1.15; margin: 0; }
+.ip-hero-sub { font-size: 16px; color: rgba(255,255,255,.7); line-height: 1.8; max-width: 580px; margin: 0; }
+.ip-hero-btns { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 8px; }
+.ip-hero-call { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.8); text-decoration: none; transition: color .2s; }
+.ip-hero-call:hover { color: #fff; }
+
+/* Challenge */
+.ip-challenge { padding: 80px 60px; }
+.ip-challenge-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1200px; margin: 0 auto; }
+.ip-challenge-text { display: flex; flex-direction: column; gap: 16px; }
+.ip-challenge-text h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); color: var(--dark); line-height: 1.25; margin: 0; }
+.ip-challenge-text p { font-size: 15px; color: var(--muted); line-height: 1.85; margin: 0; }
+.ip-stats-grid { display: flex; flex-direction: column; gap: 24px; }
+.ip-stat { padding: 20px 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+.ip-stat-val { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900; line-height: 1; margin-bottom: 8px; }
+.ip-stat-label { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+/* Products */
+.ip-products-section { background: #fff; padding: 80px 60px; }
+.ip-products-inner { max-width: 1200px; margin: 0 auto; }
+.ip-products-inner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); color: var(--dark); margin: 8px 0 12px; }
+.ip-products-sub { font-size: 15px; color: var(--muted); margin-bottom: 40px; }
+.ip-products-grid { display: grid; gap: 24px; }
+.ip-products-1 { grid-template-columns: 1fr; max-width: 500px; }
+.ip-products-2 { grid-template-columns: repeat(2, 1fr); }
+.ip-products-3 { grid-template-columns: repeat(3, 1fr); }
+.ip-products-4 { grid-template-columns: repeat(4, 1fr); }
+.ip-product-card { background: var(--bg); border-radius: 18px; overflow: hidden; cursor: pointer; border: 1px solid rgba(45,106,79,.08); transition: transform .25s, box-shadow .25s; display: flex; flex-direction: column; }
+.ip-product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,.1); }
+.ip-product-img { position: relative; height: 200px; overflow: hidden; }
+.ip-product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.ip-product-card:hover .ip-product-img img { transform: scale(1.06); }
+.ip-product-tag { position: absolute; top: 12px; left: 12px; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; }
+.ip-product-body { padding: 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.ip-product-tagline { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+.ip-product-body h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--dark); font-weight: 700; }
+.ip-product-body p { font-size: 12.5px; color: var(--muted); line-height: 1.6; flex: 1; }
+.ip-product-link { font-size: 12px; font-weight: 700; color: var(--green); margin-top: 6px; }
+
+/* Why UKEP */
+.ip-why-section { padding: 80px 60px; }
+.ip-why-inner { max-width: 1200px; margin: 0 auto; }
+.ip-why-inner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); color: var(--dark); margin: 8px 0 40px; }
+.ip-why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.ip-why-card { background: #fff; border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.05); transition: transform .25s, box-shadow .25s; }
+.ip-why-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,.1); }
+.ip-why-icon { font-size: 1.8rem; }
+.ip-why-card h4 { font-size: 15px; font-weight: 700; color: var(--dark); }
+.ip-why-card p { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+
+/* Long Content */
+.ip-long-content { background: #fff; padding: 80px 60px; }
+.ip-long-inner { max-width: 860px; margin: 0 auto; }
+.ip-long-inner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--dark); margin: 8px 0 32px; }
+.ip-long-body p { font-size: 15px; color: var(--muted); line-height: 1.9; margin-bottom: 20px; }
+.ip-long-body h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--dark); margin: 36px 0 12px; padding-left: 16px; border-left: 3px solid var(--green); }
+.ip-long-body strong { color: var(--dark); font-weight: 700; }
+
+/* FAQs */
+.ip-faqs-section { padding: 80px 60px; }
+.ip-faqs-inner { max-width: 860px; margin: 0 auto; }
+.ip-faqs-inner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--dark); margin: 8px 0 40px; }
+.ip-faqs-list { display: flex; flex-direction: column; }
+.ip-faq-item { border-bottom: 1px solid rgba(0,0,0,.08); }
+.ip-faq-item:first-child { border-top: 1px solid rgba(0,0,0,.08); }
+.ip-faq-q { width: 100%; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-size: 15px; font-weight: 600; color: var(--dark); font-family: 'DM Sans', sans-serif; text-align: left; transition: color .2s; }
+.ip-faq-q:hover { color: var(--green); }
+.ip-faq-icon { font-size: 22px; color: var(--green); transition: transform .25s ease; flex-shrink: 0; line-height: 1; }
+.ip-faq-icon.open { transform: rotate(45deg); }
+.ip-faq-a { padding-bottom: 20px; }
+.ip-faq-a p { font-size: 14px; color: var(--muted); line-height: 1.85; margin: 0; }
+
+/* CTA */
+.ip-cta { position: relative; padding: 80px 60px; overflow: hidden; }
+.ip-cta-bg { position: absolute; inset: 0; z-index: 0; }
+.ip-cta-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto; }
+.ip-cta-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 12px; }
+.ip-cta-left h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.4rem); color: #fff; line-height: 1.2; margin-bottom: 12px; }
+.ip-cta-left p { font-size: 15px; color: rgba(255,255,255,.7); line-height: 1.8; max-width: 520px; margin: 0; }
+.ip-cta-right { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; flex-shrink: 0; }
+.ip-cta-right .btn-primary { white-space: nowrap; border: none; }
+.ip-cta-email { font-size: 13px; color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+.ip-cta-email:hover { color: #fff; }
+
+/* Not Found */
+.ip-not-found { min-height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 60px; text-align: center; }
+.ip-not-found h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--dark); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .ip-breadcrumb { padding: 12px 24px; }
+  .ip-hero { padding: 90px 24px 60px; min-height: auto; }
+  .ip-hero-content h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+  .ip-challenge { padding: 60px 24px; }
+  .ip-challenge-inner { grid-template-columns: 1fr; gap: 40px; }
+  .ip-stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .ip-stat { padding: 16px; }
+  .ip-stat-val { font-size: 1.8rem; }
+  .ip-products-section { padding: 60px 24px; }
+  .ip-products-2, .ip-products-3, .ip-products-4 { grid-template-columns: repeat(2, 1fr); }
+  .ip-product-img { height: 160px; }
+  .ip-why-section { padding: 60px 24px; }
+  .ip-why-grid { grid-template-columns: repeat(2, 1fr); }
+  .ip-long-content { padding: 60px 24px; }
+  .ip-faqs-section { padding: 60px 24px; }
+  .ip-cta { padding: 60px 24px; }
+  .ip-cta-inner { grid-template-columns: 1fr; gap: 32px; }
+  .ip-cta-right { flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 600px) {
+  .ip-products-2, .ip-products-3, .ip-products-4 { grid-template-columns: 1fr; }
+  .ip-why-grid { grid-template-columns: 1fr; }
+  .ip-stats-grid { grid-template-columns: 1fr; }
+}

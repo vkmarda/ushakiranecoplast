@@ -1,10 +1,19 @@
-import { useState, useEffect} from 'react'
-
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { openContactModal } from '../utils/openContact'
 
 export default function Navbar({ page, setPage }) {
-  
+
   const [menuOpen, setMenuOpen] = useState(false)
   const [showSticky, setShowSticky] = useState(false)
+  const location = useLocation()
+
+
+
+  
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [location.pathname])
 
   useEffect(() => {
     function handleScroll() {
@@ -16,7 +25,6 @@ export default function Navbar({ page, setPage }) {
 
   function goHome(hash) {
     setPage('home')
-    setMenuOpen(false)
     setTimeout(() => {
       const el = document.querySelector(hash)
       if (el) el.scrollIntoView({ behavior: 'smooth' })
@@ -25,7 +33,6 @@ export default function Navbar({ page, setPage }) {
 
   function goPage(p) {
     setPage(p)
-    setMenuOpen(false)
   }
 
   return (
@@ -35,30 +42,23 @@ export default function Navbar({ page, setPage }) {
         <a href="tel:+919885134991">+91 98851 34991</a>
         &nbsp;|&nbsp;
         <strong>Email:</strong>{' '}
-        <a href="mailto:sales@ushakiranecoplast.com">sales@ushakiranecoplast.com</a>
+        <a href="mailto:sales@ushakiranecoplast.com">enquiry@ushakiranecoplast.com</a>
       </div>
       <nav>
         <button onClick={() => goHome('#home')} className="logo" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-          <div className="logo-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M17 8C8 10 5.9 16.17 3.82 19.9L5.71 21l1-2.3A4.49 4.49 0 0 0 8 19c8 0 10-6 10-6a7 7 0 0 0 1 4c1.8-2 2-4 2-6s-1-4-4-9z"/>
-            </svg>
-          </div>
-          <div className="logo-text">
-            USHAKIRAN ECOPLAST
-            <span>Eco-Friendly Solutions</span>
-          </div>
+          <img src="/images/ukep-logo.png" alt="Ushakiran Ecoplast" className="logo-img" />
         </button>
 
         {/* Desktop links */}
         <ul className="nav-links">
           <li><button onClick={() => goHome('#home')} className="nav-text-btn">Home</button></li>
-          <li><button onClick={() => goHome('#about')} className="nav-text-btn">About Us</button></li>
+          <li><button onClick={() => goPage('aboutus')} className="nav-text-btn">About Us</button></li>
           <li><button onClick={() => goPage('products')} className="nav-text-btn">Our Products</button></li>
+          <li><button onClick={() => goPage('industries')} className="nav-text-btn">Industries</button></li>
           <li><button onClick={() => goPage('team')} className="nav-text-btn">Our Team</button></li>
-          <li><button onClick={() => goHome('#contact')} className="nav-text-btn">Contact</button></li>
+          <li><button onClick={openContactModal} className="nav-text-btn">Contact Us</button></li>
+          <li><button onClick={() => goPage('gallery')} className="nav-text-btn">Gallery</button></li>
         </ul>
-        
 
         {/* Hamburger */}
         <button
@@ -85,10 +85,12 @@ export default function Navbar({ page, setPage }) {
       {menuOpen && (
         <div className="nav-mobile-menu">
           <button onClick={() => goHome('#home')} className="nav-mobile-item">Home</button>
-          <button onClick={() => goHome('#about')} className="nav-mobile-item">About Us</button>
+          <button onClick={() => goPage('aboutus')} className="nav-mobile-item">About Us</button>
           <button onClick={() => goPage('products')} className="nav-mobile-item">Our Products</button>
+          <button onClick={() => goPage('industries')} className="nav-mobile-item">Industries</button>
           <button onClick={() => goPage('team')} className="nav-mobile-item">Our Team</button>
-          <button onClick={() => goHome('#contact')} className="nav-mobile-item">Contact</button>
+          <button onClick={openContactModal} className="nav-mobile-item">Contact Us</button>
+          <button onClick={() => goPage('gallery')} className="nav-mobile-item">Gallery</button>
         </div>
       )}
 
@@ -108,7 +110,7 @@ export default function Navbar({ page, setPage }) {
           </a>
         </div>
       )}
+      
     </>
   )
 }
-

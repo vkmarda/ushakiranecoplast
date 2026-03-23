@@ -3,7 +3,7 @@ const founders = [
     name: 'Aditya Sarda',
     role: 'Founder & CFO',
     edu: 'B.E — Information Technology',
-    exp: '11 years of experience',
+    exp: '13 years of experience',
     img: '/images/team-aditya.jpg',
     bio: 'Drives the financial strategy and growth vision of UKEP. Aditya brings a sharp analytical mindset and deep commitment to building a profitable, sustainable business for the long term.',
   },
@@ -11,7 +11,7 @@ const founders = [
     name: 'Ramakant Sarda',
     role: 'Founder & CEO',
     edu: 'B.Com Graduate',
-    exp: '11 years of experience',
+    exp: '13 years of experience',
     img: '/images/team-ramakant.jpg',
     bio: 'Visionary leader who founded USHAKIRAN ECOPLAST with a mission to turn plastic waste into high-quality, sustainable products for India.',
   }
@@ -22,10 +22,26 @@ const advisors = [
     name: 'CA Arun Kumar Sarda',
     role: 'Head Advisor',
     edu: 'B.Com-Tax, PGDBM, CA-ATC (Inter)',
-    exp: '36 years of experience',
+    exp: '38 years of experience',
     img: '/images/team-arun.jpg',
-    bio: 'Senior financial and strategic advisor guiding UKEP through compliance, investment decisions, and long-term planning with over three decades of chartered accountancy expertise.',
+    bio: 'Senior financial and strategic advisor guiding UKEP through compliance, investment decisions, and long-term planning with over three decades of expertise in chartered accountancy.',
   },
+]
+const marketing = [
+    {
+    name: 'Abhinav Marda',
+    role: '',
+    edu: 'B.Tech, MBA',
+    exp: '8 years of experience',
+    img: '/images/team-abhinav.jpg',
+  bio: "Strategic thinker with 8 years across business development and operations — driving UKEP's growth, distribution networks, and market expansion." },
+  {
+    name: 'Varun Marda',
+    role: '',
+    edu: 'B.Tech',
+    exp: '4 years of experience',
+    img: '/images/team-varun.PNG',
+  bio: "Engineer turned digital strategist — building the technology, platforms, and marketing systems that bring UKEP's products to modern customers." },
 ]
 
 const operations = [
@@ -57,13 +73,7 @@ const operations = [
     exp: '9 years of experience',
     img: '/images/team-uttam.jpg',
   },
-  {
-    name: 'Suraj Joshi',
-    role: 'Marketing',
-    edu: 'Graduate',
-    exp: '5 years of experience',
-    img: '/images/team-suraj.jpg',
-  },
+  
   {
     name: 'Rahul Pandey',
     role: 'Plant Head — Granule Recycling',
@@ -148,6 +158,14 @@ export default function Team({ setPage }) {
           </div>
         </div>
 
+        {/* Sales & Marketing */}
+        <div className="team-section alt">
+          <div className="team-section-label">Sales & Marketing</div>
+          <div className="advisors-grid">
+            {marketing.map(m => <FounderCard key={m.name} member={m} />)}
+          </div>
+        </div>
+
         {/* Operations */}
         <div className="team-section">
           <div className="team-section-label">Operations & Management</div>
@@ -158,11 +176,7 @@ export default function Team({ setPage }) {
 
       </div>
 
-      <footer id="contact">
-        <div className="footer-bottom" style={{ padding: '28px 60px', borderTop: '1px solid rgba(255,255,255,.1)', background: 'var(--dark)', color: 'rgba(255,255,255,.6)', textAlign: 'center', fontSize: '12.5px' }}>
-          <p>Copyright 2024 USHA KIRAN ECO PLAST. All Rights Reserved.</p>
-        </div>
-      </footer>
+      
 
     </div>
   )
