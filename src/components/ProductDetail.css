@@ -1,8 +1,11 @@
 /* ── PRODUCT DETAIL PAGE ── */
 .pd-page { background: var(--bg); min-height: 100vh; }
 
+/* Desktop Nav Bar */
+.nav{position: relative;}
+
 /* Breadcrumb */
-.pd-breadcrumb { display: flex; align-items: center; gap: 8px; padding: 16px 60px; background: #fff; border-bottom: 1px solid var(--green-pale); flex-wrap: wrap; }
+.pd-breadcrumb { display: flex; align-items: center; position: sticky; justify-content: normal; gap: 8px; padding: 16px 60px; background: #fff; border-bottom: 1px solid var(--green-pale); flex-wrap: wrap; }
 .pd-breadcrumb button { background: none; border: none; cursor: pointer; font-size: 13px; color: var(--muted); font-family: 'DM Sans', sans-serif; padding: 0; transition: color .2s; }
 .pd-breadcrumb button:hover { color: var(--green); }
 .pd-bc-sep { font-size: 13px; color: #d1d5db; }
