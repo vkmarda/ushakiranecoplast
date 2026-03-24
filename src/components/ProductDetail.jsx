@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getProductBySlug, getRelatedProducts } from '../data/Products.js'
 import { getIndustryBySlug } from '../data/industries'
@@ -182,6 +182,7 @@ export default function ProductDetail({ openQuote }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={product.seoTitle} />
         <meta name="twitter:description" content={product.seoDescription} />
+        <meta property="twitter:image" content={`https://ushakiranecoplast.com${product.img}`} />
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
         {faqSchema && (
           <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -191,9 +192,9 @@ export default function ProductDetail({ openQuote }) {
 
       {/* ── BREADCRUMB ── */}
       <nav className="pd-breadcrumb" aria-label="breadcrumb">
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
         <span className="pd-bc-sep">›</span>
-        <a href="/products">Products</a>
+        <Link to="/products">Products</Link>
         <span className="pd-bc-sep">›</span>
         <span>{product.name}</span>
       </nav>
@@ -287,9 +288,9 @@ export default function ProductDetail({ openQuote }) {
         <section className="pd-industries-section">
           <div className="pd-industries-inner">
             <div className="section-label">Industry Applications</div>
-            <h2>See How {product.name} Solve Specific Challenges In Each Sector.</h2>
+            <h2>Industries That Use {product.name}</h2>
             <p className="pd-industries-sub">
-              Industries That Use {product.name.toLowerCase()}
+              Click any industry to see how {product.name} solve specific challenges in each sector.
             </p>
             <div className={`pd-industries-grid pd-industries-${productIndustries.length}`}>
               {productIndustries.map(ind => (
