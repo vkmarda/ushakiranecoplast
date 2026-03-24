@@ -120,7 +120,8 @@ export default function ProductDetail({ openQuote }) {
     '@type': 'Product',
     name: product.name,
     description: product.description,
-    image: `https://ushakiranecoplast.com${product.img}`,
+    image: [`https://ushakiranecoplast.com${product.img}`],
+    url: `https://ushakiranecoplast.com/products/${product.slug}`,
     brand: { '@type': 'Brand', name: 'Ushakiran Ecoplast' },
     manufacturer: {
       '@type': 'Organization',
@@ -133,11 +134,15 @@ export default function ProductDetail({ openQuote }) {
       }
     },
     offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'INR',
-      seller: { '@type': 'Organization', name: 'Ushakiran Ecoplast' }
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "0",
+      "description": "Contact for bulk pricing"
     }
+  }
   }
 
   const faqSchema = product.faqs?.length > 0 ? {
@@ -150,6 +155,16 @@ export default function ProductDetail({ openQuote }) {
     }))
   } : null
 
+   const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `https://ushakiranecoplast.com/products/${product.slug}` }
+    ]
+  }
+
   return (
     <div className="pd-page">
       <Helmet>
@@ -159,19 +174,26 @@ export default function ProductDetail({ openQuote }) {
         <meta property="og:title" content={product.seoTitle} />
         <meta property="og:description" content={product.seoDescription} />
         <meta property="og:image" content={`https://ushakiranecoplast.com${product.img}`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content={`https://ushakiranecoplast.com/products/${product.slug}`} />
         <meta property="og:type" content="product" />
+        <meta property="og:site_name" content="Ushakiran Ecoplast" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={product.seoTitle} />
+        <meta name="twitter:description" content={product.seoDescription} />
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
         {faqSchema && (
           <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         )}
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* ── BREADCRUMB ── */}
       <nav className="pd-breadcrumb" aria-label="breadcrumb">
-        <button onClick={() => navigate('/')}>Home</button>
+        <a href="/">Home</a>
         <span className="pd-bc-sep">›</span>
-        <button onClick={() => navigate('/products')}>Products</button>
+        <a href="/products">Products</a>
         <span className="pd-bc-sep">›</span>
         <span>{product.name}</span>
       </nav>
@@ -217,7 +239,7 @@ export default function ProductDetail({ openQuote }) {
         <div className="pd-specs-inner">
           <div className="pd-specs-left">
             <div className="section-label">Specifications</div>
-            <h2>Product Details</h2>
+            <h2>{product.name} Specification & Sizes</h2>
             <div className="pd-specs-grid">
               {product.specs.map(s => (
                 <div className="pd-spec" key={s.label}>
@@ -229,7 +251,7 @@ export default function ProductDetail({ openQuote }) {
           </div>
           <div className="pd-specs-right">
             <div className="section-label">Industries Served</div>
-            <h2>Who Uses This Product</h2>
+            <h2>Industries We Supply {product.name} To</h2>
             <div className="pd-customers-grid">
               {product.customers.map(c => (
                 <div className="pd-customer-tag" key={c}>
@@ -265,9 +287,9 @@ export default function ProductDetail({ openQuote }) {
         <section className="pd-industries-section">
           <div className="pd-industries-inner">
             <div className="section-label">Industry Applications</div>
-            <h2>Industries That Use {product.name}</h2>
+            <h2>See How {product.name} Solve Specific Challenges In Each Sector.</h2>
             <p className="pd-industries-sub">
-              Click any industry to see how {product.name.toLowerCase()} solve specific challenges in that sector.
+              Industries That Use {product.name.toLowerCase()}
             </p>
             <div className={`pd-industries-grid pd-industries-${productIndustries.length}`}>
               {productIndustries.map(ind => (
