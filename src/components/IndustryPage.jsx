@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getIndustryBySlug } from '../data/industries'
 import { getProductById } from '../data/Products'
@@ -110,6 +110,8 @@ export default function IndustryPage({ openQuote }) {
     '@type': 'Service',
     name: `${industry.name} Plastic Solutions`,
     description: industry.subheadline,
+    url: `https://ushakiranecoplast.com/industries/${industry.slug}`,
+    serviceType:`Plastic waste management and packaging solutions for the ${industry.name.toLowerCase()} industry`,
     provider: {
       '@type': 'Organization',
       name: 'Ushakiran Ecoplast',
@@ -133,6 +135,16 @@ export default function IndustryPage({ openQuote }) {
     }))
   } : null
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://ushakiranecoplast.com/industries' },
+      { '@type': 'ListItem', position: 3, name: industry.name, item: `https://ushakiranecoplast.com/industries/${industry.slug}` }
+    ]
+  }
+
   const ac = industry.accentColor
   const lc = industry.lightColor
 
@@ -144,16 +156,26 @@ export default function IndustryPage({ openQuote }) {
         <link rel="canonical" href={`https://ushakiranecoplast.com/industries/${industry.slug}`} />
         <meta property="og:title" content={industry.seoTitle} />
         <meta property="og:description" content={industry.seoDescription} />
+        <meta property="og:image" content="https://ushakiranecoplast.com/logo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content={`https://ushakiranecoplast.com/industries/${industry.slug}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ushakiran Ecoplast" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={industry.seoTitle} />
+        <meta name="twitter:description" content={industry.seoDescription} />
+        <meta name="twitter:image" content="https://ushakiranecoplast.com/logo.png" />
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* ── BREADCRUMB ── */}
       <nav className="ip-breadcrumb">
-        <button onClick={() => navigate('/')}>Home</button>
+        <Link to="/">Home</Link>
         <span>›</span>
-        <button onClick={() => navigate('/industries')}>Industries</button>
+        <Link to="/industries">Industries</Link>
         <span>›</span>
         <span>{industry.name}</span>
       </nav>
@@ -288,8 +310,8 @@ export default function IndustryPage({ openQuote }) {
             <button className="btn-primary" onClick={openQuote} style={{ background: ac }}>
               Request a Quote
             </button>
-            <a href="mailto:sales@ushakiranecoplast.com" className="ip-cta-email">
-              sales@ushakiranecoplast.com
+            <a href="mailto:enquiry@ushakiranecoplast.com" className="ip-cta-email">
+              enquiry@ushakiranecoplast.com
             </a>
           </div>
         </div>

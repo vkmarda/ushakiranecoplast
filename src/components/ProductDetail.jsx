@@ -182,7 +182,7 @@ export default function ProductDetail({ openQuote }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={product.seoTitle} />
         <meta name="twitter:description" content={product.seoDescription} />
-        <meta property="twitter:image" content={`https://ushakiranecoplast.com${product.img}`} />
+        <meta name="twitter:image" content={`https://ushakiranecoplast.com${product.img}`} />
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
         {faqSchema && (
           <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -290,7 +290,7 @@ export default function ProductDetail({ openQuote }) {
             <div className="section-label">Industry Applications</div>
             <h2>Industries That Use {product.name}</h2>
             <p className="pd-industries-sub">
-              Click any industry to see how {product.name} solve specific challenges in each sector.
+              click any industry to see how {product.name.toLowerCase()} solve specific challenges in each sector.
             </p>
             <div className={`pd-industries-grid pd-industries-${productIndustries.length}`}>
               {productIndustries.map(ind => (
