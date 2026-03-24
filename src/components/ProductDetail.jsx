@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getProductBySlug, getRelatedProducts } from '../data/Products.js'
+import { getIndustryBySlug } from '../data/industries'
+import { productIndustryMap } from '../data/Productindustrymap.js'
 import './ProductDetail.css'
 
 function useInView(threshold = 0.15) {
@@ -61,12 +63,42 @@ function RelatedCard({ product, onClick }) {
   )
 }
 
+function IndustryCard({ industry, onClick }) {
+  const [ref, inView] = useInView()
+  return (
+    <div
+      ref={ref}
+      className="pd-industry-card"
+      onClick={onClick}
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(20px)',
+        transition: 'opacity .45s ease, transform .45s ease',
+        borderTop: `3px solid ${industry.accentColor}`,
+      }}
+    >
+      <div className="pd-industry-icon">{industry.icon}</div>
+      <div className="pd-industry-name">{industry.name}</div>
+      <p className="pd-industry-desc">{industry.subheadline.slice(0, 72)}...</p>
+      <span className="pd-industry-link" style={{ color: industry.accentColor }}>
+        View Solutions →
+      </span>
+    </div>
+  )
+}
+
 export default function ProductDetail({ openQuote }) {
   const { productSlug } = useParams()
   const navigate = useNavigate()
   const product = getProductBySlug(productSlug)
   const related = product ? getRelatedProducts(product) : []
   const [heroRef, heroIn] = useInView(0.05)
+
+  // Get industries this product is used in
+  const industrySlugList = product ? (productIndustryMap[product.id] || []) : []
+  const productIndustries = industrySlugList
+    .map(slug => getIndustryBySlug(slug))
+    .filter(Boolean)
 
   useEffect(() => {
     window.scrollTo({ top: 0 })
@@ -83,7 +115,6 @@ export default function ProductDetail({ openQuote }) {
     )
   }
 
-  // ── Schema Markup ──────────────────────────────────────────────
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -136,7 +167,7 @@ export default function ProductDetail({ openQuote }) {
         )}
       </Helmet>
 
-      {/* ── BREADCRUMB ─────────────────────────────────────── */}
+      {/* ── BREADCRUMB ── */}
       <nav className="pd-breadcrumb" aria-label="breadcrumb">
         <button onClick={() => navigate('/')}>Home</button>
         <span className="pd-bc-sep">›</span>
@@ -145,7 +176,7 @@ export default function ProductDetail({ openQuote }) {
         <span>{product.name}</span>
       </nav>
 
-      {/* ── HERO ───────────────────────────────────────────── */}
+      {/* ── HERO ── */}
       <section className="pd-hero">
         <div
           ref={heroRef}
@@ -156,7 +187,11 @@ export default function ProductDetail({ openQuote }) {
             transition: 'opacity .7s ease, transform .7s ease',
           }}
         >
-          <img src={product.img} alt={`${product.name} manufacturer Hyderabad — Ushakiran Ecoplast`} loading="eager" />
+          <img
+            src={product.img}
+            alt={`${product.name} manufacturer Hyderabad — Ushakiran Ecoplast`}
+            loading="eager"
+          />
           <span className="pd-hero-tag" style={{ background: product.tagColor }}>{product.tag}</span>
         </div>
         <div
@@ -168,7 +203,6 @@ export default function ProductDetail({ openQuote }) {
           }}
         >
           <div className="section-label">{product.tagline}</div>
-          {/* H1 contains exact primary keyword from seoTitle */}
           <h1>{product.name} — Manufacturer in Hyderabad</h1>
           <p className="pd-hero-desc">{product.description}</p>
           <div className="pd-hero-btns">
@@ -178,7 +212,7 @@ export default function ProductDetail({ openQuote }) {
         </div>
       </section>
 
-      {/* ── SPECS ──────────────────────────────────────────── */}
+      {/* ── SPECS ── */}
       <section className="pd-specs-section">
         <div className="pd-specs-inner">
           <div className="pd-specs-left">
@@ -212,7 +246,7 @@ export default function ProductDetail({ openQuote }) {
         </div>
       </section>
 
-      {/* ── LONG DESCRIPTION ───────────────────────────────── */}
+      {/* ── LONG DESCRIPTION ── */}
       {product.longDescription && (
         <section className="pd-long-desc-section">
           <div className="pd-long-desc-inner">
@@ -226,7 +260,32 @@ export default function ProductDetail({ openQuote }) {
         </section>
       )}
 
-      {/* ── FAQs ───────────────────────────────────────────── */}
+      {/* ── USED IN THESE INDUSTRIES ── */}
+      {productIndustries.length > 0 && (
+        <section className="pd-industries-section">
+          <div className="pd-industries-inner">
+            <div className="section-label">Industry Applications</div>
+            <h2>Industries That Use {product.name}</h2>
+            <p className="pd-industries-sub">
+              Click any industry to see how {product.name.toLowerCase()} solve specific challenges in that sector.
+            </p>
+            <div className={`pd-industries-grid pd-industries-${productIndustries.length}`}>
+              {productIndustries.map(ind => (
+                <IndustryCard
+                  key={ind.id}
+                  industry={ind}
+                  onClick={() => {
+                    navigate(`/industries/${ind.slug}`)
+                    window.scrollTo({ top: 0 })
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── FAQs ── */}
       {product.faqs?.length > 0 && (
         <section className="pd-faqs-section">
           <div className="pd-faqs-inner">
@@ -241,7 +300,7 @@ export default function ProductDetail({ openQuote }) {
         </section>
       )}
 
-      {/* ── CTA BANNER ─────────────────────────────────────── */}
+      {/* ── CTA BANNER ── */}
       <section className="pd-cta-banner">
         <div className="pd-cta-inner">
           <div className="pd-cta-left">
@@ -267,7 +326,7 @@ export default function ProductDetail({ openQuote }) {
         </div>
       </section>
 
-      {/* ── RELATED PRODUCTS ───────────────────────────────── */}
+      {/* ── RELATED PRODUCTS ── */}
       {related.length > 0 && (
         <section className="pd-related-section">
           <div className="pd-related-inner">

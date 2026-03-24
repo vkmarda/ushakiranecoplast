@@ -29,8 +29,8 @@ export default function ProductsPage() {
       {/* Catalogue Grid */}
       <div className="pp-catalogue">
         <div className="pp-catalogue-header">
-          <div className="section-label">ISO Certified · Hyderabad</div>
-          <h2>Our Complete Product Range</h2>
+          
+          {/* <h2>Our Complete Product Range</h2> */}
           <p>Click any product to view full specifications, applications, FAQs and request a quote.</p>
         </div>
         <div className="pp-catalogue-grid">

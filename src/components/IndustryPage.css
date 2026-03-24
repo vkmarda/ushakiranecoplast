@@ -2,7 +2,7 @@
 .ip-page { background: var(--bg); min-height: 100vh; }
 
 /* Desktop Nav Bar */
-.nav{position: relative;}
+.nav{ position: relative;}
 
 /* Breadcrumb */
 .ip-breadcrumb { display: flex; align-items: center; position: sticky; justify-content: normal; gap: 8px; padding: 14px 60px; background: #fff; border-bottom: 1px solid var(--green-pale); flex-wrap: wrap; }

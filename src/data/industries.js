@@ -22,7 +22,7 @@ export const industries = [
     id: 'healthcare',
     slug: 'healthcare',
     name: 'Healthcare & Hospitals',
-    // icon: '🏥',
+    icon: '🏥',
     badge: 'PCB Approved · BMWM 2016 Compliant',
     heroTagline: 'Certified Clinical Waste Solutions',
     headline: 'BMWM Compliant Bags for Hospitals, Clinics and Laboratories',

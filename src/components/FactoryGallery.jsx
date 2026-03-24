@@ -1,25 +1,25 @@
 import { useState, useEffect, useRef } from 'react'
 
 const processSteps = [
-  { step: '01', title: 'Waste Collection', desc: 'Post-consumer plastic waste collected from households, industries and municipalities across India.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step1.png' },
-  { step: '02', title: 'Sorting & Segregation', desc: 'Plastic waste carefully sorted by type, colour and grade for optimal recycling output.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step2.png' },
-  { step: '03', title: 'Cleaning, Washing & Shredding', desc: 'Thorough industrial cleaning to remove all contaminants before processing begins. Material is then shredded into uniform flakes', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step3.png' },
-  { step: '04', title: 'Granulation', desc: 'Flakes are melted and formed into recycled granules.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step4.png' },
-  { step: '05', title: 'Extrusion', desc: 'Granules extruded into film of precisely specified thickness for each product type.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step5.png' },
-  { step: '06', title: 'Quality Check', desc: 'Extruded films rigorously tested for consistency, strength and purity at every batch.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step7.png' },
-  { step: '07', title: 'Cutting & Sealing', desc: 'Film cut and heat-sealed to exact dimensions with consistent seam strength.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step10.png' },
-  { step: '08', title: 'Final Inspection & Quality Check', desc: 'Every batch undergoes a final quality inspection before it is cleared for packaging.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step6.png' },
-  { step: '09', title: 'Packaging', desc: 'Products packed neatly in rolls, flat packs or bulk bags as per customer requirements.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step9.png' },
-  { step: '10', title: 'Stacking Up', desc: 'Packaged products are stacked up in facility', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step11.png' },
-  { step: '11', title: 'Dispatch', desc: 'Pan-India delivery from our Hyderabad facility — reliable, on time, every time.', img: 'https://ushakiranecoplast.com/wp-content/uploads/2024/12/step12.png' },
+  { step: '01', title: 'Waste Collection', desc: 'Post-consumer plastic waste collected from households, industries and municipalities across India.', img: '/images/gallery/step1.png' },
+  { step: '02', title: 'Sorting & Segregation', desc: 'Plastic waste carefully sorted by type, colour and grade for optimal recycling output.', img: '/images/gallery/step2.png' },
+  { step: '03', title: 'Cleaning, Washing & Shredding', desc: 'Thorough industrial cleaning to remove all contaminants before processing begins. Material is then shredded into uniform flakes', img: '/images/gallery/step3.png' },
+  { step: '04', title: 'Granulation', desc: 'Flakes are melted and formed into recycled granules.', img: '/images/gallery/step4.png' },
+  { step: '05', title: 'Extrusion', desc: 'Granules extruded into film of precisely specified thickness for each product type.', img: '/images/gallery/step5.png' },
+  { step: '06', title: 'Quality Check', desc: 'Extruded films rigorously tested for consistency, strength and purity at every batch.', img: '/images/gallery/step6.png' },
+  { step: '07', title: 'Cutting & Sealing', desc: 'Film cut and heat-sealed to exact dimensions with consistent seam strength.', img: '/images/gallery/step7.png' },
+  { step: '08', title: 'Final Inspection & Quality Check', desc: 'Every batch undergoes a final quality inspection before it is cleared for packaging.', img: '/images/gallery/step10.png' },
+  { step: '09', title: 'Packaging', desc: 'Products packed neatly in rolls, flat packs or bulk bags as per customer requirements.', img: '/images/gallery/step8.png' },
+  { step: '10', title: 'Stacking Up', desc: 'Packaged products are stacked up in facility', img: '/images/gallery/step11.png' },
+  { step: '11', title: 'Dispatch', desc: 'Pan-India delivery from our Hyderabad facility — reliable, on time, every time.', img: '/images/gallery/step12.png' },
 ]
 
-const galleryImages = [
-  { img: 'https://ushakiranecoplast.com/wp-content/uploads/2025/02/ab21.png', caption: 'Manufacturing Floor' },
-  { img: 'https://ushakiranecoplast.com/wp-content/uploads/2025/02/ab12.png', caption: 'Production Line' },
-  { img: '/images/hero-bg.jpg', caption: 'Factory Operations' },
-  { img: '/images/team.jpg', caption: 'Our Team' },
-]
+// const galleryImages = [
+//   { img: 'https://ushakiranecoplast.com/wp-content/uploads/2025/02/ab21.png', caption: 'Manufacturing Floor' },
+//   { img: 'https://ushakiranecoplast.com/wp-content/uploads/2025/02/ab12.png', caption: 'Production Line' },
+//   { img: '/images/hero-bg.jpg', caption: 'Factory Operations' },
+//   { img: '/images/team.jpg', caption: 'Our Team' },
+// ]
 
 function ProcessStep({ s, index, onClick }) {
   const ref = useRef(null)
@@ -99,7 +99,7 @@ export default function FactoryGallery({ setPage, openQuote }) {
         </div>
         <div className="gallery-video-wrap">
           <video
-  src="https://ushakiranecoplast.com/wp-content/uploads/2024/12/Usha.mp4"
+  src="/images/gallery/Usha.mp4"
   autoPlay
   muted
   loop

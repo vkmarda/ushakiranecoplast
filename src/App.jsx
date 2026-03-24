@@ -19,6 +19,7 @@ import FactoryGallery from './components/FactoryGallery'
 import AboutPage from './components/Aboutpage'
 import GarbageBagStory from './components/testimonials/Garbagebagstory'
 import ContactModal from './components/ContactModal'
+import IndustriesSection from './components/Industriessection'
 
 function HomePage({ setPage, openQuote }) {
   return (
@@ -26,7 +27,8 @@ function HomePage({ setPage, openQuote }) {
       <Hero setPage={setPage} openQuote={openQuote} />
       <About />
       <Products setPage={setPage} />
-      <Features />
+      <IndustriesSection />
+      {/* <Features /> */}
       <Testimonials />
       <Certifications />
       <FAQ />

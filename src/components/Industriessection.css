@@ -1,0 +1,147 @@
+/* ── INDUSTRIES SECTION (Homepage) ── */
+
+.is-section {
+  padding: 100px 60px;
+  background: var(--bg);
+}
+
+.is-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.is-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--dark);
+  margin: 8px 0 12px;
+}
+
+.is-header p {
+  font-size: 15px;
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+.is-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto 48px;
+}
+
+.is-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.is-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0,0,0,.1);
+}
+
+.is-card-top {
+  padding: 24px 22px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.is-card-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.is-card-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.is-card-body {
+  padding: 0 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.is-card-icon h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+}
+
+.is-card-body p {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.is-card-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.is-card-product-tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: .02em;
+}
+
+.is-card-footer {
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.is-card-link {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  transition: opacity .2s;
+}
+
+.is-card:hover .is-card-link {
+  opacity: .75;
+}
+
+.is-cta {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .is-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .is-section { padding: 60px 24px; }
+  .is-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .is-card-top { padding: 18px 16px 14px; }
+  .is-card-body { padding: 0 16px 18px; }
+}
+
+@media (max-width: 480px) {
+  .is-grid { grid-template-columns: 1fr; }
+}
