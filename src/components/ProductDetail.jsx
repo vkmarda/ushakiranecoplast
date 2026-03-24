@@ -5,7 +5,7 @@ import { getProductBySlug, getRelatedProducts } from '../data/Products.js'
 import { getIndustryBySlug } from '../data/industries'
 import { productIndustryMap } from '../data/Productindustrymap.js'
 import './ProductDetail.css'
-
+4
 function useInView(threshold = 0.15) {
   const ref = useRef(null)
   const [inView, setInView] = useState(false)
