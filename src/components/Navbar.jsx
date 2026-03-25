@@ -46,7 +46,13 @@ export default function Navbar({ page, setPage }) {
       </div>
       <nav>
         <button onClick={() => goHome('#home')} className="logo" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-          <img src="/images/ukep-logo.png" alt="Ushakiran Ecoplast" className="logo-img" />
+          <img
+  src="/images/ukep-logo.webp"
+  alt="Ushakiran Ecoplast"
+  className="logo-img"
+  width="239"
+  height="52"
+/>
         </button>
 
         {/* Desktop links */}

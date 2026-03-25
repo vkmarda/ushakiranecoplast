@@ -156,7 +156,7 @@ export default function IndustryPage({ openQuote }) {
         <link rel="canonical" href={`https://ushakiranecoplast.com/industries/${industry.slug}`} />
         <meta property="og:title" content={industry.seoTitle} />
         <meta property="og:description" content={industry.seoDescription} />
-        <meta property="og:image" content="https://ushakiranecoplast.com/logo.png" />
+        <meta property="og:image" content="https://ushakiranecoplast.com/logo.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content={`https://ushakiranecoplast.com/industries/${industry.slug}`} />
@@ -165,7 +165,7 @@ export default function IndustryPage({ openQuote }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={industry.seoTitle} />
         <meta name="twitter:description" content={industry.seoDescription} />
-        <meta name="twitter:image" content="https://ushakiranecoplast.com/logo.png" />
+        <meta name="twitter:image" content="https://ushakiranecoplast.com/logo.webp" />
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

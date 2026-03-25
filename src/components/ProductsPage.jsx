@@ -41,7 +41,7 @@ export default function ProductsPage() {
               onClick={() => navigate(`/products/${p.slug}`)}
             >
               <div className="pp-cat-img">
-                <img src={p.img} alt={`${p.name} manufacturer Hyderabad`} loading="lazy" />
+                <img src={p.img} alt={`${p.name} manufacturer Hyderabad`} width="600" height="500" loading="lazy" />
                 <span className="pp-cat-tag" style={{ background: p.tagColor }}>{p.tag}</span>
               </div>
               <div className="pp-cat-body">

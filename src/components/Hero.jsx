@@ -3,28 +3,28 @@ import { useNavigate } from 'react-router-dom'
 const heroProducts = [
   {
     id: 'garbage-bags',
-    img: '/images/garbage-bags.jpg',
+    img: '/images/garbage-bags.webp',
     title: 'Garbage Bags & Covers',
     desc: 'Industrial & household liners in all sizes and gauges.',
     tag: 'Most Popular',
   },
   {
     id: 'bio-medical-bags',
-    img: '/images/biohazard-bags.jpg',
+    img: '/images/biohazard-bags.webp',
     title: 'Bio-Medical Bags',
     desc: 'Certified colour-coded bags for clinical waste disposal.',
     tag: 'Certified',
   },
   {
     id: 'bags-on-rolls',
-    img: '/images/bags-on-rolls.jpg',
+    img: '/images/bags-on-rolls.webp',
     title: 'Bags on Rolls',
     desc: 'High-volume perforated roll bags for industrial dispensing.',
     tag: 'High Volume',
   },
   {
     id: 'ldpe-sheets',
-    img: '/images/shrink-roll.jpg',
+    img: '/images/shrink-roll.webp',
     title: 'LDPE Shrink Film',
     desc: 'Moisture barriers & wrapping for industry & agriculture.',
     tag: 'Industrial',
@@ -72,11 +72,14 @@ export default function Hero({ setPage, openQuote }) {
       </div>
       <div className="hero-right">
         <img
-          src="/images/hero-products-lineup.PNG"
-          alt="UKEP Product Range"
-          className="hero-lineup-img"
-          loading="eager"
-        />
+  src="/images/hero-products-lineup.webp"
+  alt="UKEP Product Range"
+  className="hero-lineup-img"
+  loading="eager"
+  fetchPriority="high"
+  width="1195"
+  height="896"
+/>
       </div>
 
     </section>

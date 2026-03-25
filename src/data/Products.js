@@ -20,7 +20,7 @@ export const products = [
     slug: 'recycled-garbage-bags-hyderabad',
     name: 'Garbage Bags',
     tagline: 'Industrial & Household Waste Management',
-    img: '/images/garbage-bags-latest.PNG',
+    img: '/images/garbage-bags-latest.webp',
     tag: 'Most Popular',
     tagColor: '#2d6a4f',
 
@@ -94,7 +94,7 @@ export const products = [
     slug: 'biomedical-waste-bags-bmwm-compliant',
     name: 'Bio-Hazard Bags',
     tagline: 'Certified Clinical Waste Disposal',
-    img: '/images/biohazard-bags.jpeg',
+    img: '/images/biohazard-bags.webp',
     tag: 'Certified',
     tagColor: '#b5451b',
 
@@ -164,7 +164,7 @@ export const products = [
     slug: 'plastic-bags-on-rolls-manufacturer',
     name: 'Bags on Rolls',
     tagline: 'High-Volume Dispensing Solution',
-    img: '/images/bags-on-rolls.jpeg',
+    img: '/images/bags-on-rolls.webp',
     tag: 'High Volume',
     tagColor: '#1a6b9a',
 
@@ -228,7 +228,7 @@ export const products = [
     slug: 'stretch-wrap-film-pallet-wrapping',
     name: 'Stretch Film',
     tagline: 'Pallet Wrapping & Load Securing',
-    img: '/images/stretch-film.jpeg',
+    img: '/images/stretch-film.webp',
     tag: 'Logistics',
     tagColor: '#2a6b7a',
 
@@ -289,7 +289,7 @@ export const products = [
     slug: 'ldpe-shrink-film-manufacturer-hyderabad',
     name: 'Shrink Film',
     tagline: 'Secure & Professional Product Packaging',
-    img: '/images/shrink-film.jpeg',
+    img: '/images/shrink-film.webp',
     tag: 'Packaging',
     tagColor: '#7a6a2a',
 
@@ -351,7 +351,7 @@ export const products = [
     slug: 'ldpe-sheets-manufacturer-hyderabad',
     name: 'LDPE Sheets',
     tagline: 'Industrial Moisture Barriers & Construction Films',
-    img: '/images/ldpe-sheets.PNG',
+    img: '/images/ldpe-sheets.webp',
     tag: 'Industrial',
     tagColor: '#5a3e8a',
 
@@ -414,7 +414,7 @@ export const products = [
     slug: 'ldpe-cover-industrial-packaging',
     name: 'LDPE Cover',
     tagline: 'Industrial-Grade Protection Covers',
-    img: '/images/ldpe-cover.jpeg',
+    img: '/images/ldpe-cover.webp',
     tag: 'Industrial',
     tagColor: '#3a6b8a',
 
@@ -475,7 +475,7 @@ export const products = [
     slug: 'mulch-film-uv-resistant-agriculture',
     name: 'Mulch Film',
     tagline: 'UV-Resistant Agricultural Protection',
-    img: '/images/mulch-film.jpg',
+    img: '/images/mulch-film.webp',
     tag: 'Agriculture',
     tagColor: '#3a7a2a',
 

@@ -1,11 +1,11 @@
 import { useRef } from 'react'
 
 const badges = [
-  { src: '/images/badges/supports-environment.png', label: 'Supports Environment' },
-  { src: '/images/badges/certified.png', label: 'Certified & Approved' },
-  { src: '/images/badges/circular-economy.png', label: 'Circular Economy' },
-  { src: '/images/badges/recyclable.png', label: 'Recyclable' },
-  { src: '/images/badges/plastic-recycle.png', label: 'Plastic-recycle' },
+  { src: '/images/badges/supports-environment.webp', label: 'Supports Environment' },
+  { src: '/images/badges/certified.webp', label: 'Certified & Approved' },
+  { src: '/images/badges/circular-economy.webp', label: 'Circular Economy' },
+  { src: '/images/badges/recyclable.webp', label: 'Recyclable' },
+  { src: '/images/badges/plastic-recycle.webp', label: 'Plastic-recycle' },
 ]
 
 export default function Features() {

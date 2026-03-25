@@ -206,13 +206,13 @@ useEffect(() => {
         </div>
         <div className="founders-quote-grid">
             <div className="founder-quote-card">
-            <div className="fq-avatar"><img src="/images/team-aditya.jpg" alt="Aditya Sarda" /></div>
+            <div className="fq-avatar"><img src="/images/team-aditya.webp" alt="Aditya Sarda" /></div>
             <blockquote>"Healthy competition drives innovation. Our focus on quality, customization and customer retention has been the foundation of our consistent growth."</blockquote>
             <div className="fq-name">Aditya Sarda</div>
             <div className="fq-role">Co-Founder &amp; Director</div>
           </div>
           <div className="founder-quote-card">
-            <div className="fq-avatar"><img src="/images/team-ramakant.jpg" alt="Ramakanth Sarda" /></div>
+            <div className="fq-avatar"><img src="/images/team-ramakant.webp" alt="Ramakanth Sarda" /></div>
             <blockquote>"We started in 2013 with one clear mission — convert plastic waste into reusable products. Every bag we make is a step towards a cleaner India."</blockquote>
             <div className="fq-name">Ramakanth Sarda</div>
             <div className="fq-role">Co-Founder &amp; Managing Director</div>

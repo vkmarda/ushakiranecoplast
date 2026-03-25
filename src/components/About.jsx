@@ -90,7 +90,7 @@ export default function About() {
 
       <div className="about-body">
         <div className="about-img-wrap">
-          <img src="/images/team.jpg" alt="UKEP manufacturing facility" loading='lazy' style={{ objectPosition: '30% center' }} />
+          <img src="/images/team.webp" alt="UKEP manufacturing facility" loading='lazy' style={{ objectPosition: '30% center' }} />
           <div className="about-img-badge">
             <span className="aib-val">ISO</span>
             <span className="aib-lab">Certified Facility</span>

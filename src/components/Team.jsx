@@ -4,7 +4,7 @@ const founders = [
     role: 'Founder & CFO',
     edu: 'B.E — Information Technology',
     exp: '13 years of experience',
-    img: '/images/team-aditya.jpg',
+    img: '/images/team-aditya.webp',
     bio: 'Drives the financial strategy and growth vision of UKEP. Aditya brings a sharp analytical mindset and deep commitment to building a profitable, sustainable business for the long term.',
   },
   {
@@ -12,7 +12,7 @@ const founders = [
     role: 'Founder & CEO',
     edu: 'B.Com Graduate',
     exp: '13 years of experience',
-    img: '/images/team-ramakant.jpg',
+    img: '/images/team-ramakant.webp',
     bio: 'Visionary leader who founded USHAKIRAN ECOPLAST with a mission to turn plastic waste into high-quality, sustainable products for India.',
   }
 ]
@@ -23,7 +23,7 @@ const advisors = [
     role: 'Head Advisor',
     edu: 'B.Com-Tax, PGDBM, CA-ATC (Inter)',
     exp: '38 years of experience',
-    img: '/images/team-arun.jpg',
+    img: '/images/team-arun.webp',
     bio: 'Senior financial and strategic advisor guiding UKEP through compliance, investment decisions, and long-term planning with over three decades of expertise in chartered accountancy.',
   },
 ]
@@ -33,14 +33,14 @@ const marketing = [
     role: '',
     edu: 'B.Tech, MBA',
     exp: '8 years of experience',
-    img: '/images/team-abhinav.jpg',
+    img: '/images/team-abhinav.webp',
   bio: "Strategic thinker with 8 years across business development and operations — driving UKEP's growth, distribution networks, and market expansion." },
   {
     name: 'Varun Marda',
     role: '',
     edu: 'B.Tech',
     exp: '4 years of experience',
-    img: '/images/team-varun.PNG',
+    img: '/images/team-varun.webp',
   bio: "Engineer turned digital strategist — building the technology, platforms, and marketing systems that bring UKEP's products to modern customers." },
 ]
 
@@ -50,28 +50,28 @@ const operations = [
     role: 'Accounts Head',
     edu: 'B.Com Graduate',
     exp: '20 years of experience',
-    img: '/images/team-amit.jpg',
+    img: '/images/team-amit.webp',
   },
   {
     name: 'Avinash Darak',
     role: 'Accounts Manager',
     edu: 'B.Com Graduate',
     exp: '5 years of experience',
-    img: '/images/team-avinash.jpg',
+    img: '/images/team-avinash.webp',
   },
   {
     name: 'Ravi Verma',
     role: 'Strategic Consultant',
     edu: 'MBA Marketing, BTech IT',
     exp: '7 years of experience in plastic recycling',
-    img: '/images/team-ravi.jpg',
+    img: '/images/team-ravi.webp',
   },
   {
     name: 'Uttam Goswami',
     role: 'Plant Head — Bags Manufacturing',
     edu: 'Graduate',
     exp: '9 years of experience',
-    img: '/images/team-uttam.jpg',
+    img: '/images/team-uttam.webp',
   },
   
   {
@@ -79,7 +79,7 @@ const operations = [
     role: 'Plant Head — Granule Recycling',
     edu: 'Graduate',
     exp: '4 years of experience',
-    img: '/images/team-rahul.jpg',
+    img: '/images/team-rahul.webp',
   },
 ]
 

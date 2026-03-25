@@ -1,10 +1,10 @@
 const certLogos = [
-  { src: '/images/certs/c1.png', alt: 'Certification 1' },
-  { src: '/images/certs/c2.png', alt: 'Make in India' },
-  { src: '/images/certs/gmp-logo.png', alt: 'GMP' },
-  { src: '/images/certs/footprint.png', alt: 'Carbon Footprint' },
-  { src: '/images/certs/fda.png', alt: 'FDA Approved' },
-  { src: '/images/certs/iso.png', alt: 'ISO 9001:2015' },
+  { src: '/images/certs/c1.webp', alt: 'Certification 1' },
+  { src: '/images/certs/c2.webp', alt: 'Make in India' },
+  { src: '/images/certs/gmp-logo.webp', alt: 'GMP' },
+  { src: '/images/certs/footprint.webp', alt: 'Carbon Footprint' },
+  { src: '/images/certs/fda.webp', alt: 'FDA Approved' },
+  { src: '/images/certs/iso.webp', alt: 'ISO 9001:2015' },
 ]
 
 export default function Certifications() {
@@ -18,7 +18,7 @@ export default function Certifications() {
       <div className="cert-logos-grid">
         {certLogos.map((c, i) => (
           <div className="cert-logo-item" key={i}>
-            <img src={c.src} alt={c.alt} />
+            <img src={c.src} alt={c.alt} width="147" height="147" />
           </div>
         ))}
       </div>
