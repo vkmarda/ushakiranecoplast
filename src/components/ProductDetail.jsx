@@ -104,6 +104,11 @@ export default function ProductDetail({ openQuote }) {
     window.scrollTo({ top: 0 })
   }, [productSlug])
 
+  useEffect(() => {
+    document.body.classList.add('page-with-sticky-breadcrumb')
+    return () => document.body.classList.remove('page-with-sticky-breadcrumb')
+  }, [])
+
   if (!product) {
     return (
       <div className="pd-not-found">

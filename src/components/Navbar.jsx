@@ -44,7 +44,7 @@ export default function Navbar({ page, setPage }) {
         <strong>Email:</strong>{' '}
         <a href="mailto:sales@ushakiranecoplast.com">enquiry@ushakiranecoplast.com</a>
       </div>
-      <nav>
+      <nav className="site-nav">
         <button onClick={() => goHome('#home')} className="logo" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
           <img
   src="/images/ukep-logo.webp"

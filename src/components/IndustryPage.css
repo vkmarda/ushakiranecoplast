@@ -5,14 +5,16 @@
 .nav{ position: relative;}
 
 /* Breadcrumb */
-.ip-breadcrumb { display: flex; align-items: center; position: sticky; justify-content: normal; gap: 8px; padding: 14px 60px; background: #fff; border-bottom: 1px solid var(--green-pale); flex-wrap: wrap; }
-.ip-breadcrumb button { background: none; border: none; cursor: pointer; font-size: 13px; color: var(--muted); font-family: 'DM Sans', sans-serif; padding: 0; transition: color .2s; }
+.ip-breadcrumb { display: flex; align-items: center; position: sticky; top: 0; z-index: 95; justify-content: normal; gap: 8px; padding: 14px 60px; background: #fff; border-bottom: 1px solid var(--green-pale); flex-wrap: wrap; }
+.ip-breadcrumb a,
+.ip-breadcrumb button { background: none; border: none; cursor: pointer; font-size: 13px; color: var(--muted); font-family: 'DM Sans', sans-serif; padding: 0; transition: color .2s; text-decoration: none; }
+.ip-breadcrumb a:hover,
 .ip-breadcrumb button:hover { color: var(--green); }
 .ip-breadcrumb span { font-size: 13px; color: #d1d5db; }
 .ip-breadcrumb span:last-child { color: var(--dark); font-weight: 600; }
 
 /* Hero */
-.ip-hero { position: relative; padding: 100px 60px 80px; min-height: 60vh; display: flex; align-items: center; overflow: hidden; }
+.ip-hero { position: relative; padding: 40px 60px 20px; min-height: 20vh; display: flex; align-items: center; overflow: hidden; }
 .ip-hero-bg { position: absolute; inset: 0; z-index: 0; }
 .ip-hero-content { position: relative; z-index: 2; max-width: 720px; display: flex; flex-direction: column; gap: 20px; }
 .ip-hero-eyebrow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -111,7 +113,7 @@
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .ip-breadcrumb { padding: 12px 24px; }
-  .ip-hero { padding: 90px 24px 60px; min-height: auto; }
+  .ip-hero { padding: 100px 24px 60px; min-height: auto; }
   .ip-hero-content h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
   .ip-challenge { padding: 60px 24px; }
   .ip-challenge-inner { grid-template-columns: 1fr; gap: 40px; }

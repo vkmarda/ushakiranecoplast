@@ -91,6 +91,11 @@ export default function IndustryPage({ openQuote }) {
 
   useEffect(() => { window.scrollTo({ top: 0 }) }, [industrySlug])
 
+  useEffect(() => {
+    document.body.classList.add('page-with-sticky-breadcrumb')
+    return () => document.body.classList.remove('page-with-sticky-breadcrumb')
+  }, [])
+
   if (!industry) {
     return (
       <div className="ip-not-found">

@@ -9,11 +9,11 @@
 /* ── HERO ── */
 .gbs-hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 120px 60px 80px;
+  padding: 40px 60px 20px;
   overflow: hidden;
   background: #0d1f18;
 }
@@ -394,7 +394,7 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .gbs-hero { padding: 100px 24px 60px; min-height: 80vh; }
+  .gbs-hero { padding: 100px 24px 60px; min-height: auto; align-items: flex-start; }
   .gbs-hero-scroll { left: 24px; }
   .gbs-hero-h1 { font-size: clamp(2.4rem, 10vw, 3.5rem); }
   .gbs-stats-section { padding: 60px 24px; }
