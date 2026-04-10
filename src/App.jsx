@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
@@ -44,7 +44,7 @@ function AppInner() {
   function setPage(p) {
     if (p === 'home') navigate('/')
     else navigate(`/${p}`)
-    window.scrollTo({ top: 0 })
+    if (typeof window !== 'undefined') window.scrollTo({ top: 0 })
   }
 
   const openQuote = () => setQuoteOpen(true)
@@ -78,9 +78,5 @@ function AppInner() {
 }
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <AppInner />
-    </BrowserRouter>
-  )
+  return <AppInner />
 }

@@ -62,7 +62,7 @@ export default function Navbar({ page, setPage }) {
           <li><button onClick={() => goPage('products')} className="nav-text-btn">Our Products</button></li>
           <li><button onClick={() => goPage('industries')} className="nav-text-btn">Industries</button></li>
           <li><button onClick={() => goPage('team')} className="nav-text-btn">Our Team</button></li>
-          <li><a href="https://blog.ushakiranecoplast.com" target="_blank" rel="noreferrer" className="nav-text-btn">Blog</a></li>
+          <li><a href="https://ushakiranecoplast.com/blog" target="_blank" rel="noreferrer" className="nav-text-btn">Blog</a></li>
           <li><button onClick={openContactModal} className="nav-text-btn">Contact Us</button></li>
           <li><button onClick={() => goPage('gallery')} className="nav-text-btn">Gallery</button></li>
         </ul>
@@ -96,7 +96,7 @@ export default function Navbar({ page, setPage }) {
           <button onClick={() => goPage('products')} className="nav-mobile-item">Our Products</button>
           <button onClick={() => goPage('industries')} className="nav-mobile-item">Industries</button>
           <button onClick={() => goPage('team')} className="nav-mobile-item">Our Team</button>
-          <a href="https://blog.ushakiranecoplast.com" target="_blank" rel="noreferrer" className="nav-text-btn">Blog</a>
+          <a href="https://ushakiranecoplast.com/blog" target="_blank" rel="noreferrer" className="nav-mobile-item">Blog</a>
           <button onClick={openContactModal} className="nav-mobile-item">Contact Us</button>
           <button onClick={() => goPage('gallery')} className="nav-mobile-item">Gallery</button>
         </div>
