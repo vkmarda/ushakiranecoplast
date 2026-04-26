@@ -1,3 +1,6 @@
+import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+
 const founders = [
     {
     name: 'Aditya Sarda',
@@ -127,8 +130,16 @@ function MemberCard({ member }) {
 }
 
 export default function Team({ setPage }) {
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
   return (
     <div className="team-page">
+      <Helmet>
+        <title>Our Team | Ushakiran Ecoplast</title>
+        <meta name="description" content="Meet the team behind Ushakiran Ecoplast — founders, advisors and operations heads driving sustainable plastic recycling in Hyderabad since 2013." />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
       {/* Hero banner */}
       <div className="team-hero">

@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const processSteps = [
   { step: '01', title: 'Waste Collection', desc: 'Post-consumer plastic waste collected from households, industries and municipalities across India.', img: '/images/gallery/step1.webp' },
@@ -76,9 +78,17 @@ function ProcessStep({ s, index, onClick }) {
 }
 export default function FactoryGallery({ setPage, openQuote }) {
   const [lightbox, setLightbox] = useState(null)
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
 
   return (
     <div className="gallery-page">
+      <Helmet>
+        <title>Gallery | Ushakiran Ecoplast</title>
+        <meta name="description" content="See inside Ushakiran Ecoplast's recycling and manufacturing facility in Hyderabad. Watch our 11-step process from plastic waste to finished eco-friendly product." />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
       {/* Hero */}
       <div className="gallery-hero">

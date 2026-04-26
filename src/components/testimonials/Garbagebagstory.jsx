@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import './Garbagebagstory.css'
 
@@ -168,12 +169,16 @@ function UseCaseCard({ u, index }) {
 
 export default function GarbageBagStory({ openQuote, setPage }) {
   const [heroRef, heroIn] = useInView(0.05)
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
 
   return (
     <div className="gbs-page">
       <Helmet>
         <title>Why Garbage Bags Matter | Ushakiran Ecoplast</title>
         <meta name="description" content="Discover why proper garbage bags are essential for hygiene, waste segregation, and environmental responsibility — told through real customer stories." />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       {/* ── HERO ── */}

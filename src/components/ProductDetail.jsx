@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useParams, useNavigate, Link} from 'react-router-dom'
+import { useParams, useNavigate, useLocation, Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getProductBySlug, getRelatedProducts } from '../data/Products.js'
 import { getIndustryBySlug } from '../data/industries'
@@ -51,7 +51,7 @@ function RelatedCard({ product, onClick }) {
       }}
     >
       <div className="pd-related-img">
-        <img src={product.img} alt={product.name} loading="lazy" />
+        <img src={product.img} alt={product.name} loading="lazy" width={product.imgWidth} height={product.imgHeight} />
         <span className="pd-related-tag" style={{ background: product.tagColor }}>{product.tag}</span>
       </div>
       <div className="pd-related-body">
@@ -90,6 +90,8 @@ function IndustryCard({ industry, onClick }) {
 export default function ProductDetail({ openQuote }) {
   const { productSlug } = useParams()
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
   const product = getProductBySlug(productSlug)
   const related = product ? getRelatedProducts(product) : []
   const [heroRef, heroIn] = useInView(0.05)
@@ -175,7 +177,7 @@ export default function ProductDetail({ openQuote }) {
       <Helmet>
         <title>{product.seoTitle}</title>
         <meta name="description" content={product.seoDescription} />
-        <link rel="canonical" href={`https://ushakiranecoplast.com/products/${product.slug}`} />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta property="og:title" content={product.seoTitle} />
         <meta property="og:description" content={product.seoDescription} />
         <meta property="og:image" content={`https://ushakiranecoplast.com${product.img}`} />
@@ -188,6 +190,7 @@ export default function ProductDetail({ openQuote }) {
         <meta name="twitter:title" content={product.seoTitle} />
         <meta name="twitter:description" content={product.seoDescription} />
         <meta name="twitter:image" content={`https://ushakiranecoplast.com${product.img}`} />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
         {faqSchema && (
           <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -219,6 +222,8 @@ export default function ProductDetail({ openQuote }) {
             src={product.img}
             alt={`${product.name} manufacturer Hyderabad — Ushakiran Ecoplast`}
             loading="eager"
+            width={product.imgWidth}
+            height={product.imgHeight}
           />
           <span className="pd-hero-tag" style={{ background: product.tagColor }}>{product.tag}</span>
         </div>
@@ -343,11 +348,11 @@ export default function ProductDetail({ openQuote }) {
           </div>
           <div className="pd-cta-right">
             <button className="btn-primary" onClick={openQuote}>Request a Quote</button>
-            <a href="tel:+919885134991" className="pd-cta-call">
+            <a href="tel:+918919428973" className="pd-cta-call">
               <span className="pd-cta-call-icon">📞</span>
               <span>
                 <span className="pd-cta-call-label">Call Us Directly</span>
-                <span className="pd-cta-call-num">+91 98851 34991</span>
+                <span className="pd-cta-call-num">+91 8919428973</span>
               </span>
             </a>
           </div>
@@ -367,6 +372,27 @@ export default function ProductDetail({ openQuote }) {
                   product={p}
                   onClick={() => navigate(`/products/${p.slug}`)}
                 />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── RELATED GUIDES ── */}
+      {product.subPageLinks?.length > 0 && (
+        <section className="pd-guides-section">
+          <div className="pd-guides-inner">
+            <div className="section-label">Buyer Guides</div>
+            <h2>Related Pages</h2>
+            <div className="pd-guides-grid">
+              {product.subPageLinks.map(link => (
+                <Link
+                  key={link.slug}
+                  to={`/products/garbage-bags/${link.slug}/`}
+                  className="pd-guide-link"
+                >
+                  {link.label} →
+                </Link>
               ))}
             </div>
           </div>

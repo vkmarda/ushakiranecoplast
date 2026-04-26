@@ -21,13 +21,15 @@ export const products = [
     name: 'Garbage Bags',
     tagline: 'Industrial & Household Waste Management',
     img: '/images/garbage-bags-latest.webp',
+    imgWidth: 1106,
+    imgHeight: 1105,
     tag: 'Most Popular',
     tagColor: '#2d6a4f',
 
     // PRIMARY: 'recycled garbage bags manufacturer Hyderabad'
     // SECONDARY: 'recycled LDPE garbage bags India', '100% recycled plastic bags manufacturer India'
     // ECO UNCLAIMED: '100% recycled plastic bags manufacturer India'
-    seoTitle: 'Recycled Garbage Bags Manufacturer in Hyderabad | 100% LDPE | Ushakiran Ecoplast',
+    seoTitle: 'Garbage Bags Manufacturer Hyderabad | Ushakiran Ecoplast',
     seoDescription: 'ISO certified manufacturer of 100% recycled LDPE garbage bags in Hyderabad. Custom sizes 17×19 to 30×37 inches, 30–120 micron. Bulk supply to hotels, airports, MNCs and households across India. Get a quote today.',
 
     description: 'Our recycled garbage bags are manufactured from 100% post-consumer plastic waste, offering a durable and eco-friendly solution for waste collection across households, hotels, airports, railways, and facility management companies.',
@@ -74,7 +76,7 @@ export const products = [
       },
       {
         q: 'What is the minimum order quantity for garbage bags?',
-        a: 'We accommodate both trial orders and large bulk contracts. MOQ varies by size and thickness. Contact our sales team at sales@ushakiranecoplast.com or WhatsApp +91 98851 34991 for a custom quote based on your volume and specification.'
+        a: 'We accommodate both trial orders and large bulk contracts. MOQ varies by size and thickness. Contact our sales team at enquiry@ushakiranecoplast.com or WhatsApp +91 8919428973 for a custom quote based on your volume and specification.'
       },
       {
         q: 'Can I get custom printed garbage bags with my company logo?',
@@ -84,6 +86,21 @@ export const products = [
         q: 'Do you supply garbage bags across India or only in Hyderabad?',
         a: 'We supply pan-India from our Hyderabad manufacturing facility. We regularly deliver to clients across Telangana, Andhra Pradesh, Maharashtra, Karnataka, Tamil Nadu and Delhi NCR. Contact us for freight rates and delivery timelines to your location.'
       },
+    ],
+    subPageLinks: [
+      { slug: 'black-garbage-bags-hyderabad',             label: 'Black Garbage Bags in Hyderabad' },
+      { slug: 'garbage-bags-wholesale-hyderabad',          label: 'Garbage Bags Wholesale Hyderabad' },
+      { slug: 'dustbin-bags-hyderabad',                    label: 'Dustbin Bags in Hyderabad' },
+      { slug: 'coloured-garbage-bags-india',               label: 'Coloured Garbage Bags India' },
+      { slug: 'eco-friendly-garbage-bags-hyderabad',       label: 'Eco-Friendly Garbage Bags Hyderabad' },
+      { slug: 'plastic-bags-supplier-hyderabad',           label: 'Plastic Bags Supplier Hyderabad' },
+      { slug: 'garbage-bags-telangana',                    label: 'Garbage Bags in Telangana' },
+      { slug: 'garbage-bags-andhra-pradesh',               label: 'Garbage Bags in Andhra Pradesh' },
+      { slug: 'garbage-bags-bangalore',                    label: 'Garbage Bags Supplier Bangalore' },
+      { slug: 'garbage-bags-chennai',                      label: 'Garbage Bags Supplier Chennai' },
+      { slug: 'garbage-bags-south-india',                  label: 'Garbage Bags South India' },
+      { slug: 'garbage-bags-secunderabad',                 label: 'Garbage Bags in Secunderabad' },
+      { slug: 'garbage-bags-mumbai',                       label: 'Garbage Bags Supplier Mumbai' },
     ],
     relatedIds: ['bio-medical-bags', 'bags-on-rolls', 'ldpe-sheets'],
   },
@@ -95,6 +112,8 @@ export const products = [
     name: 'Bio-Hazard Bags',
     tagline: 'Certified Clinical Waste Disposal',
     img: '/images/biohazard-bags.webp',
+    imgWidth: 622,
+    imgHeight: 561,
     tag: 'Certified',
     tagColor: '#b5451b',
 
@@ -102,7 +121,7 @@ export const products = [
     // SECONDARY: 'BMWM compliant bags supplier', 'biohazard bags price per kg Hyderabad'
     // ECO UNCLAIMED: 'eco friendly biomedical waste bags manufacturer India'
     // COMPETITOR GAP: Deton Pack ranks for 'medical waste bags Hyderabad' — beat with BMWM depth
-    seoTitle: 'Colour Coded Biomedical Waste Bags Manufacturer Hyderabad | BMWM 2016 Compliant | Ushakiran Ecoplast',
+    seoTitle: 'Biomedical Waste Bags Manufacturer Hyderabad | UKEP',
     seoDescription: 'PCB approved, BMWM Rules 2016 compliant colour-coded biomedical waste bags. ISO certified manufacturer in Hyderabad. All 6 BMWM colours. Supply to hospitals, labs and clinics across India.',
 
     description: 'Colour-coded bio-medical waste bags manufactured to strict PCB and CPCB norms for safe segregation and disposal of infectious, hazardous, and clinical waste. Available in all standard colours as per bio-medical waste management rules.',
@@ -165,6 +184,8 @@ export const products = [
     name: 'Bags on Rolls',
     tagline: 'High-Volume Dispensing Solution',
     img: '/images/bags-on-rolls.webp',
+    imgWidth: 2334,
+    imgHeight: 1886,
     tag: 'High Volume',
     tagColor: '#1a6b9a',
 
@@ -229,6 +250,8 @@ export const products = [
     name: 'Stretch Film',
     tagline: 'Pallet Wrapping & Load Securing',
     img: '/images/stretch-film.webp',
+    imgWidth: 1000,
+    imgHeight: 1000,
     tag: 'Logistics',
     tagColor: '#2a6b7a',
 
@@ -290,13 +313,15 @@ export const products = [
     name: 'Shrink Film',
     tagline: 'Secure & Professional Product Packaging',
     img: '/images/shrink-film.webp',
+    imgWidth: 1152,
+    imgHeight: 1152,
     tag: 'Packaging',
     tagColor: '#7a6a2a',
 
     // PRIMARY: 'LDPE shrink film manufacturer Hyderabad'
     // SECONDARY: 'tamper evident shrink film India', 'shrink film FMCG packaging India'
     // ECO UNCLAIMED: 'green packaging supplier pharma India'
-    seoTitle: 'LDPE Shrink Film Manufacturer Hyderabad | Tamper-Evident Packaging | Ushakiran Ecoplast',
+    seoTitle: 'LDPE Shrink Film Manufacturer Hyderabad | UKEP',
     seoDescription: 'High-quality LDPE shrink film for FMCG, pharma and industrial packaging in India. Tamper-evident seal, professional finish. ISO certified bulk manufacturer in Hyderabad. Get a quote.',
 
     description: 'High-quality shrink films for secure, tamper-evident and professional product packaging. Ideal for bundling, wrapping and protecting goods across FMCG, pharma, and industrial sectors.',
@@ -352,6 +377,8 @@ export const products = [
     name: 'LDPE Sheets',
     tagline: 'Industrial Moisture Barriers & Construction Films',
     img: '/images/ldpe-sheets.webp',
+    imgWidth: 1080,
+    imgHeight: 995,
     tag: 'Industrial',
     tagColor: '#5a3e8a',
 
@@ -359,7 +386,7 @@ export const products = [
     // SECONDARY: 'LDPE sheet for DPC construction', 'recycled LDPE sheet manufacturer Hyderabad'
     // COMPETITOR GAP: Singhal Industries ranks nationally — beat with Hyderabad/Telangana city content
     // ECO UNCLAIMED: 'recycled LDPE sheet manufacturer Hyderabad' — nobody has written this page
-    seoTitle: 'LDPE Sheet Manufacturer Hyderabad | DPC Construction & Industrial Film | Ushakiran Ecoplast',
+    seoTitle: 'LDPE Sheet Manufacturer Hyderabad | UKEP',
     seoDescription: 'Recycled and virgin LDPE sheets for DPC construction, road building, agriculture and industry. Custom width and thickness from 25–120+ micron. ISO certified bulk manufacturer in Hyderabad.',
 
     description: 'High-quality LDPE sheets for construction, agriculture, road construction, and textile industries. Provides superior moisture resistance, flexibility, and durability across demanding environments.',
@@ -415,6 +442,8 @@ export const products = [
     name: 'LDPE Cover',
     tagline: 'Industrial-Grade Protection Covers',
     img: '/images/ldpe-cover.webp',
+    imgWidth: 622,
+    imgHeight: 622,
     tag: 'Industrial',
     tagColor: '#3a6b8a',
 
@@ -476,6 +505,8 @@ export const products = [
     name: 'Mulch Film',
     tagline: 'UV-Resistant Agricultural Protection',
     img: '/images/mulch-film.webp',
+    imgWidth: 960,
+    imgHeight: 566,
     tag: 'Agriculture',
     tagColor: '#3a7a2a',
 

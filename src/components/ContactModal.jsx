@@ -1,25 +1,14 @@
-// ContactModal.jsx
-import { useState, useEffect } from 'react'
-
-export default function ContactModal() {
-  const [contactOpen, setContactOpen] = useState(false)
-
-  useEffect(() => {
-    function handleOpen() { setContactOpen(true) }
-    window.addEventListener('open-contact-modal', handleOpen)
-    return () => window.removeEventListener('open-contact-modal', handleOpen)
-  }, [])
-
-  if (!contactOpen) return null
+export default function ContactModal({ isOpen, onClose }) {
+  if (!isOpen) return null
 
   return (
-    <div className="contact-modal-overlay" onClick={() => setContactOpen(false)}>
+    <div className="contact-modal-overlay" onClick={onClose}>
       <div className="contact-modal" onClick={e => e.stopPropagation()}>
-        <button className="contact-modal-close" onClick={() => setContactOpen(false)}>✕</button>
+        <button className="contact-modal-close" onClick={onClose}>✕</button>
         <h3>Get in Touch</h3>
         <p>We're happy to help with orders, custom requirements, and bulk enquiries.</p>
         <div className="contact-modal-items">
-          <a href="tel:+919885134991" className="contact-modal-item">
+          <a href="tel:+918919428973" className="contact-modal-item">
             <div className="cmi-icon">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                 <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
@@ -27,7 +16,7 @@ export default function ContactModal() {
             </div>
             <div className="cmi-text">
               <span className="cmi-label">Call Us</span>
-              <span className="cmi-value">+91 98851 34991</span>
+              <span className="cmi-value">+91 8919428973</span>
             </div>
           </a>
           <a href="mailto:enquiry@ushakiranecoplast.com" className="contact-modal-item">

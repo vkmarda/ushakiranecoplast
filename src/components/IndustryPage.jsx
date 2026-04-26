@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useParams, useNavigate, Link} from 'react-router-dom'
+import { useParams, useNavigate, useLocation, Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getIndustryBySlug } from '../data/industries'
 import { getProductById } from '../data/Products'
@@ -53,7 +53,7 @@ function ProductCard({ product, onClick }) {
       }}
     >
       <div className="ip-product-img">
-        <img src={product.img} alt={`${product.name} for ${product.tagline}`} loading="lazy" />
+        <img src={product.img} alt={`${product.name} for ${product.tagline}`} loading="lazy" width={product.imgWidth} height={product.imgHeight} />
         <span className="ip-product-tag" style={{ background: product.tagColor }}>{product.tag}</span>
       </div>
       <div className="ip-product-body">
@@ -86,6 +86,8 @@ function FaqItem({ faq }) {
 export default function IndustryPage({ openQuote }) {
   const { industrySlug } = useParams()
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
   const industry = getIndustryBySlug(industrySlug)
   const [heroRef, heroIn] = useInView(0.05)
 
@@ -158,7 +160,7 @@ export default function IndustryPage({ openQuote }) {
       <Helmet>
         <title>{industry.seoTitle}</title>
         <meta name="description" content={industry.seoDescription} />
-        <link rel="canonical" href={`https://ushakiranecoplast.com/industries/${industry.slug}`} />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta property="og:title" content={industry.seoTitle} />
         <meta property="og:description" content={industry.seoDescription} />
         <meta property="og:image" content="https://ushakiranecoplast.com/logo.webp" />
@@ -171,6 +173,7 @@ export default function IndustryPage({ openQuote }) {
         <meta name="twitter:title" content={industry.seoTitle} />
         <meta name="twitter:description" content={industry.seoDescription} />
         <meta name="twitter:image" content="https://ushakiranecoplast.com/logo.webp" />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
@@ -210,8 +213,8 @@ export default function IndustryPage({ openQuote }) {
             <button className="btn-primary" onClick={openQuote} style={{ background: ac, border: 'none' }}>
               Get a Quote →
             </button>
-            <a href="tel:+919885134991" className="ip-hero-call">
-              📞 +91 98851 34991
+            <a href="tel:+918919428973" className="ip-hero-call">
+              📞 +91 8919428973
             </a>
           </div>
         </div>

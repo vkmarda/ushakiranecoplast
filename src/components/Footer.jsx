@@ -1,15 +1,6 @@
-import { openContactModal } from '../utils/openContact'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-export default function Footer({setPage}) {
-  const navigate = useNavigate()
-  function goToProduct(productId) {
-    setPage('products')
-    setTimeout(() => {
-      const el = document.getElementById(productId)
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
-    }, 300) // wait for products page to render
-  }
+export default function Footer({ setPage }) {
   return (
     <footer id="contact">
       <div className="footer-grid">
@@ -63,54 +54,30 @@ export default function Footer({setPage}) {
         <div>
           <h4>Quick Links</h4>
           <ul>
-      <li><button onClick={() => setPage('home')} className="footer-link-btn">Home</button></li>
-      <li><button onClick={() => setPage('aboutus')} className="footer-link-btn">About Us</button></li>
-      <li><button onClick={() => setPage('products')} className="footer-link-btn">Our Products</button></li>
-      <li><button onClick={openContactModal} className="footer-link-btn">Contact Us</button></li>
-      <li><button onClick={() => setPage('gallery')} className="footer-link-btn">Gallery</button></li>
+      <li><Link to="/" className="footer-link-btn">Home</Link></li>
+      <li><Link to="/aboutus" className="footer-link-btn">About Us</Link></li>
+      <li><Link to="/products" className="footer-link-btn">Our Products</Link></li>
+      <li><a href="/#contact" className="footer-link-btn">Contact Us</a></li>
+      <li><Link to="/gallery" className="footer-link-btn">Gallery</Link></li>
     </ul>
         </div>
         <div>
           <h4>Our Products</h4>
           <ul>
-        <li><button onClick={() => {
-              navigate(`/products/recycled-garbage-bags-hyderabad`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">Garbage Bags</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/biomedical-waste-bags-bmwm-compliant`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">Bio-Hazard Bags</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/plastic-bags-on-rolls-manufacturer`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">Bags on Rolls</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/ldpe-shrink-film-manufacturer-hyderabad`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">Shrink Films</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/stretch-wrap-film-pallet-wrapping`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">Stretch Films</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/ldpe-sheets-manufacturer-hyderabad`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">LDPE Sheet</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/ldpe-cover-industrial-packaging`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">LDPE Cover</button></li>
-        <li><button onClick={() => {
-              navigate(`/products/mulch-film-uv-resistant-agriculture`)
-              window.scrollTo({ top: 0 })
-            }} className="footer-link-btn">Mulch Film</button></li>
+        <li><Link to="/products/recycled-garbage-bags-hyderabad" className="footer-link-btn">Garbage Bags</Link></li>
+        <li><Link to="/products/biomedical-waste-bags-bmwm-compliant" className="footer-link-btn">Bio-Hazard Bags</Link></li>
+        <li><Link to="/products/plastic-bags-on-rolls-manufacturer" className="footer-link-btn">Bags on Rolls</Link></li>
+        <li><Link to="/products/ldpe-shrink-film-manufacturer-hyderabad" className="footer-link-btn">Shrink Films</Link></li>
+        <li><Link to="/products/stretch-wrap-film-pallet-wrapping" className="footer-link-btn">Stretch Films</Link></li>
+        <li><Link to="/products/ldpe-sheets-manufacturer-hyderabad" className="footer-link-btn">LDPE Sheet</Link></li>
+        <li><Link to="/products/ldpe-cover-industrial-packaging" className="footer-link-btn">LDPE Cover</Link></li>
+        <li><Link to="/products/mulch-film-uv-resistant-agriculture" className="footer-link-btn">Mulch Film</Link></li>
       </ul>
         </div>
         <div>
           <h4>Reach Us</h4>
           <div className="contact-item"><span>📍</span><span>Hyderabad</span></div>
-          <div className="contact-item"><span>📞</span><a href="tel:+919885134991">+91 98851 34991</a></div>
+          <div className="contact-item"><span>📞</span><a href="tel:+918919428973">+91 8919428973</a></div>
           <div className="contact-item"><span>✉️</span><a href="mailto:enquiry@ushakiranecoplast.com">enquiry@ushakiranecoplast.com</a></div>
         </div>
       </div>

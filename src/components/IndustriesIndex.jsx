@@ -1,17 +1,20 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { industries } from '../data/industries'
 import './IndustriesIndex.css'
 
 export default function IndustriesIndex() {
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
 
   return (
     <div className="ii-page">
       <Helmet>
-        <title>Industries We Serve | Recycled Plastic Solutions Hyderabad | Ushakiran Ecoplast</title>
-        <meta name="description" content="Ushakiran Ecoplast serves healthcare, hospitality, construction, agriculture, FMCG, facility management, pharma and logistics industries across Hyderabad and India with ISO certified recycled LDPE products." />
-        <link rel="canonical" href="https://ushakiranecoplast.com/industries" />
+        <title>Industries We Serve | Ushakiran Ecoplast</title>
+        <meta name="description" content="Ushakiran Ecoplast supplies ISO certified recycled LDPE products to healthcare, hospitality, construction, agriculture, FMCG, pharma and logistics industries across India." />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       {/* Hero */}

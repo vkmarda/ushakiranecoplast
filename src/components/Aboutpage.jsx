@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 // ── Animated counter ──
 function CountUp({ target, suffix = '' }) {
@@ -161,8 +163,16 @@ useEffect(() => {
 
   const active = timeline[activeStep]
 
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
   return (
     <div className="about-page">
+      <Helmet>
+        <title>About Us | Ushakiran Ecoplast - Hyderabad</title>
+        <meta name="description" content="Learn about Ushakiran Ecoplast — ISO certified recycled plastic manufacturer in Hyderabad. Founded in 2013, serving 500+ clients across 50+ Indian cities." />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
       {/* HERO */}
       <div className="about-page-hero">

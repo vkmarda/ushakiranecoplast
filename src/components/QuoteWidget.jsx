@@ -2,24 +2,45 @@ import { useState } from 'react'
 
 const products = ['Garbage Bags', 'Bio-Medical Bags', 'Bags on Rolls', 'LDPE Sheets & Film', 'Other']
 
+const EMPTY = { name: '', company: '', phone: '', email: '', product: '', quantity: '', message: '' }
+
 export default function QuoteWidget({ isOpen, onClose }) {
   const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({
-    name: '', company: '', phone: '', email: '', product: '', quantity: '', message: ''
-  })
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [form, setForm] = useState(EMPTY)
 
   function handleChange(e) {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch('/submit.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      const json = await res.json()
+      if (res.ok && json.success) {
+        setSubmitted(true)
+      } else {
+        setError('Something went wrong. Please call us directly on +91 8919428973.')
+      }
+    } catch {
+      setError('Network error. Please call us directly on +91 8919428973.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   function handleClose() {
     setSubmitted(false)
-    setForm({ name: '', company: '', phone: '', email: '', product: '', quantity: '', message: '' })
+    setError('')
+    setForm(EMPTY)
     onClose()
   }
 
@@ -52,6 +73,9 @@ export default function QuoteWidget({ isOpen, onClose }) {
           </div>
         ) : (
           <form className="qw-form" onSubmit={handleSubmit}>
+            {/* Honeypot — hidden from humans, bots fill it */}
+            <input name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
+
             <div className="qw-row">
               <div className="qw-field">
                 <label>Your Name *</label>
@@ -89,7 +113,20 @@ export default function QuoteWidget({ isOpen, onClose }) {
               <label>Additional Requirements</label>
               <textarea name="message" value={form.message} onChange={handleChange} placeholder="Size, colour, packaging, delivery location..." rows={3} />
             </div>
-            <button type="submit" className="btn-primary qw-submit">Send Enquiry →</button>
+
+            {error && <p className="qw-error">{error}</p>}
+
+            <button type="submit" className="btn-primary qw-submit" disabled={loading}>
+              {loading ? 'Sending…' : 'Send Enquiry →'}
+            </button>
+
+            <div className="qw-direct">
+              <span className="qw-direct-label">Or reach us directly</span>
+              <div className="qw-direct-links">
+                <a href="tel:+918919428973" className="qw-direct-link">📞 +91 8919428973</a>
+                <a href="mailto:enquiry@ushakiranecoplast.com" className="qw-direct-link">✉️ enquiry@ushakiranecoplast.com</a>
+              </div>
+            </div>
           </form>
         )}
       </div>

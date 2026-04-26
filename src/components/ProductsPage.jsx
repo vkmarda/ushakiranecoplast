@@ -1,18 +1,21 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { products } from '../data/Products.js'
 
 
 export default function ProductsPage() {
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
 
   return (
     <div className="products-page">
       <Helmet>
-        <title>Recycled Plastic Bags & LDPE Products Manufacturer Hyderabad | Ushakiran Ecoplast</title>
-        <meta name="description" content="ISO certified manufacturer of recycled LDPE garbage bags, biomedical waste bags, shrink film, mulch film, LDPE sheets and more in Hyderabad. Pan-India supply. Get a quote today." />
-        <link rel="canonical" href="https://ushakiranecoplast.com/products" />
-        <meta property="og:title" content="Products | Ushakiran Ecoplast — Recycled Plastic Manufacturer Hyderabad" />
+        <title>Plastic Bags &amp; Films Products | Ushakiran Ecoplast</title>
+        <meta name="description" content="ISO certified recycled LDPE garbage bags, biomedical bags, shrink film, mulch film, LDPE sheets and more. Manufacturer in Hyderabad. Pan-India supply." />
+        <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Plastic Bags & Films Products | Ushakiran Ecoplast" />
         <meta property="og:description" content="ISO certified recycled LDPE products — garbage bags, biomedical bags, shrink film, mulch film and more. Manufacturer in Hyderabad." />
       </Helmet>
 
@@ -41,7 +44,7 @@ export default function ProductsPage() {
               onClick={() => navigate(`/products/${p.slug}`)}
             >
               <div className="pp-cat-img">
-                <img src={p.img} alt={`${p.name} manufacturer Hyderabad`} width="600" height="500" loading="lazy" />
+                <img src={p.img} alt={`${p.name} manufacturer Hyderabad`} width={p.imgWidth} height={p.imgHeight} loading="lazy" />
                 <span className="pp-cat-tag" style={{ background: p.tagColor }}>{p.tag}</span>
               </div>
               <div className="pp-cat-body">
@@ -80,7 +83,7 @@ export default function ProductsPage() {
         <div className="section-label">Custom Manufacturing · Hyderabad</div>
         <h2>Need a custom specification?</h2>
         <p>We manufacture custom LDPE products to your exact size, thickness, colour and quantity. Reach out and we'll build it for you.</p>
-        <a href="mailto:sales@ushakiranecoplast.com" className="btn-primary">Contact Our Team →</a>
+        <a href="mailto:enquiry@ushakiranecoplast.com" className="btn-primary">Contact Our Team →</a>
       </div>
     </div>
   )
