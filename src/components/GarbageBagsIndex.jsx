@@ -1,7 +1,7 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import { useLocation, Link, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { industrySubPages, productVariantSubPages, geoSubPages } from '../data/GarbageBagSubPages.js'
+import { industrySubPages, productVariantSubPages, geoSubPages, keywordSubPages } from '../data/GarbageBagSubPages.js'
 import './GarbageBagsIndex.css'
 
 const breadcrumbSchema = {
@@ -134,6 +134,32 @@ export default function GarbageBagsIndex({ openQuote }) {
           </p>
           <div className="gbi-grid">
             {geoSubPages.map(page => (
+              <Link
+                key={page.slug}
+                to={`/products/garbage-bags/${page.slug}`}
+                className="gbi-card"
+              >
+                <div className="gbi-card-body">
+                  <h3>{page.label}</h3>
+                  <p>{page.tagline}</p>
+                </div>
+                <span className="gbi-card-arrow">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* KEYWORD GRID */}
+      <section className="gbi-grid-section gbi-grid-alt">
+        <div className="gbi-grid-inner">
+          <div className="section-label">By Product Category</div>
+          <h2>Garbage Bags by Material and Format</h2>
+          <p className="gbi-grid-sub">
+            Looking for a specific material, format or sustainability requirement? Browse by product keyword, plain, heavy duty, HDPE, household, biodegradable and more.
+          </p>
+          <div className="gbi-grid">
+            {keywordSubPages.map(page => (
               <Link
                 key={page.slug}
                 to={`/products/garbage-bags/${page.slug}`}

@@ -1,4 +1,4 @@
-// ─────────────────────────────────────────────────────────────────
+﻿// ─────────────────────────────────────────────────────────────────
 // SEO STRATEGY APPLIED FROM KEYWORD INTELLIGENCE REPORT:
 //
 // 1. Each product slug = exact transactional keyword buyers type
@@ -9,7 +9,7 @@
 // 5. FAQs = People Also Ask format, 50–70 word answers
 // 6. Unclaimed eco keywords woven into every page naturally
 // 7. Competitor gaps addressed: Deton Pack (biomedical), Singhal
-//    (LDPE), Shalimar (mulch film) — all targeted with city content
+//    (LDPE), Shalimar (mulch film), all targeted with city content
 // ─────────────────────────────────────────────────────────────────
 
 export const products = [
@@ -20,6 +20,8 @@ export const products = [
     slug: 'recycled-garbage-bags-hyderabad',
     name: 'Garbage Bags',
     tagline: 'Industrial & Household Waste Management',
+    factoryImg: '/images/factory/black-bags-finished.PNG',
+    factoryImgAlt: 'Finished garbage bags stacked at Ushakiran Ecoplast Hyderabad factory',
     img: '/images/garbage-bags-latest.webp',
     imgWidth: 1106,
     imgHeight: 1105,
@@ -36,12 +38,12 @@ export const products = [
 
     // 600+ words, Hyderabad 4x, primary keyword in first 50 words,
     // H3s for Google, eco angle woven throughout
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>100% recycled LDPE garbage bags in Hyderabad</strong> — supplying bulk orders to hotels, corporate campuses, hospitals, airports, railways and households across India. Every bag is produced from post-consumer recycled plastic at our Hyderabad facility, giving discarded plastic a functional second life instead of sending it to landfills or waterways across Telangana and Andhra Pradesh.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>100% recycled LDPE garbage bags in Hyderabad</strong>, supplying bulk orders to hotels, corporate campuses, hospitals, airports, railways and households across India. Every bag is produced from post-consumer recycled plastic at our Hyderabad facility, giving discarded plastic a functional second life instead of sending it to landfills or waterways across Telangana and Andhra Pradesh.</p>
 
-<p>Our garbage bags are tested for tensile strength, puncture resistance and leak-proof integrity at every production batch. We manufacture to your exact specification — size, thickness, colour and packaging format — with no minimum order restriction on trial orders.</p>
+<p>Our garbage bags are tested for tensile strength, puncture resistance and leak-proof integrity at every production batch. We manufacture to your exact specification: size, thickness, colour and packaging format, with no minimum order restriction on trial orders.</p>
 
 <h3>Available Sizes and Thickness</h3>
-<p>We manufacture garbage bags across all standard Indian bin sizes — from 17×19 inches for small household and office bins to 24×32 inches for mid-size commercial bins and 30×37 inches for large industrial waste containers. Thickness ranges from 30 micron for light household use to 120 micron for heavy industrial and wet waste applications. All sizes are available in Black, Grey, Green and custom colours to support your colour-coded waste segregation requirements.</p>
+<p>We manufacture garbage bags across all standard Indian bin sizes, from 17×19 inches for small household and office bins to 24×32 inches for mid-size commercial bins and 30×37 inches for large industrial waste containers. Thickness ranges from 30 micron for light household use to 120 micron for heavy industrial and wet waste applications. All sizes are available in Black, Grey, Green and custom colours to support your colour-coded waste segregation requirements.</p>
 
 <h3>Custom Manufacturing for Bulk Buyers</h3>
 <p>Every order at Ushakiran Ecoplast is built to your specification. We offer custom sizing to match any bin dimension, custom colour to support segregation policies, custom printing with your company logo or waste category labelling, and custom packaging in roll packs, flat packs and bulk bale formats. Our Hyderabad facility handles both trial orders and large recurring contracts for facility management companies and institutional buyers.</p>
@@ -50,14 +52,14 @@ export const products = [
 <p>Our garbage bags are trusted by five-star hotel chains managing housekeeping operations across multiple properties, facility management companies operating large corporate campuses, airports and railway stations with high-volume daily waste, hospital facility teams requiring consistent quality for clinical area waste collection, restaurant chains and food service operations, and households seeking a sustainable alternative to virgin plastic bags. Clients in Hyderabad, Telangana and across India rely on our consistent quality and on-time delivery.</p>
 
 <h3>Sustainability and Eco Credentials</h3>
-<p>Each garbage bag manufactured by Ushakiran Ecoplast is made from 100% recycled LDPE — making us one of the few manufacturers offering <strong>recycled garbage bags in India</strong> at scale. We have recycled over 50 million kg of plastic at our Hyderabad facility since inception. For FMCG companies, hotel chains and corporates building ESG procurement policies, our bags provide certified recycled content that directly contributes to your sustainability reporting. Nobody else in the garbage bag market in Hyderabad is targeting this positioning — and your procurement team can verify it through our ISO certification.</p>
+<p>Each garbage bag manufactured by Ushakiran Ecoplast is made from 100% recycled LDPE, making us one of the few manufacturers offering <strong>recycled garbage bags in India</strong> at scale. We have recycled over 50 million kg of plastic at our Hyderabad facility since inception. For FMCG companies, hotel chains and corporates building ESG procurement policies, our bags provide certified recycled content that directly contributes to your sustainability reporting. Nobody else in the garbage bag market in Hyderabad is targeting this positioning, and your procurement team can verify it through our ISO certification.</p>
 
 <h3>Pan-India Supply from Hyderabad</h3>
 <p>We supply garbage bags to clients across Telangana, Andhra Pradesh, Maharashtra, Karnataka, Tamil Nadu, Delhi NCR and other states. Our Hyderabad location provides efficient logistics to South Indian markets with competitive freight to all major metros. Contact us for your location-specific delivery timeline and volume pricing.</p>`,
 
     specs: [
       { label: 'Material', value: '100% Recycled LDPE' },
-      { label: 'Sizes', value: '17×19" to 30×37" — Custom available' },
+      { label: 'Sizes', value: '17×19" to 30×37", Custom available' },
       { label: 'Colours', value: 'Black, Grey, Green, Custom' },
       { label: 'Packaging', value: 'Roll / Flat Pack / Bulk' },
       { label: 'Thickness', value: '30 – 120 micron' },
@@ -72,7 +74,7 @@ export const products = [
       },
       {
         q: 'Are your garbage bags made from 100% recycled plastic?',
-        a: 'Yes. All our garbage bags are manufactured from 100% post-consumer recycled LDPE at our Hyderabad facility. The raw material is recovered plastic waste that has been processed and repurposed — making every bag an eco-friendly choice with certified recycled content for ESG procurement.'
+        a: 'Yes. All our garbage bags are manufactured from 100% post-consumer recycled LDPE at our Hyderabad facility. The raw material is recovered plastic waste that has been processed and repurposed, making every bag an eco-friendly choice with certified recycled content for ESG procurement.'
       },
       {
         q: 'What is the minimum order quantity for garbage bags?',
@@ -111,6 +113,8 @@ export const products = [
     slug: 'biomedical-waste-bags-bmwm-compliant',
     name: 'Bio-Hazard Bags',
     tagline: 'Certified Clinical Waste Disposal',
+    factoryImg: '/images/factory/workers-folding-red-bags.PNG',
+    factoryImgAlt: 'Workers folding biomedical red bags at Ushakiran Ecoplast facility',
     img: '/images/biohazard-bags.webp',
     imgWidth: 622,
     imgHeight: 561,
@@ -120,24 +124,24 @@ export const products = [
     // PRIMARY: 'colour coded biomedical waste bags manufacturer Hyderabad'
     // SECONDARY: 'BMWM compliant bags supplier', 'biohazard bags price per kg Hyderabad'
     // ECO UNCLAIMED: 'eco friendly biomedical waste bags manufacturer India'
-    // COMPETITOR GAP: Deton Pack ranks for 'medical waste bags Hyderabad' — beat with BMWM depth
+    // COMPETITOR GAP: Deton Pack ranks for 'medical waste bags Hyderabad', beat with BMWM depth
     seoTitle: 'Biomedical Waste Bags Manufacturer Hyderabad | UKEP',
     seoDescription: 'PCB approved, BMWM Rules 2016 compliant colour-coded biomedical waste bags. ISO certified manufacturer in Hyderabad. All 6 BMWM colours. Supply to hospitals, labs and clinics across India.',
 
     description: 'Colour-coded bio-medical waste bags manufactured to strict PCB and CPCB norms for safe segregation and disposal of infectious, hazardous, and clinical waste. Available in all standard colours as per bio-medical waste management rules.',
 
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>colour-coded biomedical waste bags fully compliant with BMWM Rules 2016</strong> — the Bio-Medical Waste Management Rules mandated by the Central Pollution Control Board (CPCB). Our biomedical bags are trusted by hospitals, clinics, diagnostic laboratories and pharmaceutical facilities across Hyderabad, Telangana and pan-India for safe, compliant clinical waste segregation.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>colour-coded biomedical waste bags fully compliant with BMWM Rules 2016</strong>, the Bio-Medical Waste Management Rules mandated by the Central Pollution Control Board (CPCB). Our biomedical bags are trusted by hospitals, clinics, diagnostic laboratories and pharmaceutical facilities across Hyderabad, Telangana and pan-India for safe, compliant clinical waste segregation.</p>
 
-<p>Non-compliant biomedical bags are not just an operational inconvenience — they are a direct legal and public health risk. Under BMWM Rules 2016, healthcare facilities using bags that do not meet the prescribed colour coding, thickness and biohazard marking requirements are liable to penalties from the State Pollution Control Board. Our bags are manufactured to exact BMWM specifications — protecting your facility from compliance risk.</p>
+<p>Non-compliant biomedical bags are not just an operational inconvenience. They are a direct legal and public health risk. Under BMWM Rules 2016, healthcare facilities using bags that do not meet the prescribed colour coding, thickness and biohazard marking requirements are liable to penalties from the State Pollution Control Board. Our bags are manufactured to exact BMWM specifications, protecting your facility from compliance risk.</p>
 
-<h3>All 6 BMWM Colour Categories — Manufactured in Hyderabad</h3>
+<h3>All 6 BMWM Colour Categories: Manufactured in Hyderabad</h3>
 <p>We manufacture the complete range of BMWM-mandated colours from our Hyderabad facility: <strong>Yellow bags</strong> for human anatomical waste, soiled waste and pharmaceutical waste, <strong>Red bags</strong> for contaminated recyclable waste, <strong>Blue bags</strong> for glassware and metallic implants, <strong>Black bags</strong> for ash and discarded medicines, <strong>White bags</strong> for sharps and similar waste, and <strong>Translucent or Green bags</strong> for general waste from non-infected areas. Each colour is manufactured to the BMWM-specified minimum thickness with biohazard symbol printing where mandated.</p>
 
 <h3>Certifications and Compliance Documentation</h3>
 <p>Our biomedical bags carry ISO certification and GMP compliance and are PCB approved. We maintain full raw material traceability and production batch records to support your facility's compliance documentation for PCB inspections. Our Hyderabad facility has supplied BMWM-compliant bags to hospitals and healthcare networks across Telangana and Andhra Pradesh since inception.</p>
 
 <h3>Custom Specifications for Healthcare Facilities</h3>
-<p>Different healthcare settings have different requirements. We manufacture biomedical bags in thicknesses from 50 micron to 120+ micron depending on waste category and volume. Custom sizes match your specific ward waste collection needs. Facility-specific printing including hospital name, ward identification and waste category labelling is available. We also offer eco friendly biomedical waste bags using recycled LDPE for non-critical waste categories — supporting your facility's sustainability and ESG commitments while maintaining full BMWM compliance.</p>
+<p>Different healthcare settings have different requirements. We manufacture biomedical bags in thicknesses from 50 micron to 120+ micron depending on waste category and volume. Custom sizes match your specific ward waste collection needs. Facility-specific printing including hospital name, ward identification and waste category labelling is available. We also offer eco friendly biomedical waste bags using recycled LDPE for non-critical waste categories, supporting your facility's sustainability and ESG commitments while maintaining full BMWM compliance.</p>
 
 <h3>Supply to Hospitals Across India</h3>
 <p>We supply BMWM-compliant biomedical bags to hospitals, multi-specialty clinics, diagnostic laboratories, blood banks and pharmaceutical manufacturing facilities across Hyderabad, Telangana, Andhra Pradesh and pan-India. Our consistent batch quality and on-time delivery support the continuous supply requirements of active healthcare operations. For large hospital networks and group procurement, we offer volume pricing and scheduled delivery programmes.</p>`,
@@ -183,6 +187,8 @@ export const products = [
     slug: 'plastic-bags-on-rolls-manufacturer',
     name: 'Bags on Rolls',
     tagline: 'High-Volume Dispensing Solution',
+    factoryImg: '/images/factory/bags-packing-dispatch.PNG',
+    factoryImgAlt: 'Bags on rolls packed for dispatch at Ushakiran Ecoplast Hyderabad',
     img: '/images/bags-on-rolls.webp',
     imgWidth: 2334,
     imgHeight: 1886,
@@ -196,7 +202,7 @@ export const products = [
 
     description: 'Perforated continuous-roll bags designed for high-volume dispensing in retail, industrial, corporate, hotels and household environments. Easy to tear, consistent in size, and available in custom prints and dimensions.',
 
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>plastic bags on rolls</strong> — perforated continuous-roll LDPE bags for high-volume dispensing environments. Our bags on rolls are manufactured from 100% recycled LDPE at our Hyderabad facility, supplying supermarkets, retail chains, corporate cafeterias, institutional kitchens, hotels and households across India.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>plastic bags on rolls</strong>, perforated continuous-roll LDPE bags for high-volume dispensing environments. Our bags on rolls are manufactured from 100% recycled LDPE at our Hyderabad facility, supplying supermarkets, retail chains, corporate cafeterias, institutional kitchens, hotels and households across India.</p>
 
 <p>The roll format eliminates the need to manually separate individual bags, speeds up packing and dispensing operations, and reduces packaging waste per unit. Our rolls are manufactured with consistent perforation spacing for clean, easy tear separation without snagging or tearing through multiple bags.</p>
 
@@ -207,10 +213,10 @@ export const products = [
 <p>Corporate campuses, hotel chains and institutional kitchens use bags on rolls for cafeteria food packaging, in-room dining, laundry bag dispensers and housekeeping operations. The roll format allows efficient storage and dispensing across high-frequency use environments. We supply to facilities management companies managing large institutional accounts across Hyderabad and other cities.</p>
 
 <h3>Custom Roll Specifications</h3>
-<p>We manufacture bags on rolls in any custom size, roll length and perforation spacing. Thickness ranges from 20 micron for light produce bags to 60 micron for heavier retail and food service applications. Natural transparent and black rolls are standard — custom colours are available on request. Custom printing with brand logos, product information or regulatory text is available for retail and institutional buyers requiring branded roll bags.</p>
+<p>We manufacture bags on rolls in any custom size, roll length and perforation spacing. Thickness ranges from 20 micron for light produce bags to 60 micron for heavier retail and food service applications. Natural transparent and black rolls are standard, custom colours are available on request. Custom printing with brand logos, product information or regulatory text is available for retail and institutional buyers requiring branded roll bags.</p>
 
 <h3>Sustainable Roll Bags from Hyderabad</h3>
-<p>All our bags on rolls are manufactured from 100% recycled LDPE — an unclaimed positioning in the Indian roll bags market. For retailers and corporates building sustainable procurement programmes, our recycled LDPE roll bags deliver the same dispensing performance as virgin plastic at a measurably lower environmental footprint. Our Hyderabad facility has the capacity to support large pan-India retail supply contracts with consistent batch quality across deliveries.</p>`,
+<p>All our bags on rolls are manufactured from 100% recycled LDPE, an unclaimed positioning in the Indian roll bags market. For retailers and corporates building sustainable procurement programmes, our recycled LDPE roll bags deliver the same dispensing performance as virgin plastic at a measurably lower environmental footprint. Our Hyderabad facility has the capacity to support large pan-India retail supply contracts with consistent batch quality across deliveries.</p>`,
 
     specs: [
       { label: 'Material', value: '100% Recycled LDPE' },
@@ -233,7 +239,7 @@ export const products = [
       },
       {
         q: 'Can bags on rolls be custom printed for retail branding?',
-        a: 'Yes. We offer custom printing for retail chains and institutional buyers — brand logo, product information, regulatory text or waste category labels. Minimum order quantities apply. We provide a printed sample roll for approval before bulk production begins.'
+        a: 'Yes. We offer custom printing for retail chains and institutional buyers, brand logo, product information, regulatory text or waste category labels. Minimum order quantities apply. We provide a printed sample roll for approval before bulk production begins.'
       },
       {
         q: 'Do you supply bags on rolls to supermarket chains across India?',
@@ -249,6 +255,8 @@ export const products = [
     slug: 'stretch-wrap-film-pallet-wrapping',
     name: 'Stretch Film',
     tagline: 'Pallet Wrapping & Load Securing',
+    factoryImg: '/images/factory/ldpe-rolls-factory.PNG',
+    factoryImgAlt: 'LDPE rolls on the factory floor at Ushakiran Ecoplast Hyderabad',
     img: '/images/stretch-film.webp',
     imgWidth: 1000,
     imgHeight: 1000,
@@ -258,19 +266,19 @@ export const products = [
     // PRIMARY: 'stretch wrap film manufacturer Hyderabad'
     // SECONDARY: 'pallet wrapping film India', 'LDPE stretch film bulk supplier'
     seoTitle: 'Stretch Wrap Film Manufacturer Hyderabad | Pallet Wrapping LDPE Film | Ushakiran Ecoplast',
-    seoDescription: 'High-stretch LDPE pallet wrapping film — up to 300% elongation. Hand roll and machine roll. Bulk manufacturer in Hyderabad supplying warehouses, logistics and FMCG companies across India.',
+    seoDescription: 'High-stretch LDPE pallet wrapping film, up to 300% elongation. Hand roll and machine roll. Bulk manufacturer in Hyderabad supplying warehouses, logistics and FMCG companies across India.',
 
     description: 'Highly stretchable LDPE film used to secure, bundle, and protect palletized goods during transport and storage. Provides excellent cling, puncture resistance and load stability across warehousing and logistics operations.',
 
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>stretch wrap film for pallet wrapping</strong> at our Hyderabad facility — supplying warehouses, logistics companies, FMCG manufacturers and cold storage operations across India. Our stretch film delivers consistent elongation up to 300% with excellent cling and puncture resistance across the full roll length.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>stretch wrap film for pallet wrapping</strong> at our Hyderabad facility, supplying warehouses, logistics companies, FMCG manufacturers and cold storage operations across India. Our stretch film delivers consistent elongation up to 300% with excellent cling and puncture resistance across the full roll length.</p>
 
-<p>Properly wrapped pallets reduce product damage in transit, prevent load shifting during handling, protect against dust and moisture in storage, and improve warehouse safety. Our stretch films are manufactured to the thickness and stretch specifications your operation requires — from lightweight hand wrap to heavy-duty machine roll film for automated wrappers.</p>
+<p>Properly wrapped pallets reduce product damage in transit, prevent load shifting during handling, protect against dust and moisture in storage, and improve warehouse safety. Our stretch films are manufactured to the thickness and stretch specifications your operation requires, from lightweight hand wrap to heavy-duty machine roll film for automated wrappers.</p>
 
 <h3>Hand Roll vs Machine Roll Stretch Film</h3>
-<p>Hand roll stretch film is designed for manual pallet wrapping with a hand dispenser — typically 400–500mm wide with 17–23 micron thickness for standard loads. Machine roll stretch film is manufactured for automated and semi-automated pallet wrapping machines — wider widths, longer roll lengths and consistent tension performance for high-throughput operations. We supply both formats from our Hyderabad facility. Share your machine model or manual dispensing requirements and we will specify the right film.</p>
+<p>Hand roll stretch film is designed for manual pallet wrapping with a hand dispenser, typically 400–500mm wide with 17–23 micron thickness for standard loads. Machine roll stretch film is manufactured for automated and semi-automated pallet wrapping machines, wider widths, longer roll lengths and consistent tension performance for high-throughput operations. We supply both formats from our Hyderabad facility. Share your machine model or manual dispensing requirements and we will specify the right film.</p>
 
 <h3>Thickness and Performance Specifications</h3>
-<p>We manufacture stretch wrap film from 17 micron for standard light loads to 35 micron for heavy, irregular or sharp-cornered loads that require additional puncture resistance. Film width is fully customisable. Elongation up to 300% ensures excellent load containment with minimal film usage per pallet — reducing your per-pallet packaging cost compared to thicker, lower-stretch alternatives.</p>
+<p>We manufacture stretch wrap film from 17 micron for standard light loads to 35 micron for heavy, irregular or sharp-cornered loads that require additional puncture resistance. Film width is fully customisable. Elongation up to 300% ensures excellent load containment with minimal film usage per pallet, reducing your per-pallet packaging cost compared to thicker, lower-stretch alternatives.</p>
 
 <h3>Industries Served from Hyderabad</h3>
 <p>We supply stretch wrap film to warehousing and logistics companies across Hyderabad and pan-India, FMCG manufacturers and distributors requiring consistent pallet protection, cold storage facilities in Telangana and Andhra Pradesh where moisture resistance is critical, manufacturing units shipping finished goods domestically and for export, and e-commerce fulfilment operations managing high daily pallet volumes. Our Hyderabad location provides efficient supply to South Indian logistics hubs.</p>`,
@@ -288,7 +296,7 @@ export const products = [
     faqs: [
       {
         q: 'What is the difference between hand roll and machine roll stretch film?',
-        a: 'Hand roll stretch film is for manual wrapping with a hand dispenser — typically 400–500mm wide and 17–23 micron. Machine roll film is for automated pallet wrappers — wider, heavier rolls sized for your specific machine model. We supply both formats. Share your wrapper model or manual operation requirements for the right specification.'
+        a: 'Hand roll stretch film is for manual wrapping with a hand dispenser, typically 400–500mm wide and 17–23 micron. Machine roll film is for automated pallet wrappers, wider, heavier rolls sized for your specific machine model. We supply both formats. Share your wrapper model or manual operation requirements for the right specification.'
       },
       {
         q: 'What thickness of stretch film do I need for heavy pallets?',
@@ -296,7 +304,7 @@ export const products = [
       },
       {
         q: 'What does 300% elongation mean for stretch film?',
-        a: 'Elongation means the film can stretch to 300% of its original length before breaking. Higher elongation means better load containment force per metre of film used — reducing your per-pallet film consumption and cost. Our stretch films are tested to consistent elongation performance across every roll in a batch.'
+        a: 'Elongation means the film can stretch to 300% of its original length before breaking. Higher elongation means better load containment force per metre of film used, reducing your per-pallet film consumption and cost. Our stretch films are tested to consistent elongation performance across every roll in a batch.'
       },
       {
         q: 'Do you supply stretch film in bulk to logistics companies in Hyderabad?',
@@ -312,6 +320,8 @@ export const products = [
     slug: 'ldpe-shrink-film-manufacturer-hyderabad',
     name: 'Shrink Film',
     tagline: 'Secure & Professional Product Packaging',
+    factoryImg: '/images/factory/black-film-machine.PNG',
+    factoryImgAlt: 'Film extrusion machine running at Ushakiran Ecoplast Hyderabad facility',
     img: '/images/shrink-film.webp',
     imgWidth: 1152,
     imgHeight: 1152,
@@ -328,13 +338,13 @@ export const products = [
 
     longDescription: `<p>Ushakiran Ecoplast manufactures <strong>LDPE shrink film in Hyderabad</strong> for professional product packaging, multi-pack bundling and tamper-evident wrapping across FMCG, pharmaceutical, logistics and industrial sectors. Our shrink films deliver consistent shrink performance, high optical clarity and reliable heat sealing across manual and automated packaging lines.</p>
 
-<p>Shrink film transforms product presentation and security. When heat is applied through a heat gun or shrink tunnel, the film conforms tightly to the product shape — creating a tamper-evident seal that protects the product, communicates quality to the end consumer and deters pilferage across the supply chain. For pharma and food companies with regulatory tamper-evidence requirements, our shrink films provide the necessary seal integrity.</p>
+<p>Shrink film transforms product presentation and security. When heat is applied through a heat gun or shrink tunnel, the film conforms tightly to the product shape, creating a tamper-evident seal that protects the product, communicates quality to the end consumer and deters pilferage across the supply chain. For pharma and food companies with regulatory tamper-evidence requirements, our shrink films provide the necessary seal integrity.</p>
 
 <h3>FMCG and Retail Applications</h3>
 <p>In FMCG, our shrink film is used for multi-pack bundling of beverage bottles, personal care products and food packs, individual product wrapping for shelf presentation, and promotional packaging for limited edition or gift sets. Retail chains across Hyderabad and pan-India use our shrink film for bundle packs and display-ready shelf packaging. Our film is compatible with standard L-sealer and shrink tunnel equipment used across Indian FMCG packaging lines.</p>
 
 <h3>Pharma and Green Packaging</h3>
-<p>For pharmaceutical and nutraceutical companies, shrink film provides the tamper-evident outer seal required for regulatory compliance and consumer trust. We supply both recycled and virgin LDPE grades — virgin grade for direct product contact applications, recycled grade for outer bundling where food-grade certification is not required. Our recycled LDPE shrink film supports <strong>green packaging for pharma companies in India</strong> building ESG procurement programmes — an unclaimed positioning we are proud to own.</p>
+<p>For pharmaceutical and nutraceutical companies, shrink film provides the tamper-evident outer seal required for regulatory compliance and consumer trust. We supply both recycled and virgin LDPE grades, virgin grade for direct product contact applications, recycled grade for outer bundling where food-grade certification is not required. Our recycled LDPE shrink film supports <strong>green packaging for pharma companies in India</strong> building ESG procurement programmes, an unclaimed positioning we are proud to own.</p>
 
 <h3>Film Formats and Customisation</h3>
 <p>We manufacture shrink film in flat roll, centrefold and pre-formed bag formats in thicknesses from 70 to 120+ micron. Width is fully customisable. Shrink percentage and activation temperature range can be adjusted to match your specific equipment and product requirements. Our Hyderabad facility supplies LDPE shrink film to packaging companies, contract manufacturers and brand owners across Telangana, Andhra Pradesh and pan-India.</p>`,
@@ -356,7 +366,7 @@ export const products = [
       },
       {
         q: 'What is the difference between shrink film and stretch film?',
-        a: 'Shrink film requires heat activation — it shrinks tightly around a product when passed through a heat tunnel or heat gun. Stretch film is applied by stretching under tension without heat, typically for pallet wrapping. Both are LDPE films but serve completely different packaging applications and are not interchangeable.'
+        a: 'Shrink film requires heat activation, it shrinks tightly around a product when passed through a heat tunnel or heat gun. Stretch film is applied by stretching under tension without heat, typically for pallet wrapping. Both are LDPE films but serve completely different packaging applications and are not interchangeable.'
       },
       {
         q: 'Is your shrink film suitable for pharma tamper-evident packaging?',
@@ -376,6 +386,8 @@ export const products = [
     slug: 'ldpe-sheets-manufacturer-hyderabad',
     name: 'LDPE Sheets',
     tagline: 'Industrial Moisture Barriers & Construction Films',
+    factoryImg: '/images/factory/factory-floor-wide.PNG',
+    factoryImgAlt: 'Factory floor at Ushakiran Ecoplast manufacturing facility in Hyderabad',
     img: '/images/ldpe-sheets.webp',
     imgWidth: 1080,
     imgHeight: 995,
@@ -384,19 +396,19 @@ export const products = [
 
     // PRIMARY: 'LDPE sheet manufacturer Hyderabad'
     // SECONDARY: 'LDPE sheet for DPC construction', 'recycled LDPE sheet manufacturer Hyderabad'
-    // COMPETITOR GAP: Singhal Industries ranks nationally — beat with Hyderabad/Telangana city content
-    // ECO UNCLAIMED: 'recycled LDPE sheet manufacturer Hyderabad' — nobody has written this page
+    // COMPETITOR GAP: Singhal Industries ranks nationally, beat with Hyderabad/Telangana city content
+    // ECO UNCLAIMED: 'recycled LDPE sheet manufacturer Hyderabad', nobody has written this page
     seoTitle: 'LDPE Sheet Manufacturer Hyderabad | UKEP',
     seoDescription: 'Recycled and virgin LDPE sheets for DPC construction, road building, agriculture and industry. Custom width and thickness from 25–120+ micron. ISO certified bulk manufacturer in Hyderabad.',
 
     description: 'High-quality LDPE sheets for construction, agriculture, road construction, and textile industries. Provides superior moisture resistance, flexibility, and durability across demanding environments.',
 
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>LDPE sheets in Hyderabad</strong> — durable, flexible polyethylene film sheets used as DPC moisture barriers, protective wrapping and ground covers across construction, road building, agriculture and industrial applications in Telangana, Andhra Pradesh and pan-India. Available in both recycled and virgin LDPE grades from 25 to 120+ micron thickness.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>LDPE sheets in Hyderabad</strong>, durable, flexible polyethylene film sheets used as DPC moisture barriers, protective wrapping and ground covers across construction, road building, agriculture and industrial applications in Telangana, Andhra Pradesh and pan-India. Available in both recycled and virgin LDPE grades from 25 to 120+ micron thickness.</p>
 
-<p>We are one of the few manufacturers offering <strong>recycled LDPE sheets in Hyderabad</strong> at scale — an unclaimed positioning that competitors like Singhal Industries and Mohit Polyfab have not targeted for the Telangana and Andhra Pradesh markets. Our sheets are manufactured to your project specification and delivered to site across the region.</p>
+<p>We are one of the few manufacturers offering <strong>recycled LDPE sheets in Hyderabad</strong> at scale, an unclaimed positioning that competitors like Singhal Industries and Mohit Polyfab have not targeted for the Telangana and Andhra Pradesh markets. Our sheets are manufactured to your project specification and delivered to site across the region.</p>
 
 <h3>Construction and DPC Applications</h3>
-<p>In construction across Hyderabad and Telangana, LDPE sheets serve as Damp Proof Course (DPC) layers between foundations and masonry — a critical application mandated by building codes to prevent rising damp. We supply to residential projects, commercial buildings, infrastructure projects and industrial facilities across the region. For road construction and highway projects in Telangana and Andhra Pradesh, LDPE sheets are used as subgrade moisture barriers. In tunnelling and underground construction, they function as waterproofing membranes. Our sheets are supplied to the exact thickness, width and roll length specified by your structural engineer or project consultant.</p>
+<p>In construction across Hyderabad and Telangana, LDPE sheets serve as Damp Proof Course (DPC) layers between foundations and masonry, a critical application mandated by building codes to prevent rising damp. We supply to residential projects, commercial buildings, infrastructure projects and industrial facilities across the region. For road construction and highway projects in Telangana and Andhra Pradesh, LDPE sheets are used as subgrade moisture barriers. In tunnelling and underground construction, they function as waterproofing membranes. Our sheets are supplied to the exact thickness, width and roll length specified by your structural engineer or project consultant.</p>
 
 <h3>Agriculture Applications in Telangana and Andhra Pradesh</h3>
 <p>In agriculture across Telangana and Andhra Pradesh, LDPE sheets are used as ground mulch films to suppress weeds and retain soil moisture, as silage covers to protect stored fodder, and as pond liners for farm water storage and aquaculture. Our black LDPE sheets in higher thicknesses are used for pond lining on farms across the region. UV-stabilised variants provide extended outdoor performance through the intense South Indian summer.</p>
@@ -417,11 +429,11 @@ export const products = [
     faqs: [
       {
         q: 'What thickness of LDPE sheet is required for DPC in construction?',
-        a: 'For Damp Proof Course (DPC) in standard residential construction, a minimum of 250 micron (1000 gauge) is typically specified. For basements, water-retaining structures and high-moisture environments, structural engineers may specify 500 micron or above. We manufacture to any project specification — share your engineer\'s requirement and we will supply accordingly.'
+        a: 'For Damp Proof Course (DPC) in standard residential construction, a minimum of 250 micron (1000 gauge) is typically specified. For basements, water-retaining structures and high-moisture environments, structural engineers may specify 500 micron or above. We manufacture to any project specification, share your engineer\'s requirement and we will supply accordingly.'
       },
       {
         q: 'What is the difference between recycled and virgin LDPE sheets?',
-        a: 'Recycled LDPE sheets are manufactured from post-consumer plastic — same moisture barrier performance at lower cost with certified recycled content for ESG reporting. Virgin LDPE sheets use new resin — recommended for food contact applications, critical waterproofing and where material purity certificates are required. We supply both grades from our Hyderabad facility.'
+        a: 'Recycled LDPE sheets are manufactured from post-consumer plastic, same moisture barrier performance at lower cost with certified recycled content for ESG reporting. Virgin LDPE sheets use new resin, recommended for food contact applications, critical waterproofing and where material purity certificates are required. We supply both grades from our Hyderabad facility.'
       },
       {
         q: 'Do you supply LDPE sheets for road construction projects in Telangana?',
@@ -441,6 +453,8 @@ export const products = [
     slug: 'ldpe-cover-industrial-packaging',
     name: 'LDPE Cover',
     tagline: 'Industrial-Grade Protection Covers',
+    factoryImg: '/images/factory/warehouse-inventory.PNG',
+    factoryImgAlt: 'Finished LDPE products in warehouse at Ushakiran Ecoplast Hyderabad',
     img: '/images/ldpe-cover.webp',
     imgWidth: 622,
     imgHeight: 622,
@@ -454,18 +468,18 @@ export const products = [
 
     description: 'Tough, flexible and reliable LDPE covers designed for heavy-duty industrial use. Suitable for food packaging, agricultural storage, electronic equipment protection, and more.',
 
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>LDPE covers in Hyderabad</strong> — heavy-duty folded polyethylene covers for the protection of goods, equipment and produce across food packaging, agriculture storage, electronics and industrial applications. Manufactured in both recycled and virgin LDPE grades from our Hyderabad facility, supplying to clients across Telangana, Andhra Pradesh and pan-India.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>LDPE covers in Hyderabad</strong>, heavy-duty folded polyethylene covers for the protection of goods, equipment and produce across food packaging, agriculture storage, electronics and industrial applications. Manufactured in both recycled and virgin LDPE grades from our Hyderabad facility, supplying to clients across Telangana, Andhra Pradesh and pan-India.</p>
 
-<p>LDPE covers are open-ended sleeves that slip over or around an item for complete moisture, dust and contamination protection — distinct from sealed bags in that they provide easier application and removal for large items, machinery, bales and bulk produce. Our covers are manufactured to your exact dimensions for a precise fit.</p>
+<p>LDPE covers are open-ended sleeves that slip over or around an item for complete moisture, dust and contamination protection, distinct from sealed bags in that they provide easier application and removal for large items, machinery, bales and bulk produce. Our covers are manufactured to your exact dimensions for a precise fit.</p>
 
 <h3>Food and Dairy Packaging Applications</h3>
 <p>LDPE covers are widely used across food and dairy processing in Hyderabad and across India for wrapping fresh produce, lining storage crates and bins, protecting dairy products during cold chain transport and distribution, and as inner liners for bulk food packaging. For food contact applications, we supply virgin LDPE grade covers meeting food safety and FSSAI packaging material requirements.</p>
 
 <h3>Agriculture Storage in Telangana and Andhra Pradesh</h3>
-<p>In agriculture across Telangana and Andhra Pradesh, LDPE covers are used extensively for protecting stored grain, seeds, fertilisers and harvested produce from moisture and pest ingress. Large-format covers are used to wrap hay bales, silage stacks and fertiliser bags in open storage. Our covers are manufactured to withstand the temperature extremes typical of South Indian agricultural storage environments — from Hyderabad's summer heat to winter cold storage conditions.</p>
+<p>In agriculture across Telangana and Andhra Pradesh, LDPE covers are used extensively for protecting stored grain, seeds, fertilisers and harvested produce from moisture and pest ingress. Large-format covers are used to wrap hay bales, silage stacks and fertiliser bags in open storage. Our covers are manufactured to withstand the temperature extremes typical of South Indian agricultural storage environments, from Hyderabad's summer heat to winter cold storage conditions.</p>
 
 <h3>Equipment and Electronics Protection</h3>
-<p>Manufacturing units and capital equipment suppliers across Hyderabad use LDPE covers to protect finished machinery, spare parts and electronic components during storage and international shipping. Custom cover dimensions are manufactured to fit your specific equipment — including gusseted covers for machinery with irregular profiles. For sensitive electronic equipment, we supply static-dissipative LDPE covers that prevent ESD damage during handling and storage.</p>`,
+<p>Manufacturing units and capital equipment suppliers across Hyderabad use LDPE covers to protect finished machinery, spare parts and electronic components during storage and international shipping. Custom cover dimensions are manufactured to fit your specific equipment, including gusseted covers for machinery with irregular profiles. For sensitive electronic equipment, we supply static-dissipative LDPE covers that prevent ESD damage during handling and storage.</p>`,
 
     specs: [
       { label: 'Material', value: 'Recycled / Virgin LDPE' },
@@ -480,7 +494,7 @@ export const products = [
     faqs: [
       {
         q: 'What is the difference between an LDPE cover and an LDPE bag?',
-        a: 'An LDPE bag is sealed at the bottom — for loose contents poured or placed inside. An LDPE cover is an open-ended sleeve — designed to slip over or around an item for protection. Covers are used for machinery, produce bins, bales and large equipment where an open sleeve is more practical than a sealed bag.'
+        a: 'An LDPE bag is sealed at the bottom, for loose contents poured or placed inside. An LDPE cover is an open-ended sleeve, designed to slip over or around an item for protection. Covers are used for machinery, produce bins, bales and large equipment where an open sleeve is more practical than a sealed bag.'
       },
       {
         q: 'Are your LDPE covers food-safe for dairy and produce packaging?',
@@ -488,7 +502,7 @@ export const products = [
       },
       {
         q: 'Can you manufacture LDPE covers to custom dimensions for our machinery?',
-        a: 'Yes. We manufacture LDPE covers to any custom width, length and thickness. Share your equipment dimensions — including height, width and depth or gusset requirement — and we will manufacture covers that fit precisely. Standard lead time for custom dimensions is 5–7 working days for trial orders.'
+        a: 'Yes. We manufacture LDPE covers to any custom width, length and thickness. Share your equipment dimensions, including height, width and depth or gusset requirement, and we will manufacture covers that fit precisely. Standard lead time for custom dimensions is 5–7 working days for trial orders.'
       },
       {
         q: 'Do you supply LDPE covers to agricultural storage operations in Telangana?',
@@ -504,6 +518,8 @@ export const products = [
     slug: 'mulch-film-uv-resistant-agriculture',
     name: 'Mulch Film',
     tagline: 'UV-Resistant Agricultural Protection',
+    factoryImg: '/images/factory/green-bags-production.PNG',
+    factoryImgAlt: 'Green film production line at Ushakiran Ecoplast Hyderabad facility',
     img: '/images/mulch-film.webp',
     imgWidth: 960,
     imgHeight: 566,
@@ -512,30 +528,30 @@ export const products = [
 
     // PRIMARY: 'mulch film manufacturer Telangana'
     // SECONDARY: 'UV resistant mulch film India', 'mulch film Andhra Pradesh'
-    // COMPETITOR GAP: Shalimar has NO Hyderabad/Telangana/AP content — this is the exact opening
+    // COMPETITOR GAP: Shalimar has NO Hyderabad/Telangana/AP content, this is the exact opening
     seoTitle: 'Mulch Film Manufacturer Telangana & Andhra Pradesh | UV Resistant LDPE | Ushakiran Ecoplast',
     seoDescription: 'UV-stabilised LDPE mulch film for Telangana and Andhra Pradesh farmers. Increases crop yield, reduces pesticide use. Black and grey available. Manufacturer in Hyderabad with pan-India supply.',
 
     description: 'Durable, UV-resistant mulch films designed for superior plant protection against weather, pests and frost. Enhances agricultural yields while reducing dependency on pesticides.',
 
-    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>UV-resistant mulch film in Hyderabad</strong> for farmers and agribusinesses across Telangana and Andhra Pradesh — supplying directly to growers, farmer producer organisations (FPOs), agricultural dealers and horticulture companies across the region. Our mulch films are UV-stabilised specifically for the intense South Indian climate and formulated to deliver a full growing season of performance.</p>
+    longDescription: `<p>Ushakiran Ecoplast manufactures <strong>UV-resistant mulch film in Hyderabad</strong> for farmers and agribusinesses across Telangana and Andhra Pradesh, supplying directly to growers, farmer producer organisations (FPOs), agricultural dealers and horticulture companies across the region. Our mulch films are UV-stabilised specifically for the intense South Indian climate and formulated to deliver a full growing season of performance.</p>
 
-<p>Shalimar Group and national mulch film brands have significant national distribution — but they have no Telangana or Andhra Pradesh specific content, no regional agronomist support and no local supply relationship. Ushakiran Ecoplast, manufacturing in Hyderabad, fills this gap directly — supplying the right product for South Indian growing conditions with the fastest delivery to farms across the two states.</p>
+<p>Shalimar Group and national mulch film brands have significant national distribution, but they have no Telangana or Andhra Pradesh specific content, no regional agronomist support and no local supply relationship. Ushakiran Ecoplast, manufacturing in Hyderabad, fills this gap directly, supplying the right product for South Indian growing conditions with the fastest delivery to farms across the two states.</p>
 
 <h3>Benefits for Telangana and Andhra Pradesh Farmers</h3>
-<p>In the semi-arid climate of Telangana and the diverse agricultural zones of Andhra Pradesh, mulch film delivers measurable returns: soil moisture retention reduces irrigation frequency by 30–50% in drip-irrigated crops — critical for chilli, tomato, cotton, maize and vegetable growers. Weed suppression under the mulch layer reduces manual weeding labour costs by 60–80% per crop cycle. Soil temperature regulation through Hyderabad's extreme summers and mild winters improves root zone conditions and extends the effective growing season. Research across Indian agricultural universities consistently shows 20–40% yield increases for vegetable crops under mulch film compared to bare soil cultivation.</p>
+<p>In the semi-arid climate of Telangana and the diverse agricultural zones of Andhra Pradesh, mulch film delivers measurable returns: soil moisture retention reduces irrigation frequency by 30–50% in drip-irrigated crops, critical for chilli, tomato, cotton, maize and vegetable growers. Weed suppression under the mulch layer reduces manual weeding labour costs by 60–80% per crop cycle. Soil temperature regulation through Hyderabad's extreme summers and mild winters improves root zone conditions and extends the effective growing season. Research across Indian agricultural universities consistently shows 20–40% yield increases for vegetable crops under mulch film compared to bare soil cultivation.</p>
 
 <h3>Black vs Grey Mulch Film for South Indian Crops</h3>
-<p>Black mulch film suppresses all weed growth by blocking sunlight and warms the soil — the most widely used option for vegetable and row crops across Telangana and AP including tomato, brinjal, okra and leafy vegetables. Grey or silver mulch film reflects UV light, repelling aphids, thrips and whiteflies — insects that act as vectors for viral diseases in chilli, capsicum, cucumber and cucurbit crops that are particularly prevalent in Andhra Pradesh. We supply both colours in all standard widths and custom thicknesses matched to your crop row spacing and bed dimensions.</p>
+<p>Black mulch film suppresses all weed growth by blocking sunlight and warms the soil, the most widely used option for vegetable and row crops across Telangana and AP including tomato, brinjal, okra and leafy vegetables. Grey or silver mulch film reflects UV light, repelling aphids, thrips and whiteflies, insects that act as vectors for viral diseases in chilli, capsicum, cucumber and cucurbit crops that are particularly prevalent in Andhra Pradesh. We supply both colours in all standard widths and custom thicknesses matched to your crop row spacing and bed dimensions.</p>
 
 <h3>Direct Supply to Telangana and Andhra Pradesh Farmers</h3>
-<p>We supply mulch film directly from our Hyderabad facility to farmers, FPOs, agricultural input dealers and horticulture companies across Telangana and Andhra Pradesh. Our proximity to both states means faster delivery and lower freight compared to national manufacturers shipping from North India. We supply in the exact width matched to your bed dimensions — from narrow row crops to wide vegetable beds — with thickness options from 25 micron single-season film to 50 micron multi-season film for high-value horticulture applications.</p>`,
+<p>We supply mulch film directly from our Hyderabad facility to farmers, FPOs, agricultural input dealers and horticulture companies across Telangana and Andhra Pradesh. Our proximity to both states means faster delivery and lower freight compared to national manufacturers shipping from North India. We supply in the exact width matched to your bed dimensions, from narrow row crops to wide vegetable beds, with thickness options from 25 micron single-season film to 50 micron multi-season film for high-value horticulture applications.</p>`,
 
     specs: [
       { label: 'Material', value: 'UV-Stabilised LDPE' },
       { label: 'Width', value: 'Custom sizes available' },
       { label: 'Thickness', value: '25 – 50 micron' },
-      { label: 'UV Protection', value: 'Yes — UV stabilised for South Indian climate' },
+      { label: 'UV Protection', value: 'Yes, UV stabilised for South Indian climate' },
       { label: 'Colours', value: 'Black, Grey/Silver' },
       { label: 'Applications', value: 'Mulching, Weed Control, Frost Cover' },
     ],
@@ -548,7 +564,7 @@ export const products = [
       },
       {
         q: 'What is the difference between black and silver mulch film for Andhra Pradesh crops?',
-        a: 'Black mulch film blocks sunlight to suppress weeds and warms the soil — suitable for tomato, brinjal, leafy vegetables and most row crops. Silver/grey mulch film reflects UV light to repel aphids, thrips and whiteflies that spread viral diseases — specifically beneficial for chilli, capsicum, cucumber and cucurbits widely grown in Andhra Pradesh. Choose based on your primary concern: weed control or insect pest management.'
+        a: 'Black mulch film blocks sunlight to suppress weeds and warms the soil, suitable for tomato, brinjal, leafy vegetables and most row crops. Silver/grey mulch film reflects UV light to repel aphids, thrips and whiteflies that spread viral diseases, specifically beneficial for chilli, capsicum, cucumber and cucurbits widely grown in Andhra Pradesh. Choose based on your primary concern: weed control or insect pest management.'
       },
       {
         q: 'How much can mulch film increase crop yield for South Indian farmers?',
@@ -556,7 +572,7 @@ export const products = [
       },
       {
         q: 'Do you supply mulch film directly to farmers in Telangana and Andhra Pradesh?',
-        a: 'Yes. We supply mulch film directly to farmers, FPOs, agricultural dealers and horticulture companies across Telangana and Andhra Pradesh from our Hyderabad manufacturing facility. Delivery to farm location is available. Contact us for bulk pricing for your crop area requirements — we work with both small growers and large commercial farms.'
+        a: 'Yes. We supply mulch film directly to farmers, FPOs, agricultural dealers and horticulture companies across Telangana and Andhra Pradesh from our Hyderabad manufacturing facility. Delivery to farm location is available. Contact us for bulk pricing for your crop area requirements, we work with both small growers and large commercial farms.'
       },
     ],
     relatedIds: ['ldpe-sheets', 'ldpe-cover', 'garbage-bags'],

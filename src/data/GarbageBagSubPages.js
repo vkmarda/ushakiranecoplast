@@ -1,4 +1,4 @@
-export const garbageBagSubPages = [
+﻿export const garbageBagSubPages = [
 
   // 1. HOTEL
   {
@@ -861,6 +861,440 @@ export const garbageBagSubPages = [
     ],
   },
 
+  // T1-1: PLAIN GARBAGE BAGS
+  {
+    slug: 'plain-garbage-bags-manufacturer',
+    seoTitle: 'Plain Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures plain garbage bags from 100% recycled LDPE in Hyderabad. Standard black bags in bulk for commercial and industrial use. ISO certified.',
+    h1: 'Plain Garbage Bags Manufacturer in India',
+    label: 'Plain Garbage Bags',
+    tagline: 'Standard black bags for general waste collection in bulk',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Plain garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Plain garbage bags are the highest-volume product in commercial waste management. No printing, no colour coding, no special features, just reliable black LDPE bags for general waste collection across offices, hotels, schools, retail outlets and residential complexes.',
+    needsHeading: 'What Plain Garbage Bags Are and Who Uses Them',
+    needsBody: 'Plain garbage bags are standard black LDPE bags with no printing, colour coding or special features. They are the default product in commercial waste management because they work for every application that does not require segregation markings or branding. Offices use them for desk bins and general floor waste. Hotels use them for guest rooms, corridors and back-of-house areas. Factories use them for general housekeeping alongside their heavy-duty industrial waste bags. Schools, colleges and retail outlets buy plain black bags in bulk as a cost-effective, universally applicable product. The plain format is the highest-volume segment in commercial garbage bag procurement in India because of its simplicity. Buyers do not need to think about it: the specification stays the same across every reorder, and the product works without any training or customisation for each location.',
+    midSection: {
+      label: 'Buying Guidance',
+      heading: 'Plain vs Printed vs Coloured: When Plain is the Right Choice',
+      body: 'Plain bags are the right choice when there is no waste segregation program, no brand requirement on guest-facing bags and no regulatory colour coding needed. The cost difference between plain and printed is meaningful at commercial volumes. Printing adds setup time, a minimum run requirement and additional cost per bag. For buyers who simply need a bag that works and disappears into the waste stream without thought, plain bags at lower cost make complete sense. Most bulk commercial buyers stay with plain bags indefinitely because their operations have no requirement that printed or coloured bags would solve. Organisations that shift from plain to printed usually do so for specific reasons: a hotel introducing branded bags in guest rooms, a corporate introducing a waste segregation program or a healthcare facility adding colour coding for waste categories. Without one of those specific drivers, plain bags from recycled LDPE cost less, work identically and reorder without complications.',
+    },
+    whyHeading: 'Why Ushakiran Ecoplast for Plain Garbage Bags in Hyderabad',
+    whyBody: 'Ushakiran Ecoplast has manufactured plain garbage bags from our IDA Mankhal facility in Hyderabad for 12 years. The plain black bag is our highest-volume product because it is the backbone of commercial waste management across every sector we supply. 100% recycled LDPE gives cost-conscious buyers an equivalent-performance bag at a lower material cost than virgin plastic alternatives of the same specification. ISO 9001:2015 certification means our quality management processes are documented and auditable, which matters for procurement managers who need supplier credentials. Consistent batch quality across reorders is something plain bag buyers rely on heavily because they rarely check specs batch to batch. Custom sizes are available if your bin dimensions fall outside standard commercial sizes. Sample batches are dispatched before bulk orders for buyers confirming a new specification. View our full range at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'What sizes are available for plain garbage bags?', a: 'We manufacture plain garbage bags in standard sizes and custom dimensions to match your specific bin formats. Standard commercial sizes are available for immediate dispatch. Custom sizes require confirmation of minimum order quantity before production begins.' },
+      { q: 'Are plain garbage bags available in any colour other than black?', a: 'Plain bags are typically supplied in black for general waste. If you need a specific colour without printing for a waste segregation program, we can manufacture plain bags in green, blue or other colours to order with confirmed minimum quantities.' },
+      { q: 'What is the difference between plain and disposable garbage bags?', a: 'Plain and disposable refer to the same product. Plain describes the finish: no printing or special features. Disposable describes the use: single use for waste collection. Both terms describe standard LDPE garbage bags used for general waste management.' },
+    ],
+  },
+
+  // T1-2: DISPOSABLE GARBAGE BAGS
+  {
+    slug: 'disposable-garbage-bags-manufacturer',
+    seoTitle: 'Disposable Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures disposable garbage bags from recycled LDPE in Hyderabad. Hospitals, hotels and commercial buyers. ISO certified, pan-India supply.',
+    h1: 'Disposable Garbage Bags Manufacturer in India',
+    label: 'Disposable Garbage Bags',
+    tagline: 'Single-use bags for hospitals, hotels and food service operations',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Disposable garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Disposable garbage bags are single-use LDPE bags designed to be used once, sealed with the waste and discarded. Hospitals change them after every collection. Hotels put a fresh bag in every room between guest stays. High-frequency disposal demands consistent quality on every bag.',
+    needsHeading: 'What Disposable Garbage Bags Are Used For',
+    needsBody: 'Disposable garbage bags are single-use LDPE bags where the intent is to use once, seal with the waste and discard. The contexts where disposable bags are essential rather than optional are healthcare, hospitality and food service. In healthcare facilities, bags in clinical areas must be changed after each waste collection cycle for infection control. A bag left too long in a ward bin creates a hygiene risk regardless of how full it is. In hotel rooms, a fresh bag in every bin after each guest stay signals cleanliness and is non-negotiable in any quality-rated property. In food service kitchens, bags changed at the end of every service or whenever they reach capacity keep kitchen stations clean and ready. LDPE is the standard material for disposable bags because it is flexible, moisture resistant, tear resistant under normal waste loads and cost-effective at the high volumes where bags are changed multiple times daily.',
+    midSection: {
+      label: 'Specifications',
+      heading: 'Specifying Disposable Bags for High-Frequency Use',
+      body: 'High-frequency disposal means bags are changed multiple times per day or after every use cycle. The specification needs to match the specific waste type at that change frequency. Lightweight specification suits dry waste changed often: guest room bins, office desk bins, general corridor waste. Heavier specification suits wet waste changed after each use: kitchen waste bins, clinical waste areas in wards, food service prep stations. Star seal base construction is essential whenever wet or heavy waste is involved because flat seal bases fail under repeated wet load. Calculating monthly consumption from daily change frequency is straightforward: multiply daily bag changes per location by 30, then add 15 percent buffer stock. For operations where bags are changed this frequently, any variation in spec between reorders is noticed immediately. A bag that is slightly too small or slightly thinner than the last batch creates complaints from housekeeping staff within the same shift.',
+    },
+    whyHeading: 'Manufacturing Disposable Garbage Bags in Hyderabad',
+    whyBody: 'Ushakiran Ecoplast has manufactured disposable garbage bags for hospitals, hotels and commercial buyers across India for 12 years from our Hyderabad facility. Recycled LDPE at the right specification gives high-volume disposable use a meaningful cost advantage over virgin material bags of the same spec. For healthcare and hospitality buyers changing bags hundreds of times daily, the per-bag saving from recycled LDPE adds up to a significant monthly cost difference. ISO certified quality management ensures consistency across batches, which matters when disposable bag changes happen at shift frequency. Pan-India supply from Hyderabad covers hospitals and hotel chains with multiple properties across different states from a single order. Sample dispatches before bulk orders allow procurement teams to confirm the specification under actual operating conditions before committing. View our full range at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'Are disposable garbage bags suitable for healthcare use?', a: 'Yes. Standard disposable LDPE garbage bags are used for general waste in healthcare settings: admin areas, canteens, corridors and general ward waste bins. For regulated biomedical waste, BMWM 2016 compliant colour-coded bags are required. We manufacture both and can supply both from a single order.' },
+      { q: 'What is the minimum order for disposable garbage bags?', a: 'Minimum order quantities vary by specification. Standard sizes in black carry lower minimums than custom sizes. Contact us with your dimensions and monthly consumption estimate for a confirmed minimum and pricing.' },
+      { q: 'Can disposable bags be custom printed with our facility name or logo?', a: 'Yes. Custom printed disposable bags are available with minimum order quantities. Hospitals and hotels often print their name or logo on guest-facing bags. Confirm your print requirements before ordering as printed bags require additional lead time.' },
+    ],
+  },
+
+  // T1-3: PLASTIC GARBAGE BAGS
+  {
+    slug: 'plastic-garbage-bags-manufacturer',
+    seoTitle: 'Plastic Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures plastic garbage bags from 100% recycled LDPE in Hyderabad. All sizes, colours and formats for B2B buyers. ISO certified, pan-India.',
+    h1: 'Plastic Garbage Bags Manufacturer in India',
+    label: 'Plastic Garbage Bags',
+    tagline: 'Full range of plastic garbage bags for B2B buyers across India',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Plastic garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Plastic garbage bag covers the broadest category in waste management procurement: LDPE bags, HDPE bags, plain bags, coloured bags, printed bags, bags on rolls and flat packs. Ushakiran Ecoplast manufactures the full range from our Hyderabad facility for B2B buyers across India.',
+    needsHeading: 'Plastic Garbage Bags: What the Term Covers',
+    needsBody: 'Plastic garbage bag is the umbrella term covering every LDPE and HDPE bag used for waste collection. Under this umbrella sits plain black bags, coloured bags for waste segregation, printed bags for branding or compliance, star seal base bags for wet waste, flat seal bags for dry waste, bags on rolls for dispensing systems and flat packs for manual distribution. LDPE is low-density polyethylene: soft, flexible and the dominant material for garbage bags in India. HDPE is high-density polyethylene: stiffer, with higher tensile strength per unit thickness. For standard garbage bag applications LDPE is preferred because flexibility matters more than raw tensile strength under typical waste loads. Recycled LDPE is increasingly the preferred material for B2B buyers because it delivers comparable performance to virgin LDPE for standard applications at lower cost, with verifiable recycled content for sustainability reporting.',
+    midSection: {
+      label: 'Buying Guidance',
+      heading: 'What B2B Buyers Should Know Before Ordering Plastic Garbage Bags',
+      body: 'Buying directly from a manufacturer rather than through a trader changes two things: specification consistency and pricing transparency. Traders source from multiple manufacturers and cannot guarantee batch-to-batch consistency in the way a direct manufacturer can. When specifications drift between orders, procurement managers face complaints from housekeeping staff and site supervisors who notice the difference immediately. For buyers with certification requirements, a direct manufacturer provides ISO documentation, material certificates and PCB approval where relevant. Recycled LDPE delivers comparable performance to virgin material for standard garbage bag applications, but the quality of processing matters. Well-processed recycled LDPE at the right gauge and with star seal construction is indistinguishable from virgin in daily use. Getting the specification right before the first order is the most important step. Gauge, seal type, bag dimensions and format all need to match the application. Ushakiran Ecoplast helps buyers specify correctly before production.',
+    },
+    whyHeading: 'Ushakiran Ecoplast: Plastic Garbage Bags Manufacturer in Hyderabad',
+    whyBody: 'Ushakiran Ecoplast manufactures the full range of plastic garbage bags from our IDA Mankhal facility in Hyderabad: plain black bags, coloured bags, printed bags, bags on rolls and flat packs, all from 100% recycled LDPE. ISO 9001:2015 certified. 12 years of production experience across every sector that uses garbage bags commercially: hospitality, healthcare, facility management, manufacturing, retail and construction. 5 crore KG of plastic recycled through our facility since 2013. Direct manufacturer supply means no trader margin in the supply chain and a single point of quality accountability. Custom sizes are available for any bin dimension outside standard commercial sizes. Sample batches are dispatched before bulk orders. Pan-India supply covers all major cities and states from Hyderabad. See our full product range at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'What types of plastic garbage bags do you manufacture?', a: 'We manufacture plain black bags, coloured bags, printed bags, star seal and flat seal bags, bags on rolls and flat packs. All manufactured from 100% recycled LDPE in standard and custom sizes. Full range available from a single manufacturer relationship.' },
+      { q: 'Do you supply plastic garbage bags pan-India?', a: 'Yes. We supply from our Hyderabad manufacturing facility to buyers across India including Telangana, Andhra Pradesh, Karnataka, Tamil Nadu, Maharashtra, Delhi NCR and all major markets. Contact us with your location for delivery timelines.' },
+      { q: 'How is recycled LDPE different from virgin plastic for garbage bags?', a: 'Recycled LDPE is chemically the same polymer as virgin LDPE. For standard garbage bag applications the performance is comparable: same flexibility, tear resistance and moisture resistance. Recycled LDPE costs less than virgin and delivers a documented environmental benefit for buyers with sustainability reporting requirements.' },
+    ],
+  },
+
+  // T1-4: HDPE GARBAGE BAGS
+  {
+    slug: 'hdpe-garbage-bags-manufacturer',
+    seoTitle: 'HDPE Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures HDPE garbage bags in Hyderabad. High density polyethylene bags for heavy duty and industrial applications. ISO certified, pan-India.',
+    h1: 'HDPE Garbage Bags Manufacturer in India',
+    label: 'HDPE Garbage Bags',
+    tagline: 'High-density polyethylene bags for industrial and demanding applications',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'HDPE garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'HDPE garbage bags are manufactured from high-density polyethylene, a stiffer and higher-tensile material than standard LDPE. They suit specific applications where puncture resistance at lower film weight matters more than flexibility. This page covers when HDPE is the right choice and when heavy-gauge LDPE is the better option.',
+    needsHeading: 'HDPE vs LDPE Garbage Bags: The Material Difference',
+    needsBody: 'HDPE, high-density polyethylene, has a tighter molecular structure than LDPE, producing a stiffer film with higher tensile strength per unit thickness. LDPE, low-density polyethylene, is softer, more flexible and more stretch-resistant. HDPE suits applications where puncture resistance is critical and rigidity is not a problem: thin-gauge bags for municipal waste collection, industrial packaging applications where strength-to-weight ratio matters, construction site bags where sharp debris requires puncture resistance at lower cost per bag. LDPE suits applications where flexibility is critical: kitchen waste where the bag needs to stretch without tearing, clinical waste where bags are filled and tied under pressure, commercial bins where the bag must conform to irregular waste shapes. In Indian commercial waste management, LDPE dominates because flexibility and moisture resistance are more relevant than raw tensile strength for most applications. Buyers specifying HDPE should confirm the material genuinely suits their waste type before ordering.',
+    midSection: {
+      label: 'Applications',
+      heading: 'Applications for HDPE Garbage Bags',
+      body: 'Construction waste removal is the strongest HDPE application: sharp debris from demolition and renovation, broken tiles, concrete fragments and metal offcuts require puncture resistance that thinner HDPE provides more cost-effectively than equivalent LDPE. Industrial floor waste at factories where material offcuts are sharp and irregular is another genuine HDPE application. Municipal waste collection where very large volumes of thin-gauge bags are needed per collection route benefits from HDPE\'s higher strength-to-weight ratio. For buyers who have specified HDPE but whose application is actually wet kitchen waste, heavy commercial refuse or clinical material, heavy-gauge LDPE with star seal construction will often perform better. LDPE stretches under load rather than tearing; HDPE can crack or split when filled beyond its tensile limit under dynamic conditions like bin lifting. We can supply samples of both materials in comparable gauges so buyers can confirm which performs better in their specific operation before committing.',
+    },
+    whyHeading: 'HDPE Garbage Bag Manufacturing at Ushakiran Ecoplast',
+    whyBody: 'Our Hyderabad facility at IDA Mankhal produces both HDPE and LDPE garbage bags, which means buyers who need both materials for different waste streams deal with a single manufacturer. ISO certified quality management covers both product lines. Custom gauge is available for HDPE bags across light, medium and heavy-duty specifications. Custom dimensions are available for non-standard bin formats. For buyers currently using HDPE who have not compared performance against LDPE in their specific application, we dispatch comparison samples so you can test both under your actual conditions before committing to a bulk order. 12 years of manufacturing experience means our production team understands the material behaviour differences and can advise on specification before production runs. Pan-India supply from Hyderabad covers all major industrial markets. See full specifications at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'Are HDPE garbage bags stronger than LDPE bags?', a: 'HDPE has higher tensile strength per unit thickness which means thinner HDPE film can handle similar loads to thicker LDPE film. However LDPE is more flexible and puncture-resistant under stress. For most commercial waste applications, the right gauge of LDPE outperforms thin HDPE. The best choice depends on your specific waste type and bin format.' },
+      { q: 'Can you supply HDPE and LDPE bags in the same order?', a: 'Yes. We manufacture both and can combine them in a single order. If your operation has different waste streams with different material requirements, contact us with the spec for each application and we confirm the most efficient order structure.' },
+      { q: 'What gauge HDPE bags do you manufacture?', a: 'We manufacture HDPE bags across a range of gauges from light to heavy duty. Share your application and waste type and we recommend the appropriate gauge before production. Custom gauge specifications are available on confirmed orders.' },
+    ],
+  },
+
+  // T1-5: HEAVY DUTY GARBAGE BAGS
+  {
+    slug: 'heavy-duty-garbage-bags-manufacturer',
+    seoTitle: 'Heavy Duty Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures heavy duty garbage bags in Hyderabad. Star seal, thick gauge LDPE for industrial, construction and commercial use. Pan-India supply.',
+    h1: 'Heavy Duty Garbage Bags Manufacturer in India',
+    label: 'Heavy Duty Garbage Bags',
+    tagline: 'Star seal, thick gauge bags for demanding industrial and kitchen applications',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Heavy duty garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Heavy duty garbage bags are a specification, not a marketing category. The right combination of film thickness, seal construction and material quality separates a bag that holds under a heavy kitchen wet waste load from one that fails mid-service. Getting this right before ordering is the only way to avoid failures.',
+    needsHeading: 'What Makes a Garbage Bag Heavy Duty',
+    needsBody: 'Heavy duty is defined by a specific combination of film thickness, seal construction and material quality, not any one of these alone. Film thickness sets the baseline resistance to puncture and tearing under load. A thick bag with a flat seal at the base will still fail when a heavy wet waste load is lifted, because all the stress concentrates at the corner seals. Star seal construction distributes load across the entire base perimeter rather than four corner points, which is what makes the base genuinely heavy-duty under wet and heavy loads. Material quality at the same thickness also matters. Well-processed recycled LDPE at heavy-duty specification performs comparably to virgin material for demanding applications including wet kitchen waste, heavy industrial refuse and clinical waste in high-generation areas. Thin virgin material with a flat seal will fail faster than properly specified recycled LDPE with a star seal under comparable loads.',
+    midSection: {
+      label: 'Applications',
+      heading: 'Where Heavy Duty Bags Are Used',
+      body: 'Hotel and restaurant kitchen waste is the most common heavy duty application in commercial supply. Wet food waste is heavy and unevenly distributed in the bag, changed under time pressure during service. Kitchen bags need to hold first time without slowing kitchen staff. Construction and renovation debris creates sharp puncture risks: broken tiles, metal brackets, plasterboard scraps and concrete fragments test bag integrity constantly. Industrial and factory floor waste includes manufacturing offcuts, chemical containers, abrasive material and heavy packaging debris. In each of these settings, bag failure is not just a nuisance. In a hotel kitchen it stops service. In a hospital ward it is a hygiene incident. In an industrial setting it means floor cleanup and productivity loss. Heavy duty bags cost more per bag than standard bags. They cost far less than the operational disruption caused by standard bag failure in demanding applications.',
+    },
+    whyHeading: 'Heavy Duty Garbage Bag Production at Ushakiran Ecoplast',
+    whyBody: 'Our star seal construction at IDA Mankhal, Hyderabad produces a heavy-duty base that holds under wet and heavy loads that flat-seal alternatives cannot match at comparable thickness. Recycled LDPE processed at the right standard delivers the heavy-duty performance our industrial and kitchen waste clients need without the cost premium of virgin material. We supply heavy-duty garbage bags to hotel kitchens, restaurants, manufacturing plants, construction contractors and healthcare facilities across Hyderabad, Telangana and pan-India. Custom sizes are available for oversized bins and non-standard industrial containers. ISO 9001:2015 certification matters for procurement managers in regulated environments who need supplier documentation. 12 years of supplying heavy-duty specifications means our production team understands what failure looks like in each application and specifies accordingly. Sample bags are dispatched before bulk orders. Full specifications at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'What is the difference between standard and heavy duty garbage bags?', a: 'Heavy duty bags use thicker film, star seal base construction and higher quality material processing. Standard bags suit dry general waste. Heavy duty bags suit wet waste, sharp debris, heavy loads and any application where bag failure creates operational or hygiene problems.' },
+      { q: 'Are heavy duty bags available in large sizes for industrial bins?', a: 'Yes. We manufacture heavy duty bags in standard commercial sizes and custom dimensions for oversized industrial bins and skip liners. Share your bin dimensions and waste type and we confirm the right specification.' },
+      { q: 'Do heavy duty recycled LDPE bags perform as well as virgin material bags?', a: 'Yes, when manufactured correctly. Well-processed recycled LDPE at the right gauge and with star seal construction performs comparably to virgin material for heavy duty applications. We provide samples for you to test in your operation before committing to bulk.' },
+    ],
+  },
+
+  // T1-6: DUSTBIN COVERS
+  {
+    slug: 'dustbin-covers-manufacturer',
+    seoTitle: 'Dustbin Covers Manufacturer Hyderabad | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures dustbin covers in Hyderabad from recycled LDPE. All sizes for household, office and commercial dustbins. ISO certified, bulk supply.',
+    h1: 'Dustbin Covers Manufacturer in Hyderabad',
+    label: 'Dustbin Covers Hyderabad',
+    tagline: 'Dustbin covers for households, offices and commercial buyers in Hyderabad',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Dustbin covers manufacturer Hyderabad, Ushakiran Ecoplast',
+    intro: 'Dustbin cover is the term widely used in Hyderabad and across South India for LDPE bags that line waste bins. Outside the region, the same product is called a garbage bag, bin liner or polythene cover. If you are searching for dustbin covers in Hyderabad, you are in the right place.',
+    needsHeading: 'Dustbin Covers in Hyderabad: What They Are and Who Uses Them',
+    needsBody: 'Dustbin cover is the dominant term in Hyderabad and Telangana for the plastic bags that line household, office and commercial dustbins. Outside South India, the same product is called a garbage bag, bin liner, trash bag or polythene cover. All terms describe the same LDPE product. In Hyderabad, the term is used in household procurement, small office and shop buying, school and college purchasing, restaurant supply and local distributor trade. The retail and small commercial market in the city uses dustbin cover in local language searches and when buying from nearby distributors. Bulk buyers in Hyderabad, hotel housekeeping teams, office facility managers, restaurant operators, often use the same term when placing wholesale orders. Ushakiran Ecoplast manufactures the full range of dustbin covers for the Hyderabad market, supplying through direct sales and through distribution partners across Telangana.',
+    midSection: {
+      label: 'Specifications',
+      heading: 'Sizes and Specifications for Dustbin Covers',
+      body: 'The most important factor in a dustbin cover is fit. A cover that is too large bunches above the bin rim and creates hygiene problems when waste falls behind the bunched material. A cover too small falls inside the bin and fails to protect the bin wall. To get the right fit, measure your bin at the widest point across the top opening and the depth from rim to base. Common sizes in Hyderabad households: small bathroom bins at 25x27 cm, medium kitchen bins at 36x47 cm, larger home bins at 48x55 cm. Commercial and office bins are typically larger, from 55x65 cm upward. Roll format suits high-frequency dispensing from a holder mounted near the bin. Flat packs suit home use and small offices where bags are changed at lower frequency. We manufacture both formats in the standard sizes used across Hyderabad and Telangana.',
+    },
+    whyHeading: 'Buying Dustbin Covers Wholesale in Hyderabad',
+    whyBody: 'Ushakiran Ecoplast\'s IDA Mankhal facility is based in Hyderabad, which means local buyers get manufacturer proximity: fast delivery, sample collection possible and direct contact with the production team when specifications need confirming. Distributors supplying the Hyderabad retail market source wholesale dustbin covers directly from us, giving their retail customers consistent product without price inflation from multiple trading layers. Small commercial buyers in Hyderabad and Secunderabad can access wholesale pricing directly with confirmed minimum quantities. Delivery across Hyderabad and the twin cities is fast from our facility. 100% recycled LDPE means distributors and retailers can position our dustbin covers as an eco-conscious product for Hyderabad\'s growing urban consumer segment. Quality is consistent batch to batch, which matters for distributors whose retail customers notice product variation. See our full range at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'What sizes of dustbin covers do you manufacture in Hyderabad?', a: 'We manufacture dustbin covers in sizes suitable for small household bins, medium office and kitchen bins and larger commercial bins. Share your bin dimensions and we confirm the right size. Custom sizes are available for non-standard bins.' },
+      { q: 'Are dustbin covers available in bulk packs for resale?', a: 'Yes. We supply dustbin covers in bulk packs suitable for wholesale and retail distribution. Contact us with your pack size requirement and monthly volume for wholesale pricing.' },
+      { q: 'What is the difference between a dustbin cover and a garbage bag?', a: 'No difference in the product. Dustbin cover is the term commonly used in South India and Hyderabad. Garbage bag is the standard commercial procurement term. Both refer to LDPE bags designed to line waste bins.' },
+    ],
+  },
+
+  // T1-7: BIODEGRADABLE GARBAGE BAGS
+  {
+    slug: 'biodegradable-garbage-bags-manufacturer',
+    seoTitle: 'Biodegradable Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Looking for biodegradable garbage bags in India? Ushakiran Ecoplast makes 100% recycled LDPE bags, the practical sustainable alternative for Indian businesses.',
+    h1: 'Biodegradable Garbage Bags Manufacturer in India',
+    label: 'Biodegradable Garbage Bags',
+    tagline: 'Recycled LDPE: the verified sustainable alternative for Indian businesses',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Biodegradable garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Biodegradable is a term that means very different things depending on whether it describes oxo-degradable additives, plant-based compostables or recycled content. Understanding which your sustainability goal actually requires is important before purchasing. This page explains the difference honestly.',
+    needsHeading: 'Biodegradable, Compostable and Recycled: What the Terms Actually Mean',
+    needsBody: 'Biodegradable in the context of plastic bags usually refers to one of two things. Oxo-degradable additives are chemical compounds added to standard plastic that cause it to fragment over time when exposed to UV light and oxygen. The fragments are microplastics. The plastic does not disappear: it becomes smaller and less visible, creating a different environmental problem. Compostable bags are made from plant-based polymers, usually corn starch or PLA, that break down in industrial composting conditions at specific temperatures and humidity levels. These genuinely biodegrade, but only in industrial composting facilities. In standard landfill, they behave similarly to conventional plastic. Recycled LDPE is different from both: it takes existing plastic waste and reprocesses it into new bags, diverting material from landfill and keeping it in productive use. For businesses evaluating sustainability options, the right question is not which term sounds best but which delivers a verifiable result within India\'s actual waste infrastructure.',
+    midSection: {
+      label: 'The Sustainable Choice',
+      heading: 'Why Recycled LDPE is the Practical Sustainable Choice in India',
+      body: 'India\'s industrial composting infrastructure is extremely limited. Most cities do not have facilities that can process compostable bags at the temperatures and conditions required for genuine biodegradation. When compostable bags end up in municipal landfill or open waste streams, they do not biodegrade as intended. The environmental benefit simply does not materialise. Oxo-degradable bags face similar practical problems: they fragment into microplastics that enter soil and water systems. Recycled LDPE works within India\'s actual infrastructure. Post-consumer plastic waste is collected, sorted, processed and remanufactured into new bags. The material stays in productive use instead of going to landfill. For a corporate buyer building an ESG report or a hotel chain seeking LEED certification, recycled LDPE with a material certificate is a verifiable, auditable sustainable choice. It delivers a documented environmental benefit that compostable bags cannot match in Indian conditions where industrial composting is not available at scale.',
+    },
+    whyHeading: 'Ushakiran Ecoplast: Sustainable Garbage Bags from Hyderabad',
+    whyBody: 'Ushakiran Ecoplast has recycled 5 crore KG of plastic since we started manufacturing in 2013. Every garbage bag we produce uses 100% recycled LDPE feedstock. Material certificates confirming recycled content are available for buyers who need documentation for LEED credit submissions, Green Key certification, BRSR reporting under SEBI requirements or GRI-aligned sustainability disclosures. ISO 9001:2015 certification covers our quality management processes, and our recycled content documentation is specific and auditable, not a general sustainability claim. Hyderabad-based production means buyers in South India can visit our IDA Mankhal facility and verify manufacturing processes before placing orders. We supply sustainability-aligned buyers across India including hotel chains, corporate campuses, hospitals with green certification requirements and FM companies with client sustainability mandates. Sample batches are available before bulk orders. See our full range at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'Are recycled LDPE bags a genuine sustainable alternative to biodegradable bags?', a: 'For most Indian businesses, yes. Recycled LDPE bags divert plastic from landfill, use less energy to produce than virgin plastic and deliver a verifiable environmental benefit within India\'s actual waste infrastructure. Compostable bags require industrial composting conditions that are not widely available in Indian cities.' },
+      { q: 'Can you provide documentation confirming recycled content for our sustainability reporting?', a: 'Yes. We provide material certificates confirming 100% recycled LDPE content. This documentation supports LEED certification, Green Key, BRSR reporting and other ESG frameworks used by Indian corporates and hotel chains.' },
+      { q: 'Do your recycled garbage bags perform the same as standard garbage bags?', a: 'Yes. Recycled LDPE at the right specification and processing standard performs comparably to virgin LDPE for standard waste management applications. We provide sample batches before bulk orders so you can confirm performance in your specific operation.' },
+    ],
+  },
+
+  // T1-8: HOUSEHOLD GARBAGE BAGS
+  {
+    slug: 'household-garbage-bags-manufacturer',
+    seoTitle: 'Household Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures household garbage bags from recycled LDPE in Hyderabad. Kitchen, bathroom and general household bins. Bulk supply, pan-India.',
+    h1: 'Household Garbage Bags Manufacturer in India',
+    label: 'Household Garbage Bags',
+    tagline: 'Small to large household bag sizes, 100% recycled LDPE, pan-India',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Household garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Household garbage bags are manufactured in small to large sizes for kitchen bins, bathroom bins and general home use. Ushakiran Ecoplast supplies the household market through distributors and retailers across India, and is preparing to launch Eco Bags, a direct consumer brand, for household buyers online.',
+    needsHeading: 'Household Garbage Bags: What the Market Needs',
+    needsBody: 'Household garbage bags need to fit common bin sizes, be strong enough for daily kitchen and bathroom waste and cost-effectively priced for regular home repurchase. The standard household bin profile in Indian homes includes small bathroom bins of approximately 5 litres, kitchen bins of 10 to 15 litres and larger general bins of 25 to 30 litres. Each size needs a bag that fits without excess material bunching at the rim. Bunched bags look untidy and trap waste between the bag and bin wall. Bags that are too small fall inside the bin. Getting sizing right matters more in household use than in commercial settings because home users notice and switch brands after one bad experience. The household buyer is price-sensitive but quality memory is strong: a bag that tears during removal in the kitchen is remembered for a long time. Consistent sizing across repurchases is as important as initial quality.',
+    midSection: {
+      label: 'The Household Market',
+      heading: 'Supplying the Household Market: Distributors and Retailers',
+      body: 'The household garbage bag market in India is served through a mix of branded retail and unbranded bulk distribution. Amazon and Flipkart carry branded household bag products. Local supermarkets, chemists and kiranas stock both branded and unbranded formats. Wholesale markets supply unbranded bags in bulk packs to local retailers. Distributors who supply the retail channel buy from manufacturers at wholesale and pack for their retail customers in formats that sell: 30-bag packs, 50-bag packs and rolls for kitchen holders. For distributors, recycled LDPE positions well with urban Indian consumers who are increasingly eco-conscious about household purchases. A distributor offering a sustainable household bag product with verified recycled content can differentiate on retail shelves against commodity unbranded bags. The growing e-commerce channel for household consumables means online product listings with sustainability credentials perform better than commodity black bag listings without a product story.',
+    },
+    whyHeading: 'Eco Bags by Ushakiran Ecoplast: Coming to Household Retail',
+    whyBody: 'Ushakiran Ecoplast is launching Eco Bags, our consumer brand for household garbage bags, to reach household buyers directly through Amazon and other retail channels. Eco Bags brings the same 100% recycled LDPE quality we supply to hotels, hospitals and FM companies to Indian household buyers. Made in Hyderabad, ISO certified, recycled content verified. For distributors and retailers interested in stocking Eco Bags, contact our team to discuss wholesale pricing and pack format options. For household buyers looking to purchase directly, our Amazon listing will be live soon. In the meantime, bulk household quantities are available through direct order from our Hyderabad facility. We manufacture in small, medium and large household sizes, all from 100% recycled LDPE. See full specifications at the recycled garbage bags product page.',
+    faqs: [
+      { q: 'What sizes of household garbage bags do you manufacture?', a: 'We manufacture household garbage bags in small sizes for bathroom and bedroom bins, medium sizes for kitchen bins and large sizes for general household use. Standard household sizes are available from stock. Contact us with your bin dimensions for a size recommendation.' },
+      { q: 'Do you supply household garbage bags to distributors and retailers?', a: 'Yes. We supply to distributors and retailers serving the household market across India. Contact us with your monthly volume requirement and we discuss wholesale pricing and pack format options suited to your retail channel.' },
+      { q: 'Are your household garbage bags made from recycled plastic?', a: 'Yes. All our garbage bags including household sizes are manufactured from 100% recycled LDPE at our Hyderabad facility. Recycled content documentation is available for retailers with sustainability positioning requirements.' },
+    ],
+  },
+
+  // === TIER 2 PAGES ===
+
+  // T2-1
+  {
+    slug: 'polythene-bags-manufacturer',
+    seoTitle: 'Polythene Bags Manufacturer Hyderabad | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures polythene bags in Hyderabad from recycled LDPE. Garbage bags, covers and packaging bags in custom sizes. ISO certified, bulk supply.',
+    h1: 'Polythene Bags Manufacturer in Hyderabad',
+    label: 'Polythene Bags',
+    tagline: 'LDPE polythene bags for garbage, packaging and industrial use',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Polythene bags manufacturer Hyderabad, Ushakiran Ecoplast',
+    intro: 'Polythene bags is the term used in Indian trading communities and older procurement vocabulary for what commercial buyers call LDPE garbage bags, bin liners and packaging bags. The word comes from the British English term for polyethylene. Ushakiran Ecoplast manufactures the full polythene bag range from our Hyderabad facility under ISO 9001:2015 certification.',
+    needsHeading: 'Polythene Bags in India: What the Term Covers',
+    needsBody: 'Polythene bags is an umbrella term covering garbage bags for waste collection, bin liners for offices and hotels, bags on rolls for dispensers and housekeeping trolleys, LDPE covers for industrial packaging, and packaging bags for product protection. All are made from polyethylene, either LDPE (low density) or HDPE (high density) depending on the application. LDPE is softer and more flexible, making it the dominant material for garbage bags across Indian commercial procurement. HDPE has higher tensile strength and suits heavier applications. Both are recyclable and both are available in recycled grades that deliver performance comparable to virgin material for standard applications. The term polythene bags is most common in trading communities and wholesale markets in South India, particularly in Hyderabad and Telangana where the term has remained in active use alongside newer procurement terminology.',
+    midSection: {
+      label: 'Material',
+      heading: 'Recycled Polythene: Performance vs Virgin Material',
+      body: 'The question buyers raise about recycled polythene is whether it performs the same as virgin material. At controlled processing temperatures with quality-sorted feedstock, recycled LDPE delivers the same flexibility, tear resistance and moisture resistance as virgin LDPE. The difference is cost: recycled material is priced lower than virgin equivalents of the same specification. For buyers whose procurement is cost-driven but quality-conscious, recycled polythene bags offer the best combination of price and performance. ISO 9001:2015 certification adds the independent quality verification that larger procurement teams require. Some buyers have received poor quality recycled material from other suppliers, typically a sign of inadequate feedstock sorting or processing temperature control. Consistent material quality across batches is the benchmark that separates reliable recycled polythene from unreliable. Our ISO certification documents that we maintain this consistency on every production run.',
+    },
+    whyHeading: 'Ushakiran Ecoplast: Polythene Bags Manufacturer in Hyderabad',
+    whyBody: 'Our IDA Mankhal facility in Hyderabad has manufactured polythene bags for 12 years. The full range is available from one manufacturer: plain black garbage bags, coloured bags, printed bags, bags on rolls, LDPE covers and packaging bags. All manufactured from 100% recycled LDPE under ISO 9001:2015 quality management. Custom sizes are available across the full range. Hyderabad buyers get the advantage of local proximity: faster turnaround, smaller minimum orders possible for initial orders and the option to visit our facility before committing. We have recycled over 5 crore kilograms of plastic since 2013, and documentation confirming recycled content is available with every order. For buyers comparing manufacturers on price, our direct manufacturer pricing removes the distributor margin. Pan-India supply is available from our Hyderabad facility. View the full product range on our recycled garbage bags product page.',
+    faqs: [
+      { q: 'Is polythene the same as LDPE or HDPE?', a: 'Polythene is the informal term for polyethylene, the polymer used to make both LDPE and HDPE bags. LDPE (low density polyethylene) is the more flexible grade used for garbage bags, bin liners and packaging bags. HDPE (high density polyethylene) is stiffer and used for heavier applications. When buyers in Hyderabad and South India say polythene bags, they usually mean LDPE garbage bags or packaging bags.' },
+      { q: 'Do you manufacture polythene bags in custom sizes?', a: 'Yes. Custom sizes are available across our full polythene bag range including garbage bags, bin liners, bags on rolls and packaging bags. Share your bin or container dimensions and we confirm the right size and minimum order requirement before production begins.' },
+      { q: 'Can I visit your factory in Hyderabad before placing an order?', a: 'Yes. Our manufacturing facility is at IDA Mankhal, Maheshwaram, Hyderabad. We welcome buyer visits before first orders. Seeing the production process and meeting the team helps you confirm the supplier relationship before committing to bulk. Contact us to schedule a visit.' },
+    ],
+  },
+
+  // T2-2
+  {
+    slug: 'garbage-covers-manufacturer',
+    seoTitle: 'Garbage Covers Manufacturer Hyderabad | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures garbage covers in Hyderabad from recycled LDPE. All sizes for household, office and commercial use. ISO certified, bulk supply.',
+    h1: 'Garbage Covers Manufacturer in Hyderabad',
+    label: 'Garbage Covers',
+    tagline: 'South Indian term for LDPE bin liners, all sizes and formats',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Garbage covers manufacturer Hyderabad, Ushakiran Ecoplast',
+    intro: 'Garbage cover is the term used across South India, particularly in Hyderabad, Telangana and Andhra Pradesh, for the same product that commercial procurement calls a garbage bag or bin liner. Ushakiran Ecoplast manufactures garbage covers in all sizes for household, office and commercial use from our Hyderabad facility, supplying the local market with 100% recycled LDPE bags under ISO 9001:2015 certification.',
+    needsHeading: 'Garbage Covers in Hyderabad: Terminology and Market',
+    needsBody: 'Garbage cover is the dominant local term in the Hyderabad market for LDPE bags used to line waste bins. The same product is called a garbage bag in commercial procurement, a bin liner in corporate purchasing and a polythene cover in wholesale markets. All refer to the same LDPE bag. The term is used widely across Telangana, Andhra Pradesh and South India generally, with particularly high usage in household, small office and retail settings. Households buying through local distributors and kiranas use the term garbage cover. Small offices, restaurants, schools and retail shops place orders using the same language. For manufacturers like Ushakiran Ecoplast supplying the South Indian market, understanding local terminology matters for buyer communication. Whether the order arrives as a garbage cover enquiry or a bin liner specification, the product is the same and the manufacturing standard is consistent.',
+    midSection: {
+      label: 'Sizing',
+      heading: 'Sizes and Specifications for Garbage Covers',
+      body: 'Garbage covers need to fit the bin without excess bunching at the rim or falling inside when weight is added. Common bin sizes in Hyderabad households and small commercial settings include small bathroom bins of 5 to 7 litres, kitchen and office desk bins of 10 to 20 litres and floor-standing general waste bins of 25 to 45 litres. Hotels and restaurants use larger commercial bins of 60 to 120 litres for kitchen and corridor waste. Measuring your bin before ordering avoids the wrong size: measure the circumference at the top rim and the depth from rim to base. A cover sized to those dimensions sits securely on the rim without excess material. Garbage covers are available in both roll format for dispensing from a holder and flat packs for high-volume storage and retail distribution.',
+    },
+    whyHeading: 'Buying Garbage Covers Wholesale in Hyderabad',
+    whyBody: 'Hyderabad buyers sourcing garbage covers directly from a local manufacturer get faster turnaround and lower pricing than sourcing through a distributor. Our IDA Mankhal facility in Maheshwaram is accessible to buyers across Hyderabad and Secunderabad. For distributors supplying retail and wholesale markets in Hyderabad, Telangana and Andhra Pradesh, we supply in bulk packs sized for retail distribution. For direct commercial buyers including hotels, restaurants, offices and schools, we supply in the quantities and pack formats your operation needs. All bags are manufactured from 100% recycled LDPE under ISO 9001:2015 quality management, with consistent sizing across reorders. We have supplied Hyderabad buyers for 12 years and understand local market format requirements. First-time buyers can request samples before committing to bulk. See specifications on our recycled garbage bags product page.',
+    faqs: [
+      { q: 'What is the difference between a garbage cover and a garbage bag?', a: 'No difference in the product itself. Garbage cover is the term commonly used in Hyderabad, Telangana and Andhra Pradesh. Garbage bag is the standard commercial procurement term. Bin liner, polythene cover and dustbin cover all refer to the same LDPE bag used to line waste bins.' },
+      { q: 'What sizes of garbage covers do you manufacture in Hyderabad?', a: 'We manufacture garbage covers in small, medium and large sizes for household and commercial bins. Standard sizes cover most common household and commercial bin formats. Custom sizes are available for non-standard bins. Share your bin dimensions and we recommend the right size before you order.' },
+      { q: 'Can Hyderabad distributors buy garbage covers directly from your factory?', a: 'Yes. We supply directly to distributors and wholesale buyers in Hyderabad from our IDA Mankhal facility. Contact us with your monthly volume and pack size preference for wholesale pricing. We accommodate regular weekly or monthly reorder cycles for established accounts.' },
+    ],
+  },
+
+  // T2-3
+  {
+    slug: 'kitchen-garbage-bags-manufacturer',
+    seoTitle: 'Kitchen Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Kitchen garbage bags from Ushakiran Ecoplast Hyderabad. Heavy duty, star seal base for commercial kitchens and households. ISO certified, pan-India supply.',
+    h1: 'Kitchen Garbage Bags Manufacturer in India',
+    label: 'Kitchen Garbage Bags',
+    tagline: 'Star seal heavy duty bags for commercial and household kitchens',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Kitchen garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Kitchen waste is the toughest garbage bag application in any commercial or household setting. Wet food waste, high change frequency during service and the need to tie off quickly under pressure mean that most standard bags fail under real kitchen conditions. Ushakiran Ecoplast manufactures kitchen garbage bags with star seal construction and appropriate gauge for commercial and household kitchen use.',
+    needsHeading: 'Why Kitchen Waste Needs Specifically Selected Garbage Bags',
+    needsBody: 'Kitchen waste combines wet, heavy and sharp elements that standard light-gauge bags are not designed to handle. Food waste from commercial kitchens includes wet vegetable matter, cooking liquids, discarded packaging with sharp edges and glass or ceramic fragments from busy food service operations. The bag is often lifted quickly and at an angle when full rather than carefully carried, putting maximum stress on the seal and film at the moment of removal. In hotel kitchens and restaurant service, bags are changed multiple times during a service period, typically under time pressure between covers. Any bag failure at this point creates a hygiene incident and disrupts kitchen flow. Household kitchen bins face less extreme loads but the same basic requirement: wet food waste needs a bag that does not leak from the base when full and lifted.',
+    midSection: {
+      label: 'Specification',
+      heading: 'Specifying Kitchen Garbage Bags Correctly',
+      body: 'Star seal base construction is the essential specification for kitchen garbage bags. A flat seal base has a seam across the bottom that can open under wet, heavy loads. A star seal base folds the film into a star pattern at the base, distributing weight across multiple sealed layers. This is significantly stronger under the same load. Film gauge for kitchen use should be heavier than standard dry waste bags: commercial kitchens generating wet food waste need heavier gauge than office or household settings. For commercial kitchen operations, calculating bag count from change frequency helps set the right order volume. A kitchen changing bags three times per service across two daily services needs six bags per station per day. Roll format is most practical for kitchen use as bags can be pulled one at a time during service without opening a flat pack.',
+    },
+    whyHeading: 'Ushakiran Ecoplast Kitchen Garbage Bags: Made for Kitchen Conditions',
+    whyBody: 'We supply kitchen garbage bags to hotel F&B operations and restaurants across Hyderabad and Telangana. Star seal construction is standard on our kitchen range. Film gauge is matched to the application rather than sold as a single standard gauge for all kitchen types. We match gauge to waste type and change frequency. 100% recycled LDPE processes well for kitchen bag production at the right temperature and material grade, delivering the wet-waste performance commercial kitchens require. ISO 9001:2015 certification means quality management is documented and consistent across batches. Custom sizes are available for non-standard kitchen bins. For buyers switching from bags that have failed in kitchen use, we provide samples to test before committing to bulk. Our IDA Mankhal Hyderabad facility dispatches to kitchen and food service buyers across India. See our recycled garbage bags page for full specifications.',
+    faqs: [
+      { q: 'What bag construction is best for commercial kitchen waste?', a: 'Star seal construction is the right choice for commercial kitchen waste. The star seal base distributes load across multiple sealed layers, making it significantly more resistant to failure under wet, heavy food waste than flat seal bags. Combined with appropriate film gauge for your waste weight, star seal is the standard construction for kitchen garbage bags.' },
+      { q: 'What gauge do you recommend for restaurant kitchen garbage bags?', a: 'Gauge recommendation depends on the waste weight and change frequency in your specific operation. Share your kitchen type, approximate waste weight per bag and daily change frequency and we recommend the right gauge before your first order. Testing a sample before bulk is the right approach for kitchen bag specifications.' },
+      { q: 'Are kitchen garbage bags available on rolls for commercial kitchens?', a: 'Yes. Roll format is the most practical for commercial kitchens as bags can be pulled and dispensed one at a time during service without opening a flat pack. We manufacture kitchen garbage bags on rolls in standard and custom sizes. Contact us with your bin dimensions and dispenser format for a roll specification.' },
+    ],
+  },
+
+  // T2-4
+  {
+    slug: 'large-garbage-bags-manufacturer',
+    seoTitle: 'Large Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Large garbage bags from Ushakiran Ecoplast Hyderabad. Oversized LDPE for industrial bins, skip liners and bulk waste. Custom sizes, pan-India supply.',
+    h1: 'Large Garbage Bags Manufacturer in India',
+    label: 'Large Garbage Bags',
+    tagline: 'Oversized bags for industrial bins, skip liners and events',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Large garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Large format garbage bags are used where standard commercial sizes are not adequate for the bin or the waste volume. Industrial bins, skip liners, banquet and event waste collection and municipal collection points all require bags sized beyond standard commercial formats. Ushakiran Ecoplast manufactures large garbage bags in custom dimensions with star seal construction for applications where standard sizes do not fit.',
+    needsHeading: 'Where Large Format Garbage Bags Are Used',
+    needsBody: 'Large format garbage bags are required where waste volume per change is too high for standard commercial sizes or where the bin is physically larger than standard formats. Industrial bins on factory floors often hold 120 to 240 litres and need bags sized to the bin circumference and depth rather than standard dimensions. Construction and renovation sites use large format bags for demolition debris and general site waste in large open bins. Hotel banquet halls generate concentrated waste during events, and large bags reduce the number of changes during service. Municipal collection points where multiple households deposit waste use high-capacity bags sized to the collection container. Skip liners are a specific large format application: a heavy-duty liner placed inside a skip to contain liquid and fine particles before the skip is removed.',
+    midSection: {
+      label: 'Specification',
+      heading: 'Specifying Large Format Garbage Bags',
+      body: 'Large format bags require attention to three specification points beyond standard sizing: film gauge, seal construction and exact dimensions. Film gauge for large bags should be heavier than standard because the absolute weight carried is higher. A bag sized for a 120 litre bin at half the gauge of an equivalent standard bag will fail under the same load per unit of film. Star seal construction is essential at large format because the increased base area means a flat seal base has a longer seam more exposed to failure under load. Dimensions for large format bags are specified as width and depth in centimetres: share your bin circumference and depth and we calculate the bag dimensions. For skip liners and custom containers, share the container dimensions directly and we manufacture to fit.',
+    },
+    whyHeading: 'Custom Large Format Bag Production at Ushakiran Ecoplast',
+    whyBody: 'Our Hyderabad facility produces large format garbage bags with no standard size constraint. If your bin or container is larger than any listed standard size, we manufacture to your dimensions on confirmed order. Industrial buyers in Telangana and Andhra Pradesh have sourced large format bags from our IDA Mankhal facility for over a decade. ISO 9001:2015 certification covers large format production under the same quality management that applies to standard sizes. Star seal construction is standard on all large format bags. Recycled LDPE at the right gauge performs comparably to virgin material for large format applications, delivering cost savings at the high film weight these bags require. For buyers who have not sourced large format from a direct manufacturer before, we provide samples before bulk order. Pan-India supply from Hyderabad on confirmed specifications. See our recycled garbage bags page for product details.',
+    faqs: [
+      { q: 'What are the largest garbage bag dimensions you manufacture?', a: 'There is no upper size limit on custom garbage bag production. We manufacture to your bin or container dimensions. Share the circumference and depth of your bin and we quote dimensions and gauge for a custom large format bag. Minimum order quantities apply to custom sizes.' },
+      { q: 'Can you make garbage bags for skips and industrial containers?', a: 'Yes. Skip liners and large industrial container bags are a specific application we manufacture. Share your skip or container dimensions and we produce bags to fit, typically with heavy gauge star seal construction to handle debris and any liquid that collects at the base.' },
+      { q: 'Are large garbage bags available in heavy duty specifications?', a: 'Yes. Large format and heavy duty are usually specified together for industrial and construction applications. We manufacture large format bags with heavy gauge film and star seal construction for applications involving sharp debris, heavy loads and rough handling. Share your specific application and we recommend the right combination.' },
+    ],
+  },
+
+  // T2-5
+  {
+    slug: 'jumbo-garbage-bags-manufacturer',
+    seoTitle: 'Jumbo Garbage Bags Manufacturer India | Ushakiran Ecoplast',
+    seoMeta: 'Jumbo garbage bags from Ushakiran Ecoplast Hyderabad. Extra large LDPE for hotels, events and industrial waste. Custom dimensions, ISO certified, pan-India.',
+    h1: 'Jumbo Garbage Bags Manufacturer in India',
+    label: 'Jumbo Garbage Bags',
+    tagline: 'Maximum capacity bags for hotel banquets and industrial waste',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Jumbo garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Jumbo garbage bags are the highest capacity format, used in hotel banquet halls during large events, outdoor event cleanup operations, large industrial waste streams and municipal collection points. Ushakiran Ecoplast manufactures jumbo garbage bags in custom dimensions for buyers who need maximum capacity from each bag change.',
+    needsHeading: 'Where Jumbo Garbage Bags Are Used',
+    needsBody: 'Jumbo garbage bags are defined by capacity rather than a fixed dimension. In practice, jumbo refers to bags designed for bin sizes of 150 litres and above, used where waste accumulation is rapid and bag changes need to be minimised. Hotel banquet halls generate concentrated food and general waste during multi-hundred cover events, and jumbo bags allow one change per station per event rather than multiple changes during service. Outdoor events including concerts, exhibitions and festivals use jumbo bags at collection points where multiple smaller bags would create more work and higher change frequency for cleanup crews. Large industrial waste streams involving bulky manufacturing offcuts or large-volume packaging waste use jumbo format to reduce handling of multiple smaller bags. Municipal collection points in high-density areas use jumbo bags to hold waste between collection runs.',
+    midSection: {
+      label: 'Sizing Guide',
+      heading: 'Jumbo vs Large vs Standard: Choosing the Right Size',
+      body: 'Jumbo bags are not always the right choice. Where the issue is bag failure under load rather than insufficient capacity, a heavy duty standard bag with the right gauge and star seal construction often solves the problem at lower material cost per bag. Jumbo makes sense when the bin or container is physically large, when waste accumulation requires maximum capacity between changes, or when cleanup logistics require minimising bag change frequency. For hotel banquet operations, the choice between jumbo and large depends on bin placement and the number of covers. A 250-cover event may need different sizing than a 1000-cover event at a larger hall. Providing bin dimensions and event capacity when requesting a quote gives us the information to recommend the right size rather than defaulting to the largest available.',
+    },
+    whyHeading: 'Jumbo Garbage Bag Production at Ushakiran Ecoplast',
+    whyBody: 'We supply jumbo garbage bags to hotel groups, event management companies and industrial buyers across India. Custom dimensions are available on confirmed order: if your bin or container is an unusual size, we manufacture to fit. Star seal construction is standard on all jumbo format bags. Recycled LDPE at heavy gauge performs well for jumbo applications because the film properties that matter at large format, including tear resistance and moisture resistance under load, are maintained through our controlled processing at IDA Mankhal, Hyderabad. ISO 9001:2015 certification covers the full production range including jumbo formats. We have served the hospitality sector for 12 years, and jumbo banquet bags are a regular production item. Pan-India supply means hotel groups with properties across India can consolidate supply from one manufacturer. Samples are available before bulk order on custom dimensions.',
+    faqs: [
+      { q: 'What size constitutes a jumbo garbage bag?', a: 'Jumbo typically refers to bags designed for bins of 150 litres and above, though the term is used loosely across the industry. The right approach is to share your bin dimensions, circumference and depth, and we size the bag to your container. This ensures the bag fits correctly regardless of what the format is called.' },
+      { q: 'Do jumbo garbage bags require star seal construction?', a: 'Yes. Star seal construction is essential for jumbo format bags. The larger base area of a jumbo bag means a flat seal base has a longer seam more exposed to failure under high loads. Star seal construction distributes weight across multiple sealed layers, significantly improving base strength at large format.' },
+      { q: 'Can you supply jumbo garbage bags for hotel chains across India?', a: 'Yes. We supply hotel chains and hospitality groups with consolidated specifications across all properties, including jumbo format bags for banquet operations. Single order, single specification, pan-India delivery from our Hyderabad facility. Contact us with your property count, bin dimensions and monthly consumption for a consolidated supply quote.' },
+    ],
+  },
+
+  // T2-6
+  {
+    slug: 'eco-friendly-garbage-bags-manufacturer',
+    seoTitle: 'Eco-Friendly Garbage Bags India | Ushakiran Ecoplast',
+    seoMeta: 'Ushakiran Ecoplast manufactures eco-friendly garbage bags from 100% recycled LDPE in Hyderabad. Verified sustainable, ISO certified, pan-India supply since 2013.',
+    h1: 'Eco-Friendly Garbage Bags Manufacturer in India',
+    label: 'Eco-Friendly Garbage Bags',
+    tagline: 'Verified recycled LDPE with ESG documentation, pan-India supply',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Eco-friendly garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Eco-friendly garbage bags cover a procurement category where the claim matters as much as the product. For Indian businesses, the sustainable choice needs to work within India\'s actual waste infrastructure, deliver documentable environmental benefit and support ESG reporting. Ushakiran Ecoplast manufactures eco-friendly garbage bags from 100% recycled LDPE at our Hyderabad facility, supplying corporate, hospitality and institutional buyers across India with material certificates for sustainability reporting.',
+    needsHeading: 'What Eco-Friendly Actually Means for Garbage Bags in India',
+    needsBody: 'Eco-friendly is a claim applied broadly to waste management products. For garbage bags specifically, it means either verified recycled content, biodegradable or compostable material, or reduced material weight at the same performance. Recycled content is the only option that delivers a verifiable, documentable environmental benefit within India\'s actual waste management infrastructure. Compostable bags require industrial composting conditions that are not available at scale in Indian cities. Oxo-degradable bags fragment into microplastics, which is widely considered a harmful outcome despite the eco label. For procurement teams building ESG reports, the key requirement is documentation: a material certificate confirming recycled content and an ISO-certified quality management system ensuring consistency batch to batch.',
+    midSection: {
+      label: 'ESG Documentation',
+      heading: 'ESG and Green Certification Value of Recycled LDPE Bags',
+      body: 'Corporate buyers with LEED-certified buildings, Green Key-rated hotels, BRSR reporting obligations and GRI sustainability disclosure requirements need to document the environmental credentials of procurement decisions. Recycled LDPE garbage bags contribute to these frameworks through diversion of post-consumer plastic waste from landfill, documented in the material certificate, reduced energy consumption compared to virgin plastic production, and verified recycled content that can be cited in sustainability disclosures. For LEED certification, recycled content materials contribute to Materials and Resources credits. For hotel groups pursuing Green Key certification, verified recycled materials across supply chains meet procurement requirements. For large Indian corporates under BRSR reporting obligations, documented recycled material procurement is a specific line item. We provide material certificates with every order confirming 100% recycled LDPE content.',
+    },
+    whyHeading: 'Ushakiran Ecoplast, Eco-Friendly Credentials Since 2013',
+    whyBody: 'Ushakiran Ecoplast has manufactured 100% recycled LDPE garbage bags since 2013. Over 5 crore kilograms of plastic waste has been recycled and converted into products at our IDA Mankhal, Hyderabad facility. ISO 9001:2015 certification covers quality management across the full production process. Material certificates confirming recycled LDPE content are provided with every order and are formatted to support ESG, LEED, Green Key and BRSR documentation requirements. Pan-India supply means our eco-friendly bags are available to corporate buyers, hotel groups and institutional procurement teams across India from one verified manufacturer. Our 12 years of recycled material manufacturing and documented impact are the substance behind the eco-friendly claim, not a marketing addition. For buyers comparing eco-friendly options, our recycled garbage bags product page has full specifications and documentation details.',
+    faqs: [
+      { q: 'What documentation do you provide for ESG and sustainability reporting?', a: 'We provide material certificates confirming 100% recycled LDPE content with every order. This documentation supports LEED Materials and Resources credits, Green Key procurement requirements, BRSR reporting for Indian corporates, GRI sustainability disclosures and other ESG frameworks. If you need specific documentation formats, contact us to discuss.' },
+      { q: 'How do your eco-friendly bags compare to biodegradable or compostable options?', a: 'Recycled LDPE bags deliver a verifiable environmental benefit within India\'s actual waste infrastructure. Compostable bags require industrial composting conditions that are not widely available in Indian cities, meaning they often end up in general waste without degrading. Recycled LDPE keeps existing plastic in productive use and reduces demand for virgin material, a documentable circular economy outcome.' },
+      { q: 'Do you supply eco-friendly garbage bags to corporate campuses and hotel chains pan-India?', a: 'Yes. We supply corporate campuses, hotel groups and institutional buyers with eco-friendly recycled LDPE bags pan-India from our Hyderabad facility. Single order, consolidated specifications, pan-India delivery. Contact us with your property count and monthly consumption estimate for a supply quote with documentation package.' },
+    ],
+  },
+
+  // T2-7
+  {
+    slug: 'compostable-garbage-bags-manufacturer',
+    seoTitle: 'Compostable Garbage Bags India | Ushakiran Ecoplast',
+    seoMeta: 'Looking for compostable garbage bags in India? Understand why recycled LDPE from Ushakiran Ecoplast is the more practical sustainable choice for Indian businesses.',
+    h1: 'Compostable Garbage Bags: What Indian Businesses Need to Know',
+    label: 'Compostable Bags Guide',
+    tagline: 'Why recycled LDPE is the better sustainable choice in India',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Compostable garbage bags guide India, Ushakiran Ecoplast Hyderabad',
+    intro: 'You searched for compostable garbage bags. Before ordering, there are important things to understand about how compostable bags actually perform in India and whether they deliver the environmental benefit you are looking for. Ushakiran Ecoplast does not manufacture compostable bags, but we do manufacture 100% recycled LDPE bags that deliver a verifiable sustainable outcome in Indian conditions.',
+    needsHeading: 'Compostable Garbage Bags: What They Actually Are',
+    needsBody: 'Compostable bags are made from plant-based materials, typically corn starch, PLA (polylactic acid) or other biopolymers. They are designed to break down into CO2, water and biomass under specific composting conditions: industrial composting facilities that maintain temperatures of 55 to 60 degrees Celsius for sustained periods with active aeration. Under these conditions, certified compostable bags break down completely within 90 to 180 days. Without these conditions, in a landfill, an open dump or a household compost bin, compostable bags do not degrade meaningfully. They sit in the waste stream in the same way as conventional plastic, just at a higher cost per bag. The environmental benefit of compostable bags depends entirely on access to industrial composting infrastructure.',
+    midSection: {
+      label: 'Indian Infrastructure',
+      heading: 'Why Compostable Bags Rarely Work in India',
+      body: 'India\'s industrial composting infrastructure covers a fraction of its urban waste volume. Most municipal solid waste, even in major cities, ends up in landfills or open dumping sites where composting conditions do not exist. In this context, a compostable bag purchased for its environmental benefit typically ends up in a landfill alongside conventional plastic waste, where it does not degrade within any meaningful timeframe. Some buyers have switched to compostable bags for internal waste collection, only to find the bags cannot be processed by the local municipal composting facility or that no local facility accepts them. The result is higher cost per bag with the same environmental outcome as conventional plastic. Oxo-degradable bags, sometimes marketed as biodegradable, fragment into microplastics, an outcome broadly considered worse than conventional plastic.',
+    },
+    whyHeading: 'Recycled LDPE as the Practical Sustainable Alternative in India',
+    whyBody: 'For buyers whose goal is genuine environmental impact from waste bag procurement, 100% recycled LDPE delivers a verifiable result within India\'s actual waste infrastructure. Recycled LDPE diverts existing plastic waste from landfill and reprocesses it into new bags: a circular economy outcome that works regardless of composting infrastructure. Every kilogram of recycled LDPE used in a bag represents a kilogram of plastic that was not sent to landfill. Material certificates confirm the recycled content. Documentation supports ESG reporting, LEED certification and other green frameworks. Ushakiran Ecoplast has recycled over 5 crore kilograms of plastic at our Hyderabad facility since 2013. ISO 9001:2015 certification ensures quality consistency. Pan-India supply is available for buyers across India. If your goal is a sustainable purchase with verifiable impact, see our recycled garbage bags page and contact our team to discuss your requirements.',
+    faqs: [
+      { q: 'Do compostable bags work in India\'s waste system?', a: 'Only if they reach an industrial composting facility operating at 55 to 60 degrees Celsius, conditions that are not widely available across Indian cities. Most compostable bags purchased in India end up in landfills or municipal waste streams where they do not degrade meaningfully. The environmental benefit depends on composting infrastructure that India has not yet built at scale.' },
+      { q: 'What is the practical sustainable alternative for Indian businesses?', a: '100% recycled LDPE garbage bags. They divert existing plastic waste from landfill, require less energy to produce than virgin plastic and deliver a verifiable environmental benefit documented in the material certificate. Unlike compostable bags, the benefit is not dependent on specific infrastructure that may not be available in your city.' },
+      { q: 'Can you provide documentation showing the environmental benefit of recycled LDPE bags?', a: 'Yes. We provide material certificates confirming 100% recycled LDPE content for every order. This documentation supports LEED certification, BRSR reporting, Green Key and other sustainability frameworks. If you have specific reporting requirements, contact us to discuss the format and content needed.' },
+    ],
+  },
+
+  // T2-8
+  {
+    slug: 'hospital-usage-garbage-bags-manufacturer',
+    seoTitle: 'Hospital Garbage Bags Manufacturer | Ushakiran Ecoplast',
+    seoMeta: 'Hospital usage garbage bags from Ushakiran Ecoplast Hyderabad. General and regulated waste bags for hospitals. BMWM compliant, ISO certified, pan-India supply.',
+    h1: 'Hospital Usage Garbage Bags Manufacturer in India',
+    label: 'Hospital Usage Bags',
+    tagline: 'General and biomedical bags for hospitals, pan-India supply',
+    heroImg: '/images/garbage-bags-latest.webp',
+    heroImgAlt: 'Hospital usage garbage bags manufacturer India, Ushakiran Ecoplast Hyderabad',
+    intro: 'Hospitals require garbage bags across two distinct waste streams simultaneously: general non-biomedical waste and regulated biomedical waste. Ushakiran Ecoplast manufactures both general LDPE garbage bags and BMWM 2016 compliant biomedical bags, allowing hospital procurement teams to consolidate both requirements with one verified supplier.',
+    needsHeading: 'Hospital Waste Streams, Why One Manufacturer for Both',
+    needsBody: 'Hospital facilities generate waste across multiple streams requiring different bags. General administrative waste from offices, reception areas and canteens uses standard black LDPE garbage bags. Food waste from hospital canteens and pantry areas uses standard bags in heavier gauge for wet waste. Ward general waste, non-biomedical materials from patient areas that do not require regulated disposal, uses standard LDPE bags. Regulated biomedical waste across four BMWM 2016 colour categories requires non-chlorinated LDPE bags with biohazard printing, facility name and PCB-approved production. Managing two separate suppliers for these streams creates documentation risk: if bags from different suppliers do not meet the same quality standard, or if biomedical bags arrive without the correct printing, the consequences for the hospital include regulatory notices. Sourcing both stream types from one verified manufacturer simplifies the compliance picture.',
+    midSection: {
+      label: 'Compliance',
+      heading: 'Hospital Procurement Compliance: What Documentation Matters',
+      body: 'Hospital procurement teams face audits from multiple bodies: NABH accreditation assessors, State PCB inspection teams and internal quality management reviews. For garbage bag procurement, the key documentation requirements are ISO certification of the manufacturer, PCB approval for biomedical bag manufacturing (required under BMWM Rules 2016), material certificates for any sustainability claims, and consistent specification documentation confirming bags in batch 10 match batch 1. NABH standards for biomedical waste management require documented processes at each stage of waste segregation, collection and disposal. The bag supplier\'s documentation forms part of this chain. A supplier who provides ISO certificates, PCB approval documentation and batch-specific quality confirmation makes the hospital\'s compliance reporting straightforward. A supplier who cannot provide these creates gaps in the documentation chain.',
+    },
+    whyHeading: 'Ushakiran Ecoplast as a National Hospital Bag Supplier',
+    whyBody: 'Ushakiran Ecoplast supplies both general LDPE garbage bags and BMWM 2016 compliant biomedical bags from our Hyderabad facility. PCB approved manufacturing for biomedical bag production. ISO 9001:2015 certified quality management across the full product range. Non-chlorinated LDPE for biomedical bags with biohazard printing and facility name printing as required by BMWM Rules 2016. All four colour categories available. Pan-India supply for hospital groups with multiple facilities. 12 years supplying healthcare sector buyers means we understand the documentation requirements for hospital procurement audits and provide the certificate format needed. For national hospital groups consolidating supply across multiple facilities in Telangana, Andhra Pradesh and other states, we manage consistent specifications and centralised ordering with delivery to individual facilities. View full specifications on our recycled garbage bags page or contact our team with your facility count and requirement details.',
+    faqs: [
+      { q: 'Can you supply both general and biomedical waste bags in a single order?', a: 'Yes. General LDPE garbage bags and BMWM 2016 compliant biomedical bags are both manufactured at our facility and can be combined in a single purchase order. This simplifies procurement documentation and ensures both bag types come with ISO and PCB compliance documentation from the same verified source.' },
+      { q: 'What documentation do you provide for hospital procurement compliance?', a: 'We provide ISO 9001:2015 certificates covering quality management, PCB approval documentation for biomedical bag manufacturing, material certificates and batch quality confirmation. If your NABH accreditation or PCB audit requires specific documentation formats, contact us to discuss what we can provide.' },
+      { q: 'Do you supply to hospital groups with multiple facilities across India?', a: 'Yes. We manage consolidated specifications and pan-India delivery for hospital groups operating multiple facilities. Single purchase order, consistent specifications across all locations, delivery to individual facilities. This is the structure most hospital groups use when consolidating bag supply to reduce procurement overhead and quality variation risk.' },
+    ],
+  },
+
 ]
 
 export function getSubPageBySlug(slug) {
@@ -875,3 +1309,6 @@ export const productVariantSubPages = garbageBagSubPages.slice(14, 20)
 
 // Geography pages (telangana, AP, bangalore, chennai, south india, secunderabad, mumbai)
 export const geoSubPages = garbageBagSubPages.slice(20, 27)
+
+// Tier 1 + Tier 2 keyword pages
+export const keywordSubPages = garbageBagSubPages.slice(27, 43)

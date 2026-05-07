@@ -1,11 +1,11 @@
-import { useLocation } from 'react-router-dom'
+﻿import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 
 const founders = [
     {
     name: 'Aditya Sarda',
     role: 'Founder & CFO',
-    edu: 'B.E — Information Technology',
+    edu: 'B.E, Information Technology',
     exp: '13 years of experience',
     img: '/images/team-aditya.webp',
     bio: 'Drives the financial strategy and growth vision of UKEP. Aditya brings a sharp analytical mindset and deep commitment to building a profitable, sustainable business for the long term.',
@@ -37,14 +37,14 @@ const marketing = [
     edu: 'B.Tech, MBA',
     exp: '8 years of experience',
     img: '/images/team-abhinav.webp',
-  bio: "Strategic thinker with 8 years across business development and operations — driving UKEP's growth, distribution networks, and market expansion." },
+  bio: "Strategic thinker with 8 years across business development and operations, driving UKEP's growth, distribution networks, and market expansion." },
   {
     name: 'Varun Marda',
     role: '',
     edu: 'B.Tech',
     exp: '4 years of experience',
     img: '/images/team-varun.webp',
-  bio: "Engineer turned digital strategist — building the technology, platforms, and marketing systems that bring UKEP's products to modern customers." },
+  bio: "Engineer turned digital strategist, building the technology, platforms, and marketing systems that bring UKEP's products to modern customers." },
 ]
 
 const operations = [
@@ -71,7 +71,7 @@ const operations = [
   },
   {
     name: 'Uttam Goswami',
-    role: 'Plant Head — Bags Manufacturing',
+    role: 'Plant Head: Bags Manufacturing',
     edu: 'Graduate',
     exp: '9 years of experience',
     img: '/images/team-uttam.webp',
@@ -79,7 +79,7 @@ const operations = [
   
   {
     name: 'Rahul Pandey',
-    role: 'Plant Head — Granule Recycling',
+    role: 'Plant Head: Granule Recycling',
     edu: 'Graduate',
     exp: '4 years of experience',
     img: '/images/team-rahul.webp',
@@ -136,7 +136,7 @@ export default function Team({ setPage }) {
     <div className="team-page">
       <Helmet>
         <title>Our Team | Ushakiran Ecoplast</title>
-        <meta name="description" content="Meet the team behind Ushakiran Ecoplast — founders, advisors and operations heads driving sustainable plastic recycling in Hyderabad since 2013." />
+        <meta name="description" content="Meet the team behind Ushakiran Ecoplast, founders, advisors and operations heads driving sustainable plastic recycling in Hyderabad since 2013." />
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta name="robots" content="index, follow" />
       </Helmet>
@@ -146,7 +146,7 @@ export default function Team({ setPage }) {
         <div className="team-hero-content">
           <div className="section-label">The People Behind UKEP</div>
           <h1>Our Team</h1>
-          <p>Experienced professionals united by a shared mission — turning plastic waste into products that serve India.</p>
+          <p>Experienced professionals united by a shared mission: turning plastic waste into products that serve India.</p>
           <button onClick={() => setPage('home')} className="btn-outline">← Back to Home</button>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from 'react-router-dom'
+﻿import { useNavigate, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { products } from '../data/Products.js'
 
@@ -16,7 +16,7 @@ export default function ProductsPage() {
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Plastic Bags & Films Products | Ushakiran Ecoplast" />
-        <meta property="og:description" content="ISO certified recycled LDPE products — garbage bags, biomedical bags, shrink film, mulch film and more. Manufacturer in Hyderabad." />
+        <meta property="og:description" content="ISO certified recycled LDPE products, garbage bags, biomedical bags, shrink film, mulch film and more. Manufacturer in Hyderabad." />
       </Helmet>
 
       {/* Hero */}
@@ -24,7 +24,7 @@ export default function ProductsPage() {
         <div className="pp-hero-content">
           <div className="pp-hero-badge">ISO Certified · Made in Hyderabad · Pan-India Supply</div>
           <h1>Our Products</h1>
-          <p>100% recycled LDPE products built to your specification — delivered across India from our Hyderabad manufacturing facility.</p>
+          <p>100% recycled LDPE products built to your specification, delivered across India from our Hyderabad manufacturing facility.</p>
           <button onClick={() => navigate('/')} className="btn-outline" style={{ borderColor: '#fff', color: '#fff' }}>← Back to Home</button>
         </div>
       </div>

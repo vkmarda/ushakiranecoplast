@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+﻿import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
@@ -17,7 +17,7 @@ const tree = (
   </StrictMode>
 )
 
-// In production, pre-rendered HTML is already in the root — hydrate it.
+// In production, pre-rendered HTML is already in the root, hydrate it.
 // In dev (empty root), fall back to a fresh render so HMR works normally.
 if (root.innerHTML) {
   hydrateRoot(root, tree)

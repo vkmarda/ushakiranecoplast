@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 
 function CountUp({ target, suffix = '' }) {
   const [count, setCount] = useState(0)
@@ -102,7 +102,7 @@ export default function About() {
           <p className="about-lead">From producing our first batches of eco-friendly bags to achieving large-scale manufacturing capacity, our journey has been marked by continuous innovation, customer trust, and an unwavering focus on environmental responsibility.</p>
           <div className="about-pillars">
             <div className="ap"><span className="ap-icon">🏭</span><span>In-house manufacturing in Hyderabad</span></div>
-            <div className="ap"><span className="ap-icon">♻️</span><span>100% recycled raw material — circular by design</span></div>
+            <div className="ap"><span className="ap-icon">♻️</span><span>100% recycled raw material, circular by design</span></div>
             <div className="ap"><span className="ap-icon">🚚</span><span>Pan-India delivery</span></div>
           </div>
         </div>
@@ -136,11 +136,11 @@ export default function About() {
       {[
         {
           title: 'Keeping plastic out of waterways',
-desc: `Every tonne of recycled plastic we process is a tonne that didn't flow into India's rivers, lakes or coastline. Since 2013, that has added up to thousands of tonnes diverted from the environment — one order at a time. `        },
+desc: `Every tonne of recycled plastic we process is a tonne that didn't flow into India's rivers, lakes or coastline. Since 2013, that has added up to thousands of tonnes diverted from the environment, one order at a time. `        },
 
         {
           title: 'A circular factory, not a linear one',
-          desc: 'Our entire production runs on post-consumer waste — closing the loop on plastic that would otherwise have no future.',
+          desc: 'Our entire production runs on post-consumer waste, closing the loop on plastic that would otherwise have no future.',
         },
                 {
           title: 'Safer disposal for hazardous waste',

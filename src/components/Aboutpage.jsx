@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 
@@ -35,7 +35,7 @@ const timeline = [
     icon: '🌱',
     tag: 'Founded',
     color: '#1b4332',
-    desc: 'Aditya & Ramakanth Sarda founded Ushakiran Ecoplast in Hyderabad with a clear mission — convert plastic waste into reusable, everyday products.',
+    desc: 'Aditya & Ramakanth Sarda founded Ushakiran Ecoplast in Hyderabad with a clear mission: convert plastic waste into reusable, everyday products.',
     milestone: 'First garbage bags manufactured',
   },
   {
@@ -62,7 +62,7 @@ const timeline = [
     icon: '🛡️',
     tag: 'Resilience',
     color: '#1b4332',
-    desc: 'During the pandemic, we prioritised clients over profit — supplying critical bio-medical waste bags to hospitals at fair prices throughout the crisis.',
+    desc: 'During the pandemic, we prioritised clients over profit, supplying critical bio-medical waste bags to hospitals at fair prices throughout the crisis.',
     milestone: '90%+ client retention through COVID',
   },
   {
@@ -86,12 +86,12 @@ const timeline = [
 ]
 
 const values = [
-  { icon: '♻️', title: 'Circular by Design', desc: 'We believe plastic doesn\'t have to be a problem. Every product we make starts as waste and ends as something useful — that\'s the only kind of manufacturing we do.' },
-  { icon: '🌱', title: 'Sustainability Without Compromise', desc: 'Eco-friendly should never mean lower quality. We prove that recycled products can match — and often exceed — the performance of virgin plastic alternatives.' },
-  { icon: '🤲', title: 'Responsibility at Every Step', desc: 'From the waste collectors in our supply chain to the organizations trusting us — we take our obligations to people and planet seriously.' },
-  { icon: '🏗️', title: 'Built to Last', desc: 'We are not chasing trends. We are building a company designed for decades — with consistent processes, long-term client relationships, and a facility that grows with demand.' },
+  { icon: '♻️', title: 'Circular by Design', desc: 'We believe plastic doesn\'t have to be a problem. Every product we make starts as waste and ends as something useful. That\'s the only kind of manufacturing we do.' },
+  { icon: '🌱', title: 'Sustainability Without Compromise', desc: 'Eco-friendly should never mean lower quality. We prove that recycled products can match, and often exceed, the performance of virgin plastic alternatives.' },
+  { icon: '🤲', title: 'Responsibility at Every Step', desc: 'From the waste collectors in our supply chain to the organizations trusting us, we take our obligations to people and planet seriously.' },
+  { icon: '🏗️', title: 'Built to Last', desc: 'We are not chasing trends. We are building a company designed for decades, with consistent processes, long-term client relationships, and a facility that grows with demand.' },
   { icon: '🔍', title: 'Honest About What We Make', desc: 'Plastic is complex. We don\'t pretend otherwise. We\'re transparent about our materials, our certifications, and what recycled really means in practice.' },
-  { icon: '🤝', title: 'Partnership Over Transaction', desc: 'A client placing their first order gets the same attention as one who has been with us for a decade. We grow when our clients grow — that alignment drives everything.' },
+  { icon: '🤝', title: 'Partnership Over Transaction', desc: 'A client placing their first order gets the same attention as one who has been with us for a decade. We grow when our clients grow. That alignment drives everything.' },
 ]
 
 const problemStats = [
@@ -169,7 +169,7 @@ useEffect(() => {
     <div className="about-page">
       <Helmet>
         <title>About Us | Ushakiran Ecoplast - Hyderabad</title>
-        <meta name="description" content="Learn about Ushakiran Ecoplast — ISO certified recycled plastic manufacturer in Hyderabad. Founded in 2013, serving 500+ clients across 50+ Indian cities." />
+        <meta name="description" content="Learn about Ushakiran Ecoplast, ISO certified recycled plastic manufacturer in Hyderabad. Founded in 2013, serving 500+ clients across 50+ Indian cities." />
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta name="robots" content="index, follow" />
       </Helmet>
@@ -179,7 +179,7 @@ useEffect(() => {
         <div className="about-page-hero-content">
           <div className="section-label" style={{ color: 'rgba(255,255,255,.75)' }}>Our Story</div>
           <h1>A Step Towards a Cleaner &amp; Greener Tomorrow</h1>
-          <p>From a small Hyderabad factory in 2013 to serving 500+ clients across 50+ Indian cities — this is our journey.</p>
+          <p>From a small Hyderabad factory in 2013 to serving 500+ clients across 50+ Indian cities, this is our journey.</p>
           <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
             <button className="btn-outline" style={{ borderColor: '#fff', color: '#fff' }} onClick={() => setPage('home')}>← Back to Home</button>
           </div>
@@ -192,7 +192,7 @@ useEffect(() => {
           <div className="about-problem-text">
             <div className="section-label">Why We Exist</div>
             <h2>The Problem We're Solving</h2>
-            <p>Plastic is one of humanity's greatest inventions — yet human irresponsibility has turned it into a crisis. Manufacturing virgin plastic bags worsens the problem. Compostable bags are too expensive and fragile. <strong>There had to be a better way.</strong></p>
+            <p>Plastic is one of humanity's greatest inventions, yet human irresponsibility has turned it into a crisis. Manufacturing virgin plastic bags worsens the problem. Compostable bags are too expensive and fragile. <strong>There had to be a better way.</strong></p>
             <p>We found it: take plastic waste that already exists, recycle it, and turn it into durable, affordable, useful products. Waste becomes resource. Problem becomes solution.</p>
             <button className="btn-primary" onClick={() => setPage('gallery')}>See Our Process →</button>
           </div>
@@ -212,7 +212,7 @@ useEffect(() => {
         <div className="section-header">
           <div className="section-label">The People Behind It</div>
           <h2>Founded by Brothers, Built on Purpose</h2>
-          <p>Aditya and Ramakanth Sarda saw the plastic waste crisis as an opportunity — to build a business that does good while doing well.</p>
+          <p>Aditya and Ramakanth Sarda saw the plastic waste crisis as an opportunity to build a business that does good while doing well.</p>
         </div>
         <div className="founders-quote-grid">
             <div className="founder-quote-card">
@@ -223,7 +223,7 @@ useEffect(() => {
           </div>
           <div className="founder-quote-card">
             <div className="fq-avatar"><img src="/images/team-ramakant.webp" alt="Ramakanth Sarda" /></div>
-            <blockquote>"We started in 2013 with one clear mission — convert plastic waste into reusable products. Every bag we make is a step towards a cleaner India."</blockquote>
+            <blockquote>"We started in 2013 with one clear mission: convert plastic waste into reusable products. Every bag we make is a step towards a cleaner India."</blockquote>
             <div className="fq-name">Ramakanth Sarda</div>
             <div className="fq-role">Co-Founder &amp; Managing Director</div>
           </div>
@@ -342,7 +342,7 @@ useEffect(() => {
       <section className="about-page-cta">
         <div className="section-label" style={{ color: 'var(--accent)' }}>Join the Journey</div>
         <h2>Be Part of a Greener Future</h2>
-        <p>Whether you're a bulk buyer, a distributor, or an investor — we'd love to have you on board.</p>
+        <p>Whether you're a bulk buyer, a distributor, or an investor, we'd love to have you on board.</p>
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
           <button className="btn-primary" style={{ background: '#fff', color: 'var(--green)' }} onClick={openQuote}>Get a Quote</button>
           <button className="btn-outline" style={{ borderColor: '#fff', color: '#fff' }} onClick={() => setPage('gallery')}>View Our Factory</button>

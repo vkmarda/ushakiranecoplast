@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 
@@ -13,7 +13,7 @@ const processSteps = [
   { step: '08', title: 'Final Inspection & Quality Check', desc: 'Every batch undergoes a final quality inspection before it is cleared for packaging.', img: '/images/gallery/step10.webp' },
   { step: '09', title: 'Packaging', desc: 'Products packed neatly in rolls, flat packs or bulk bags as per customer requirements.', img: '/images/gallery/step8.webp' },
   { step: '10', title: 'Stacking Up', desc: 'Packaged products are stacked up in facility', img: '/images/gallery/step11.webp' },
-  { step: '11', title: 'Dispatch', desc: 'Pan-India delivery from our Hyderabad facility — reliable, on time, every time.', img: '/images/gallery/step12.webp' },
+  { step: '11', title: 'Dispatch', desc: 'Pan-India delivery from our Hyderabad facility, reliable, on time, every time.', img: '/images/gallery/step12.webp' },
 ]
 
 // const galleryImages = [
@@ -95,7 +95,7 @@ export default function FactoryGallery({ setPage, openQuote }) {
         <div className="gallery-hero-content">
           <div className="section-label" style={{ color: 'rgba(255,255,255,.7)' }}>Inside UKEP</div>
           <h1>Factory &amp; Process</h1>
-          <p>From waste collection to finished product — see how we turn recycled plastic into quality solutions.</p>
+          <p>From waste collection to finished product, see how we turn recycled plastic into quality solutions.</p>
           <button onClick={() => setPage('home')} className="btn-outline" style={{ borderColor: '#fff', color: '#fff' }}>← Back to Home</button>
         </div>
       </div>
@@ -159,7 +159,7 @@ export default function FactoryGallery({ setPage, openQuote }) {
             <p className="lightbox-caption">
               {lightbox >= 100
                 ? galleryImages[lightbox - 100].caption
-                : `Step ${processSteps[lightbox].step} — ${processSteps[lightbox].title}`}
+                : `Step ${processSteps[lightbox].step}, ${processSteps[lightbox].title}`}
             </p>
           </div>
           <button className="lightbox-nav lightbox-prev"

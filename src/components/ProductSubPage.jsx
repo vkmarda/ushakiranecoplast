@@ -1,8 +1,6 @@
-﻿import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useParams, useLocation, Link, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { getSubPageBySlug } from '../data/GarbageBagSubPages.js'
-import { pageBadges, pageRelated, pageRelatedFull, pageDescriptions, getFactoryImageProps, getFactoryText } from '../data/GarbageBagMeta.js'
 import FactorySection from './FactorySection.jsx'
 import './GarbageBagSubPage.css'
 
@@ -29,14 +27,15 @@ const BADGE_ICONS = {
       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
     </svg>
   ),
-  '5 Cr+ KG Recycled': (
+  'PCB Approved': (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
-      <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
-      <circle cx="12" cy="12" r="3"/>
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <path d="M9 12l2 2 4-4"/>
     </svg>
   ),
 }
+
+const SECTION_LABELS = ['About This Product', 'Specifications', 'About Us']
 
 function FaqItem({ faq, isOpen, onToggle }) {
   return (
@@ -61,13 +60,24 @@ function FaqItem({ faq, isOpen, onToggle }) {
   )
 }
 
-export default function GarbageBagSubPage({ openQuote }) {
+export default function ProductSubPage({
+  openQuote,
+  pages,
+  getFactoryAlt,
+  clusterSlug,
+  clusterName,
+  clusterPath,
+  mainProductUrl,
+  mainProductName,
+}) {
   const { subSlug } = useParams()
   const { pathname } = useLocation()
   const navigate = useNavigate()
   const canonical = pathname.endsWith('/') ? pathname : pathname + '/'
-  const page = getSubPageBySlug(subSlug)
+  const page = pages.find(p => p.slug === subSlug) || null
   const [openFaq, setOpenFaq] = useState(null)
+  const heroRef = useRef(null)
+  const [showStickyCTA, setShowStickyCTA] = useState(false)
 
   useEffect(() => { window.scrollTo({ top: 0 }); setOpenFaq(null) }, [subSlug])
 
@@ -75,23 +85,6 @@ export default function GarbageBagSubPage({ openQuote }) {
     document.body.classList.add('page-with-sticky-breadcrumb')
     return () => document.body.classList.remove('page-with-sticky-breadcrumb')
   }, [])
-
-  if (!page) {
-    return (
-      <div className="gbsp-not-found">
-        <h2>Page not found</h2>
-        <button className="btn-primary" onClick={() => navigate('/products/garbage-bags')}>
-          ← Back to Garbage Bags
-        </button>
-      </div>
-    )
-  }
-
-  const factoryImg = getFactoryImageProps(page.slug)
-  const factoryText = getFactoryText(page.slug)
-  const badges = pageBadges[page.slug] || []
-  const heroRef = useRef(null)
-  const [showStickyCTA, setShowStickyCTA] = useState(false)
 
   useEffect(() => {
     setShowStickyCTA(false)
@@ -104,13 +97,20 @@ export default function GarbageBagSubPage({ openQuote }) {
     obs.observe(hero)
     return () => obs.disconnect()
   }, [subSlug])
-  const relatedFull = pageRelatedFull ? pageRelatedFull[page.slug] : null
-  const related = relatedFull || (pageRelated[page.slug] || [])
-    .map(slug => {
-      const rPage = getSubPageBySlug(slug)
-      return rPage ? { url: `/products/garbage-bags/${slug}/`, title: rPage.h1, desc: pageDescriptions[slug] || '' } : null
-    })
-    .filter(Boolean)
+
+  if (!page) {
+    return (
+      <div className="gbsp-not-found">
+        <h2>Page not found</h2>
+        <button className="btn-primary" onClick={() => navigate(clusterPath)}>
+          {'←'} Back to {clusterName}
+        </button>
+      </div>
+    )
+  }
+
+  const factoryImgSrc = `/images/factory/${page.factoryImg}`
+  const factoryImgAlt = getFactoryAlt(page.factoryImg)
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -118,9 +118,9 @@ export default function GarbageBagSubPage({ openQuote }) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
       { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
-      { '@type': 'ListItem', position: 3, name: 'Garbage Bags', item: 'https://ushakiranecoplast.com/products/garbage-bags' },
-      { '@type': 'ListItem', position: 4, name: page.h1, item: `https://ushakiranecoplast.com/products/garbage-bags/${page.slug}` }
-    ]
+      { '@type': 'ListItem', position: 3, name: clusterName, item: `https://ushakiranecoplast.com${clusterPath}` },
+      { '@type': 'ListItem', position: 4, name: page.h1, item: `https://ushakiranecoplast.com${clusterPath}/${page.slug}` },
+    ],
   }
 
   const faqSchema = {
@@ -129,8 +129,8 @@ export default function GarbageBagSubPage({ openQuote }) {
     mainEntity: page.faqs.map(f => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a }
-    }))
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   }
 
   return (
@@ -141,7 +141,7 @@ export default function GarbageBagSubPage({ openQuote }) {
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta property="og:title" content={page.seoTitle} />
         <meta property="og:description" content={page.seoMeta} />
-        <meta property="og:url" content={`https://ushakiranecoplast.com/products/garbage-bags/${page.slug}`} />
+        <meta property="og:url" content={`https://ushakiranecoplast.com${clusterPath}/${page.slug}`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
         <meta name="twitter:card" content="summary" />
@@ -158,7 +158,7 @@ export default function GarbageBagSubPage({ openQuote }) {
         <span className="gbsp-bc-sep">›</span>
         <Link to="/products">Products</Link>
         <span className="gbsp-bc-sep">›</span>
-        <Link to="/products/garbage-bags">Garbage Bags</Link>
+        <Link to={clusterPath}>{clusterName}</Link>
         <span className="gbsp-bc-sep">›</span>
         <span>{page.h1}</span>
       </nav>
@@ -167,11 +167,11 @@ export default function GarbageBagSubPage({ openQuote }) {
       <section className="gbsp-hero" ref={heroRef}>
         <div className="gbsp-hero-inner">
           <div className="gbsp-hero-text">
-            <div className="section-label">Recycled LDPE · ISO Certified · Pan-India Supply</div>
+            <div className="section-label">ISO Certified · Pan-India Supply · Made in Hyderabad</div>
             <h1>{page.h1}</h1>
-            {badges.length > 0 && (
+            {page.badges && page.badges.length > 0 && (
               <div className="gbsp-trust-pills">
-                {badges.map((badge, i) => (
+                {page.badges.map((badge, i) => (
                   <span key={i} className="gbsp-trust-pill">
                     {BADGE_ICONS[badge]}
                     {badge}
@@ -182,18 +182,11 @@ export default function GarbageBagSubPage({ openQuote }) {
             <p className="gbsp-intro">{page.intro}</p>
             <p className="gbsp-intro-link">
               View our full range on the{' '}
-              <Link to="/products/recycled-garbage-bags-hyderabad/">recycled garbage bags product page</Link>.
+              <Link to={mainProductUrl}>{mainProductName}</Link>.
             </p>
-            {page.linkToRolls && (
-              <p className="gbsp-intro-link">
-                We also manufacture{' '}
-                <Link to="/products/plastic-bags-on-rolls-manufacturer/">bags on rolls</Link>{' '}
-                for housekeeping trolleys and retail operations.
-              </p>
-            )}
             <div className="gbsp-hero-btns">
               <button className="btn-primary" onClick={openQuote}>Get a Quote →</button>
-              <Link to="/products/recycled-garbage-bags-hyderabad/" className="btn-outline">View More Details</Link>
+              <Link to={mainProductUrl} className="btn-outline">View More Details</Link>
             </div>
           </div>
           {page.heroImg && (
@@ -204,77 +197,31 @@ export default function GarbageBagSubPage({ openQuote }) {
         </div>
       </section>
 
-      {/* FACTORY SECTION, immediately after hero */}
-      {factoryImg && (
-        <FactorySection
-          imageSrc={factoryImg.src}
-          imageAlt={factoryImg.alt}
-          heading={factoryText.heading}
-          body={factoryText.body}
-        />
-      )}
+      {/* FACTORY SECTION */}
+      <FactorySection
+        imageSrc={factoryImgSrc}
+        imageAlt={factoryImgAlt}
+        heading={page.factoryHeading}
+        body={page.factoryBody}
+      />
 
-      {/* NEEDS SECTION */}
-      <section className="gbsp-needs">
-        <div className="gbsp-needs-inner">
-          <div className="section-label">Buyer Requirements</div>
-          <h2>{page.needsHeading}</h2>
-          <p>{page.needsBody}</p>
-        </div>
-      </section>
-
-      {/* MID SECTION */}
-      {page.midSection && (
-        <section className="gbsp-mid">
-          <div className="gbsp-mid-inner">
-            <div className="section-label">{page.midSection.label || 'Details'}</div>
-            <h2>{page.midSection.heading}</h2>
-            <p>{page.midSection.body}</p>
+      {/* CONTENT SECTIONS */}
+      {page.sections.map((section, idx) => (
+        <section
+          key={idx}
+          className={idx === 1 ? 'gbsp-mid' : idx === 0 ? 'gbsp-needs' : 'gbsp-why'}
+        >
+          <div className={idx === 1 ? 'gbsp-mid-inner' : idx === 0 ? 'gbsp-needs-inner' : 'gbsp-why-inner'}>
+            <div className="section-label">{SECTION_LABELS[idx]}</div>
+            <h2>{section.heading}</h2>
+            {idx === 2 ? (
+              <p dangerouslySetInnerHTML={{ __html: section.body }} />
+            ) : (
+              <p>{section.body}</p>
+            )}
           </div>
         </section>
-      )}
-
-      {/* WHY UKEP SECTION */}
-      <section className="gbsp-why">
-        <div className="gbsp-why-inner">
-          <div className="section-label">About Us</div>
-          <h2>{page.whyHeading}</h2>
-          <p>{page.whyBody}</p>
-          <p className="gbsp-why-link">
-            See full product specifications on our{' '}
-            <Link to="/products/recycled-garbage-bags-hyderabad/">recycled garbage bags page</Link>.
-          </p>
-        </div>
-      </section>
-
-      {/* SECONDARY PRODUCT CARD */}
-      {page.secondaryCard && (
-        <section className="gbsp-also">
-          <div className="gbsp-also-inner">
-            <div className="gbsp-also-card">
-              <div className="gbsp-also-img">
-                <img src={page.secondaryCard.img} alt={page.secondaryCard.imgAlt} loading="lazy" />
-              </div>
-              <div className="gbsp-also-body">
-                <div className="section-label">Also Available</div>
-                <h3>{page.secondaryCard.name}</h3>
-                <Link to={page.secondaryCard.link} className="btn-primary">View Product →</Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* EXTRA SECTION (page 13 only) */}
-      {page.extraSection && (
-        <section className="gbsp-extra">
-          <div className="gbsp-extra-inner">
-            <div className="section-label">Product Range</div>
-            <h2>{page.extraSection.heading}</h2>
-            <p>{page.extraSection.body}</p>
-          </div>
-        </section>
-      )}
+      ))}
 
       {/* FAQS */}
       <section className="gbsp-faqs">
@@ -295,12 +242,12 @@ export default function GarbageBagSubPage({ openQuote }) {
       </section>
 
       {/* RELATED PAGES */}
-      {related.length > 0 && (
+      {page.related && page.related.length > 0 && (
         <section className="gbsp-related">
           <div className="gbsp-related-inner">
             <h2>You might also find these useful</h2>
             <div className="gbsp-related-cards">
-              {related.map((r, i) => (
+              {page.related.map((r, i) => (
                 <a key={i} href={r.url} className="gbsp-related-card">
                   <div className="gbsp-related-card-body">
                     <div className="gbsp-related-title">{r.title}</div>
@@ -321,13 +268,12 @@ export default function GarbageBagSubPage({ openQuote }) {
             <div className="section-label" style={{ color: 'var(--accent)' }}>
               ISO Certified · Pan-India Supply · Made in Hyderabad
             </div>
-            <h2>Ready to order garbage bags?</h2>
+            <h2>Ready to place an order?</h2>
             <p>
-              We manufacture to your exact specification, size, colour and quantity.
-              Delivery across Telangana, Andhra Pradesh and pan-India from our Hyderabad facility.
+              We manufacture to your exact specification. Delivery across Telangana, Andhra Pradesh and pan-India from our Hyderabad facility.
               View our full{' '}
-              <Link to="/products/recycled-garbage-bags-hyderabad/" className="gbsp-cta-inline-link">
-                recycled garbage bags range
+              <Link to={mainProductUrl} className="gbsp-cta-inline-link">
+                {mainProductName}
               </Link>{' '}
               or contact us directly.
             </p>
@@ -345,7 +291,7 @@ export default function GarbageBagSubPage({ openQuote }) {
         </div>
       </section>
 
-      {/* STICKY PHONE CTA, mobile only, shown after hero scrolls out of view */}
+      {/* STICKY PHONE CTA */}
       <div className={`gbsp-sticky-cta${showStickyCTA ? ' visible' : ''}`}>
         <a href="tel:+919885134991" className="gbsp-sticky-cta-link">
           Call to order: +91 98851 34991

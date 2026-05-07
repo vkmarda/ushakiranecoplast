@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 
 const products = ['Garbage Bags', 'Bio-Medical Bags', 'Bags on Rolls', 'LDPE Sheets & Film', 'Other']
 
@@ -73,7 +73,7 @@ export default function QuoteWidget({ isOpen, onClose }) {
           </div>
         ) : (
           <form className="qw-form" onSubmit={handleSubmit}>
-            {/* Honeypot — hidden from humans, bots fill it */}
+            {/* Honeypot, hidden from humans, bots fill it */}
             <input name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
 
             <div className="qw-row">

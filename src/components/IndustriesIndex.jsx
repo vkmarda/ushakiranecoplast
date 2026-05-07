@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from 'react-router-dom'
+﻿import { useNavigate, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { industries } from '../data/industries'
 import './IndustriesIndex.css'
@@ -22,7 +22,7 @@ export default function IndustriesIndex() {
         <div className="ii-hero-content">
           <div className="section-label" style={{ color: 'var(--accent)' }}>ISO Certified · Hyderabad</div>
           <h1>Industries We Serve</h1>
-          <p>From hospitals and hotels to farms and factories — our recycled LDPE products solve waste management and packaging challenges across India's key industries.</p>
+          <p>From hospitals and hotels to farms and factories, our recycled LDPE products solve waste management and packaging challenges across India's key industries.</p>
         </div>
       </div>
 

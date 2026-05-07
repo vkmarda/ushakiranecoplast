@@ -1,4 +1,4 @@
-// Metadata for garbage bag sub-pages: badges, related slugs, and link descriptions.
+﻿// Metadata for garbage bag sub-pages: badges, related slugs, and link descriptions.
 // Kept separate so the main data file stays clean.
 
 export const pageBadges = {
@@ -33,6 +33,24 @@ export const pageBadges = {
   'garbage-bags-chennai':                     ['ISO 9001:2015 Certified', 'Pan-India Supply'],
   'garbage-bags-south-india':                 ['ISO 9001:2015 Certified', 'Pan-India Supply'],
   'garbage-bags-mumbai':                      ['ISO 9001:2015 Certified', 'Pan-India Supply'],
+  // Tier 1 keyword pages
+  'plain-garbage-bags-manufacturer':          ['ISO 9001:2015 Certified', '100% Recycled LDPE'],
+  // Tier 2 keyword pages
+  'polythene-bags-manufacturer':              ['12+ Years in Operation', 'ISO 9001:2015 Certified'],
+  'garbage-covers-manufacturer':              ['12+ Years in Operation', '100% Recycled LDPE'],
+  'kitchen-garbage-bags-manufacturer':        ['ISO 9001:2015 Certified', '100% Recycled LDPE'],
+  'large-garbage-bags-manufacturer':          ['ISO 9001:2015 Certified', '12+ Years in Operation'],
+  'jumbo-garbage-bags-manufacturer':          ['ISO 9001:2015 Certified', '100% Recycled LDPE'],
+  'eco-friendly-garbage-bags-manufacturer':   ['5 Cr+ KG Recycled', 'ISO 9001:2015 Certified'],
+  'compostable-garbage-bags-manufacturer':    ['5 Cr+ KG Recycled', '100% Recycled LDPE'],
+  'hospital-usage-garbage-bags-manufacturer': ['PCB Approved', 'ISO 9001:2015 Certified'],
+  'disposable-garbage-bags-manufacturer':     ['ISO 9001:2015 Certified', 'Pan-India Supply'],
+  'plastic-garbage-bags-manufacturer':        ['12+ Years in Operation', 'ISO 9001:2015 Certified'],
+  'hdpe-garbage-bags-manufacturer':           ['ISO 9001:2015 Certified', '12+ Years in Operation'],
+  'heavy-duty-garbage-bags-manufacturer':     ['ISO 9001:2015 Certified', '100% Recycled LDPE'],
+  'dustbin-covers-manufacturer':              ['12+ Years in Operation', '100% Recycled LDPE'],
+  'biodegradable-garbage-bags-manufacturer':  ['5 Cr+ KG Recycled', '100% Recycled LDPE'],
+  'household-garbage-bags-manufacturer':      ['100% Recycled LDPE', '12+ Years in Operation'],
 }
 
 // One-line descriptions used on related-page cards
@@ -64,6 +82,24 @@ export const pageDescriptions = {
   'garbage-bags-south-india':                 'Pan-South India supply from Hyderabad to all five states.',
   'garbage-bags-secunderabad':                'Same-day and next-day delivery across Secunderabad and the twin cities.',
   'garbage-bags-mumbai':                      'Reliable bulk supply to Mumbai from Hyderabad, 2–3 business days.',
+  // Tier 1 keyword pages
+  'plain-garbage-bags-manufacturer':          'Standard black LDPE bags for general waste in offices, hotels and factories.',
+  // Tier 2 keyword pages
+  'polythene-bags-manufacturer':              'Full LDPE polythene bag range from a Hyderabad manufacturer, 12 years in operation.',
+  'garbage-covers-manufacturer':              'Local Hyderabad manufacturer of garbage covers for household and commercial use.',
+  'kitchen-garbage-bags-manufacturer':        'Star seal heavy duty bags for commercial kitchens and food service operations.',
+  'large-garbage-bags-manufacturer':          'Custom large format bags for industrial bins, skip liners and event waste.',
+  'jumbo-garbage-bags-manufacturer':          'Extra large bags for hotel banquets, outdoor events and industrial waste streams.',
+  'eco-friendly-garbage-bags-manufacturer':   'Verified recycled LDPE bags with ESG documentation for pan-India corporate buyers.',
+  'compostable-garbage-bags-manufacturer':    'Honest guide: why recycled LDPE is the better sustainable choice in India.',
+  'hospital-usage-garbage-bags-manufacturer': 'General and BMWM compliant biomedical bags from one PCB approved manufacturer.',
+  'disposable-garbage-bags-manufacturer':     'Single-use LDPE bags for hospitals, hotels and high-frequency disposal.',
+  'plastic-garbage-bags-manufacturer':        'Full range of plastic garbage bags from a direct manufacturer in Hyderabad.',
+  'hdpe-garbage-bags-manufacturer':           'High density polyethylene bags for industrial and construction applications.',
+  'heavy-duty-garbage-bags-manufacturer':     'Star seal, thick gauge bags for kitchen waste, construction and heavy industrial use.',
+  'dustbin-covers-manufacturer':              'LDPE covers for household, office and commercial dustbins in Hyderabad.',
+  'biodegradable-garbage-bags-manufacturer':  '100% recycled LDPE bags, the practical sustainable choice for Indian businesses.',
+  'household-garbage-bags-manufacturer':      'Recycled LDPE bags for household bins in small, medium and large sizes.',
 }
 
 // Factory section image assignments
@@ -111,6 +147,24 @@ const pageFactoryFilename = {
   'garbage-bags-south-india':                 'dispatch-truck-team.PNG',
   'garbage-bags-secunderabad':                'factory-floor-wide.PNG',
   'garbage-bags-mumbai':                      'dispatch-truck-team.PNG',
+  // Tier 1 keyword pages
+  'plain-garbage-bags-manufacturer':          'black-bags-finished.PNG',
+  // Tier 2 keyword pages
+  'polythene-bags-manufacturer':              'ldpe-rolls-factory.PNG',
+  'garbage-covers-manufacturer':              'factory-floor-wide.PNG',
+  'kitchen-garbage-bags-manufacturer':        'bags-packing-dispatch.PNG',
+  'large-garbage-bags-manufacturer':          'warehouse-inventory.PNG',
+  'jumbo-garbage-bags-manufacturer':          'warehouse-inventory.PNG',
+  'eco-friendly-garbage-bags-manufacturer':   'green-bags-production.PNG',
+  'compostable-garbage-bags-manufacturer':    'green-bags-production.PNG',
+  'hospital-usage-garbage-bags-manufacturer': 'workers-folding-red-bags.PNG',
+  'disposable-garbage-bags-manufacturer':     'bags-packing-dispatch.PNG',
+  'plastic-garbage-bags-manufacturer':        'factory-floor-wide.PNG',
+  'hdpe-garbage-bags-manufacturer':           'black-film-machine.PNG',
+  'heavy-duty-garbage-bags-manufacturer':     'warehouse-inventory.PNG',
+  'dustbin-covers-manufacturer':              'black-bags-finished.PNG',
+  'biodegradable-garbage-bags-manufacturer':  'green-bags-production.PNG',
+  'household-garbage-bags-manufacturer':      'black-bags-finished.PNG',
 }
 
 export function getFactoryImageProps(slug) {
@@ -161,7 +215,7 @@ const FACTORY_TEXT = {
   },
   healthcare: {
     heading: 'Colour-coded bags manufactured to BMWM compliance',
-    body: 'Every yellow, red and blue bag leaving our facility meets BMWM 2016 requirements. Healthcare buyers trust us because we control the colour, the material and the print — not a third party.',
+    body: 'Every yellow, red and blue bag leaving our facility meets BMWM 2016 requirements. Healthcare buyers trust us because we control the colour, the material and the print, not a third party.',
   },
   heavyIndustry: {
     heading: 'Heavy volume orders handled without disruption',
@@ -215,6 +269,160 @@ const slugFactoryCategory = {
   'garbage-bags-secunderabad':                'localGeo',
 }
 
+// Per-slug factory text overrides for T1 keyword pages
+const FACTORY_TEXT_SLUG = {
+  'plain-garbage-bags-manufacturer': {
+    heading: 'Plain bags. Consistent quality. Every batch.',
+    body: 'Our IDA Mankhal facility has manufactured plain black LDPE bags for 12 years. Batch consistency matters when you reorder regularly. What you approve in the sample is what arrives on every subsequent order.',
+  },
+  'disposable-garbage-bags-manufacturer': {
+    heading: 'Packed for dispatch. Ready for your operation.',
+    body: 'Packed, labelled and dispatched from our Hyderabad facility. Hotels and hospitals that change bags multiple times daily need consistent spec on every shipment. That is what we deliver.',
+  },
+  'plastic-garbage-bags-manufacturer': {
+    heading: 'Made here. Supplied pan-India.',
+    body: '12 years of manufacturing from our Hyderabad facility means the full range, including plain, coloured, printed and rolls, is available from one source with one quality standard applied to every batch.',
+  },
+  'hdpe-garbage-bags-manufacturer': {
+    heading: 'High density. High strength. Consistent output.',
+    body: 'Our extrusion lines process both HDPE and LDPE at controlled temperatures for consistent output. Same facility, same quality management system. Both materials available on one order.',
+  },
+  'heavy-duty-garbage-bags-manufacturer': {
+    heading: 'Built for loads that standard bags cannot handle.',
+    body: 'Star seal construction and controlled film processing at IDA Mankhal means our heavy duty bags hold their spec across every batch. Seal strength is verified before dispatch on all heavy duty specifications.',
+  },
+  'dustbin-covers-manufacturer': {
+    heading: 'Covers that fit. Every time.',
+    body: '12 years making dustbin covers for Hyderabad retail, hotel and commercial buyers. Our IDA Mankhal facility is local. Hyderabad buyers get faster turnaround than any out-of-city supplier.',
+  },
+  'biodegradable-garbage-bags-manufacturer': {
+    heading: 'Sustainable bags. Verified recycled content.',
+    body: '5 crore kilograms of plastic waste recycled since 2013. Material certificates confirming recycled content are available for every order, the documentation your ESG and sustainability reporting needs.',
+  },
+  'household-garbage-bags-manufacturer': {
+    heading: 'The bag your home needs. Made responsibly.',
+    body: 'The same manufacturing quality that supplies hotels and hospitals in bulk is now available in household sizes. Made in Hyderabad from 100% recycled LDPE, sized for the bins Indian households actually use.',
+  },
+  // Tier 2 overrides
+  'polythene-bags-manufacturer': {
+    heading: 'Full range. One manufacturer. One quality standard.',
+    body: 'Garbage bags, bin liners, bags on rolls, packaging bags, LDPE covers. All made at our IDA Mankhal Hyderabad facility from 100% recycled LDPE under ISO 9001:2015. One manufacturer, one quality standard, across the full polythene bag range.',
+  },
+  'garbage-covers-manufacturer': {
+    heading: 'Made in Hyderabad. Delivered across South India.',
+    body: 'Our IDA Mankhal facility has supplied garbage covers to Hyderabad, Secunderabad, Telangana and South India buyers for 12 years. Local manufacturer proximity means faster turnaround and lower freight costs than out-of-city suppliers.',
+  },
+  'kitchen-garbage-bags-manufacturer': {
+    heading: 'Star seal construction. Ready for kitchen conditions.',
+    body: 'Every kitchen garbage bag leaves our facility with star seal base construction tested for wet-waste loads. Hotel kitchens and restaurant F&B operations across Hyderabad reorder from us because the spec holds across every batch.',
+  },
+  'large-garbage-bags-manufacturer': {
+    heading: 'Any size. Any dimension. Built to your bin.',
+    body: 'No standard size constraint at our Hyderabad facility. Industrial buyers share their bin dimensions and we produce large format bags to fit. Star seal construction standard on all large format orders.',
+  },
+  'jumbo-garbage-bags-manufacturer': {
+    heading: 'Maximum capacity. Consistent quality. Every batch.',
+    body: 'Jumbo format bags are a regular production item at our IDA Mankhal facility. Hotel banquet buyers and event management companies know that what arrives in batch five matches what was approved in the sample.',
+  },
+  'eco-friendly-garbage-bags-manufacturer': {
+    heading: 'Verified recycled content. Documented for ESG.',
+    body: '5 crore kilograms of plastic recycled since 2013. Material certificates confirming 100% recycled LDPE content are available for every order, in the format your ESG, LEED or BRSR reporting requires.',
+  },
+  'compostable-garbage-bags-manufacturer': {
+    heading: 'Recycled. Verified. The sustainable choice for India.',
+    body: 'Recycled LDPE delivers a verifiable environmental benefit within India\'s actual waste infrastructure. Our material certificates confirm the recycled content. The documentation is there when your ESG reporting needs it.',
+  },
+  'hospital-usage-garbage-bags-manufacturer': {
+    heading: 'PCB approved. ISO certified. Ready for hospital audits.',
+    body: 'Both general and biomedical bags manufactured here at IDA Mankhal. PCB approval and ISO certification cover the full range. Documentation ready for NABH accreditation and PCB audit requirements.',
+  },
+}
+
 export function getFactoryText(slug) {
-  return FACTORY_TEXT[slugFactoryCategory[slug]] || FACTORY_TEXT.product
+  return FACTORY_TEXT_SLUG[slug] || FACTORY_TEXT[slugFactoryCategory[slug]] || FACTORY_TEXT.product
+}
+
+// Full related links for T1 keyword pages, supports blog URLs and cross-cluster links
+export const pageRelatedFull = {
+  'plain-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/black-garbage-bags-hyderabad/', title: 'Black Garbage Bags Hyderabad', desc: 'Looking for plain black bags specifically?' },
+    { url: '/products/garbage-bags/garbage-bags-wholesale-hyderabad/', title: 'Garbage Bags Wholesale Hyderabad', desc: 'Buying plain bags in bulk?' },
+    { url: '/blog/dustbin-bags-bin-liners-trash-bags-are-they-all-the-same/', title: 'Dustbin Bags, Bin Liners, Trash Bags', desc: 'Understanding garbage bag terminology' },
+  ],
+  'disposable-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/hospital-garbage-bags-hyderabad/', title: 'Hospital Garbage Bags Hyderabad', desc: 'Disposable bags for hospitals' },
+    { url: '/products/garbage-bags/hotel-garbage-bags-hyderabad/', title: 'Hotel Garbage Bags Hyderabad', desc: 'Disposable bags for hotels' },
+    { url: '/blog/dustbin-bags-bin-liners-trash-bags-are-they-all-the-same/', title: 'Dustbin Bags, Bin Liners, Trash Bags', desc: 'Bag terminology explained' },
+  ],
+  'plastic-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/plastic-bags-manufacturer-hyderabad/', title: 'Plastic Bags Manufacturer Hyderabad', desc: 'Hyderabad-specific manufacturer page' },
+    { url: '/products/garbage-bags/garbage-bags-wholesale-hyderabad/', title: 'Garbage Bags Wholesale Hyderabad', desc: 'Bulk and wholesale supply' },
+    { url: '/blog/recycled-plastic-bags-vs-virgin-plastic-bags-why-recycled-is-the-smarter-choice/', title: 'Recycled vs Virgin Plastic Bags', desc: 'Recycled vs virgin comparison' },
+  ],
+  'hdpe-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/industrial-garbage-bags-hyderabad/', title: 'Industrial Garbage Bags Hyderabad', desc: 'Industrial garbage bags Hyderabad' },
+    { url: '/products/garbage-bags/heavy-duty-garbage-bags-manufacturer/', title: 'Heavy Duty Garbage Bags Manufacturer', desc: 'Heavy duty bags for demanding applications' },
+    { url: '/products/garbage-bags/black-garbage-bags-hyderabad/', title: 'Black Garbage Bags Hyderabad', desc: 'Standard black garbage bags' },
+  ],
+  'heavy-duty-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/industrial-garbage-bags-hyderabad/', title: 'Industrial Garbage Bags Hyderabad', desc: 'Industrial applications' },
+    { url: '/products/garbage-bags/construction-garbage-bags-hyderabad/', title: 'Construction Garbage Bags Hyderabad', desc: 'Construction site bags' },
+    { url: '/products/garbage-bags/black-garbage-bags-hyderabad/', title: 'Black Garbage Bags Hyderabad', desc: 'Standard black bags' },
+  ],
+  'dustbin-covers-manufacturer': [
+    { url: '/products/garbage-bags/dustbin-bags-hyderabad/', title: 'Dustbin Bags Hyderabad', desc: 'Dustbin bags Hyderabad' },
+    { url: '/products/garbage-bags/garbage-bags-telangana/', title: 'Garbage Bags Telangana', desc: 'Supply across Telangana' },
+    { url: '/blog/dustbin-bags-bin-liners-trash-bags-are-they-all-the-same/', title: 'Dustbin Bags, Bin Liners, Trash Bags', desc: 'Terminology guide' },
+  ],
+  'biodegradable-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/eco-friendly-garbage-bags-hyderabad/', title: 'Eco-Friendly Garbage Bags Hyderabad', desc: 'Eco-friendly bags Hyderabad' },
+    { url: '/products/garbage-bags/coloured-garbage-bags-india/', title: 'Coloured Garbage Bags India', desc: 'Coloured bags for waste segregation' },
+    { url: '/blog/compostable-vs-recycled-garbage-bags-which-is-the-right-choice-for-indian-businesses/', title: 'Compostable vs Recycled Garbage Bags', desc: 'Compostable vs recycled comparison' },
+  ],
+  'household-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/dustbin-bags-hyderabad/', title: 'Dustbin Bags Hyderabad', desc: 'Dustbin bags for household use' },
+    { url: '/products/garbage-bags/garbage-bags-wholesale-hyderabad/', title: 'Garbage Bags Wholesale Hyderabad', desc: 'Wholesale supply for distributors' },
+    { url: '/blog/compostable-vs-recycled-garbage-bags-which-is-the-right-choice-for-indian-businesses/', title: 'Compostable vs Recycled Garbage Bags', desc: 'Sustainable household bags guide' },
+  ],
+  // Tier 2 related links
+  'polythene-bags-manufacturer': [
+    { url: '/products/garbage-bags/plastic-bags-manufacturer-hyderabad/', title: 'Plastic Bags Manufacturer Hyderabad', desc: 'Plastic bags manufacturer Hyderabad' },
+    { url: '/products/garbage-bags/dustbin-bags-hyderabad/', title: 'Dustbin Bags Hyderabad', desc: 'Dustbin bags in Hyderabad' },
+    { url: '/products/garbage-bags/garbage-bags-wholesale-hyderabad/', title: 'Garbage Bags Wholesale Hyderabad', desc: 'Wholesale polythene bags' },
+  ],
+  'garbage-covers-manufacturer': [
+    { url: '/products/garbage-bags/dustbin-covers-manufacturer/', title: 'Dustbin Covers Manufacturer', desc: 'Dustbin covers manufacturer Hyderabad' },
+    { url: '/products/garbage-bags/dustbin-bags-hyderabad/', title: 'Dustbin Bags Hyderabad', desc: 'Dustbin bags Hyderabad' },
+    { url: '/products/garbage-bags/garbage-bags-telangana/', title: 'Garbage Bags Telangana', desc: 'Supply across Telangana' },
+  ],
+  'kitchen-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/heavy-duty-garbage-bags-manufacturer/', title: 'Heavy Duty Garbage Bags Manufacturer', desc: 'Heavy duty bags for kitchens' },
+    { url: '/products/garbage-bags/hotel-garbage-bags-hyderabad/', title: 'Hotel Garbage Bags Hyderabad', desc: 'Hotel kitchen bags' },
+    { url: '/products/garbage-bags/restaurant-garbage-bags-hyderabad/', title: 'Restaurant Garbage Bags Hyderabad', desc: 'Restaurant bags' },
+  ],
+  'large-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/heavy-duty-garbage-bags-manufacturer/', title: 'Heavy Duty Garbage Bags Manufacturer', desc: 'Heavy duty large bags' },
+    { url: '/products/garbage-bags/industrial-garbage-bags-hyderabad/', title: 'Industrial Garbage Bags Hyderabad', desc: 'Industrial bin bags' },
+    { url: '/products/garbage-bags/jumbo-garbage-bags-manufacturer/', title: 'Jumbo Garbage Bags Manufacturer', desc: 'Jumbo bags for maximum capacity' },
+  ],
+  'jumbo-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/large-garbage-bags-manufacturer/', title: 'Large Garbage Bags Manufacturer', desc: 'Large garbage bags' },
+    { url: '/products/garbage-bags/heavy-duty-garbage-bags-manufacturer/', title: 'Heavy Duty Garbage Bags Manufacturer', desc: 'Heavy duty bags' },
+    { url: '/products/garbage-bags/hotel-garbage-bags-hyderabad/', title: 'Hotel Garbage Bags Hyderabad', desc: 'Hotel banquet waste bags' },
+  ],
+  'eco-friendly-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/biodegradable-garbage-bags-manufacturer/', title: 'Biodegradable Garbage Bags Manufacturer', desc: 'Biodegradable bags India' },
+    { url: '/products/garbage-bags/eco-friendly-garbage-bags-hyderabad/', title: 'Eco-Friendly Garbage Bags Hyderabad', desc: 'Eco-friendly bags Hyderabad' },
+    { url: '/blog/compostable-vs-recycled-garbage-bags-which-is-the-right-choice-for-indian-businesses/', title: 'Compostable vs Recycled Garbage Bags', desc: 'Sustainable bags guide' },
+  ],
+  'compostable-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/biodegradable-garbage-bags-manufacturer/', title: 'Biodegradable Garbage Bags Manufacturer', desc: 'Biodegradable bags India' },
+    { url: '/products/garbage-bags/eco-friendly-garbage-bags-manufacturer/', title: 'Eco-Friendly Garbage Bags Manufacturer', desc: 'Eco-friendly bags manufacturer' },
+    { url: '/blog/compostable-vs-recycled-garbage-bags-which-is-the-right-choice-for-indian-businesses/', title: 'Compostable vs Recycled Garbage Bags', desc: 'Compostable vs recycled comparison' },
+  ],
+  'hospital-usage-garbage-bags-manufacturer': [
+    { url: '/products/garbage-bags/hospital-garbage-bags-hyderabad/', title: 'Hospital Garbage Bags Hyderabad', desc: 'Hospital garbage bags Hyderabad' },
+    { url: '/products/garbage-bags/disposable-garbage-bags-manufacturer/', title: 'Disposable Garbage Bags Manufacturer', desc: 'Disposable bags for healthcare' },
+    { url: '/products/biomedical-bags/', title: 'Biomedical Bags Range', desc: 'Full BMWM compliant biomedical bags range' },
+  ],
 }

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { useParams, useNavigate, useLocation, Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { getProductBySlug, getRelatedProducts } from '../data/Products.js'
@@ -220,7 +220,7 @@ export default function ProductDetail({ openQuote }) {
         >
           <img
             src={product.img}
-            alt={`${product.name} manufacturer Hyderabad — Ushakiran Ecoplast`}
+            alt={`${product.name} manufacturer Hyderabad, Ushakiran Ecoplast`}
             loading="eager"
             width={product.imgWidth}
             height={product.imgHeight}
@@ -236,7 +236,7 @@ export default function ProductDetail({ openQuote }) {
           }}
         >
           <div className="section-label">{product.tagline}</div>
-          <h1>{product.name} — Manufacturer in Hyderabad</h1>
+          <h1>{product.name} Manufacturer in Hyderabad</h1>
           <p className="pd-hero-desc">{product.description}</p>
           <div className="pd-hero-btns">
             <button className="btn-primary" onClick={openQuote}>Get a Quote →</button>
@@ -261,16 +261,17 @@ export default function ProductDetail({ openQuote }) {
             </div>
           </div>
           <div className="pd-specs-right">
-            <div className="section-label">Industries Served</div>
-            <h2>Industries We Supply {product.name} To</h2>
-            <div className="pd-customers-grid">
-              {product.customers.map(c => (
-                <div className="pd-customer-tag" key={c}>
-                  <span className="pd-customer-dot" />
-                  {c}
-                </div>
-              ))}
-            </div>
+            {product.factoryImg && (
+              <div className="pd-specs-factory">
+                <div className="pd-specs-factory-label">From our Hyderabad facility</div>
+                <img
+                  src={product.factoryImg}
+                  alt={product.factoryImgAlt}
+                  loading="lazy"
+                  className="pd-specs-factory-img"
+                />
+              </div>
+            )}
             <div className="pd-specs-cta">
               <p>Need custom specifications for your industry?</p>
               <button className="btn-primary" onClick={openQuote}>Talk to Our Team →</button>
@@ -284,7 +285,7 @@ export default function ProductDetail({ openQuote }) {
         <section className="pd-long-desc-section">
           <div className="pd-long-desc-inner">
             <div className="section-label">About This Product</div>
-            <h2>{product.name} Manufacturer in Hyderabad — Ushakiran Ecoplast</h2>
+            <h2>{product.name} Manufacturer in Hyderabad | Ushakiran Ecoplast</h2>
             <div
               className="pd-long-desc-body"
               dangerouslySetInnerHTML={{ __html: product.longDescription }}
@@ -342,7 +343,7 @@ export default function ProductDetail({ openQuote }) {
             </div>
             <h2>Ready to order {product.name}?</h2>
             <p>
-              We manufacture to your exact specification — size, thickness, colour and quantity.
+              We manufacture to your exact specification: size, thickness, colour and quantity.
               Delivery across Telangana, Andhra Pradesh and pan-India from our Hyderabad facility.
             </p>
           </div>

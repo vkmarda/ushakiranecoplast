@@ -1,4 +1,4 @@
-/* ── GARBAGE BAG SUB-PAGE ── */
+﻿/* ── GARBAGE BAG SUB-PAGE ── */
 .gbsp-page { background: var(--bg); min-height: 100vh; }
 
 /* Breadcrumb */
@@ -92,7 +92,7 @@
   flex-shrink: 0; transition: transform .3s ease;
 }
 .gbsp-faq-chevron.open { transform: rotate(180deg); }
-/* Answer is always in the DOM for SEO — hidden via height/overflow */
+/* Answer is always in the DOM for SEO, hidden via height/overflow */
 .gbsp-faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
 .gbsp-faq-open .gbsp-faq-answer { max-height: 600px; }
 .gbsp-faq-answer-inner {
@@ -145,7 +145,7 @@
 .gbsp-cta-call-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.6); }
 .gbsp-cta-call-num { display: block; font-size: 15px; font-weight: 700; color: #fff; }
 
-/* Sticky phone CTA — mobile only */
+/* Sticky phone CTA, mobile only */
 .gbsp-sticky-cta {
   display: none;
 }

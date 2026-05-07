@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import './Garbagebagstory.css'
@@ -7,12 +7,12 @@ const stats = [
   { value: '62M', unit: 'tonnes', label: 'of solid waste generated in India every year' },
   { value: '80%', unit: '', label: 'ends up in open dumpsites without proper bagging' },
   { value: '3x', unit: 'faster', label: 'waste collection when garbage bags are used' },
-  { value: '₹0', unit: '', label: 'cost of disease prevention — priceless' },
+  { value: '₹0', unit: '', label: 'cost of disease prevention, priceless' },
 ]
 
 const testimonials = [
   {
-    quote: "Before switching to proper garbage bags, our housekeeping staff had to handle loose waste directly. Infection risks were real. Now every floor has colour-coded bags — it changed everything.",
+    quote: "Before switching to proper garbage bags, our housekeeping staff had to handle loose waste directly. Infection risks were real. Now every floor has colour-coded bags. It changed everything.",
     name: "Facilities Head",
     org: "5-Star Hotel, Hyderabad",
     icon: "🏨",
@@ -20,7 +20,7 @@ const testimonials = [
     tagColor: "#c8873a",
   },
   {
-    quote: "We process clinical waste daily. A torn or substandard bag is not just inconvenient — it's a biohazard. Ushakiran's bags have never failed us in three years of daily use.",
+    quote: "We process clinical waste daily. A torn or substandard bag is not just inconvenient. It's a biohazard. Ushakiran's bags have never failed us in three years of daily use.",
     name: "Procurement Manager",
     org: "Multi-Specialty Hospital, Bengaluru",
     icon: "🏥",
@@ -36,7 +36,7 @@ const testimonials = [
     tagColor: "#2d6a4f",
   },
   {
-    quote: "We supply to 40+ restaurants across the city. Garbage bags are the silent hero — no customer sees them, but without them the kitchen shuts down in an hour.",
+    quote: "We supply to 40+ restaurants across the city. Garbage bags are the silent hero. No customer sees them, but without them the kitchen shuts down in an hour.",
     name: "Operations Manager",
     org: "Food & Beverage Chain, Telangana",
     icon: "🍽️",
@@ -65,7 +65,7 @@ const useCases = [
   {
     icon: "🧹",
     title: "Hygiene",
-    body: "A garbage bag creates a sealed barrier between waste and the environment — preventing odour, leakage and direct contact with harmful pathogens.",
+    body: "A garbage bag creates a sealed barrier between waste and the environment, preventing odour, leakage and direct contact with harmful pathogens.",
   },
   {
     icon: "♻️",
@@ -80,7 +80,7 @@ const useCases = [
   {
     icon: "🌍",
     title: "Environment",
-    body: "When made from recycled LDPE, each bag repurposes plastic that would otherwise reach a landfill or waterway — closing the loop.",
+    body: "When made from recycled LDPE, each bag repurposes plastic that would otherwise reach a landfill or waterway, closing the loop.",
   },
   {
     icon: "⚕️",
@@ -176,7 +176,7 @@ export default function GarbageBagStory({ openQuote, setPage }) {
     <div className="gbs-page">
       <Helmet>
         <title>Why Garbage Bags Matter | Ushakiran Ecoplast</title>
-        <meta name="description" content="Discover why proper garbage bags are essential for hygiene, waste segregation, and environmental responsibility — told through real customer stories." />
+        <meta name="description" content="Discover why proper garbage bags are essential for hygiene, waste segregation, and environmental responsibility, told through real customer stories." />
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta name="robots" content="index, follow" />
       </Helmet>
@@ -196,7 +196,7 @@ export default function GarbageBagStory({ openQuote, setPage }) {
           <div className="gbs-hero-eyebrow">The Unsung Essential</div>
           <h1 className="gbs-hero-h1">
             The bag nobody<br />
-            notices — until<br />
+            notices, until<br />
             <em>it's gone.</em>
           </h1>
           <p className="gbs-hero-sub">
@@ -243,7 +243,7 @@ export default function GarbageBagStory({ openQuote, setPage }) {
         <div className="gbs-section-header">
           <div className="section-label">Real Voices</div>
           <h2>What happens when<br />you get it right</h2>
-          <p>From hospitals to households — customers share what changed when they switched to proper garbage bags.</p>
+          <p>From hospitals to households, customers share what changed when they switched to proper garbage bags.</p>
         </div>
         <div className="gbs-testi-grid">
           {testimonials.map((t, i) => <TestiCard key={i} t={t} index={i} />)}
@@ -255,7 +255,7 @@ export default function GarbageBagStory({ openQuote, setPage }) {
         <div className="gbs-cta-inner">
           <div className="section-label" style={{ color: 'var(--accent)' }}>Made in Hyderabad</div>
           <h2>Ready to get the right bag<br />for your needs?</h2>
-          <p>We manufacture to your exact specifications — size, thickness, colour, quantity. Talk to us.</p>
+          <p>We manufacture to your exact specifications: size, thickness, colour, quantity. Talk to us.</p>
           <div className="gbs-cta-btns">
             <button className="btn-primary" onClick={openQuote}>Request a Quote</button>
             <button className="btn-outline" style={{ borderColor: '#fff', color: '#fff' }} onClick={() => setPage('products')}>View All Products</button>

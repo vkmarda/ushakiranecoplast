@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Navbar from './components/Navbar'
@@ -23,6 +23,11 @@ import ContactModal from './components/ContactModal'
 import IndustriesSection from './components/Industriessection'
 import GarbageBagsIndex from './components/GarbageBagsIndex'
 import GarbageBagSubPage from './components/GarbageBagSubPage'
+import BagsOnRollsIndex from './components/BagsOnRollsIndex'
+import BiomedicalBagsIndex from './components/BiomedicalBagsIndex'
+import ProductSubPage from './components/ProductSubPage'
+import { bagsOnRollsPages, getFactoryAlt as getBagsOnRollsAlt } from './data/BagsOnRollsData.js'
+import { biomedicalBagsPages, getBiomedicalFactoryAlt } from './data/BiomedicalBagsData.js'
 
 const homeFaqSchema = {
   '@context': 'https://schema.org',
@@ -30,9 +35,9 @@ const homeFaqSchema = {
   mainEntity: [
     { '@type': 'Question', name: 'How can I get in touch for inquiries?', acceptedAnswer: { '@type': 'Answer', text: 'Reach us at enquiry@ushakiranecoplast.com or call +91 8919428973. Our team responds within 24-48 hours.' } },
     { '@type': 'Question', name: 'What information do I need to provide for a quote?', acceptedAnswer: { '@type': 'Answer', text: 'Please include the product type, quantity, size, material preferences, and any specific requirements.' } },
-    { '@type': 'Question', name: 'Do you offer customized packaging solutions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — from design to material selection, we tailor every order to your exact specifications.' } },
+    { '@type': 'Question', name: 'Do you offer customized packaging solutions?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, from design to material selection, we tailor every order to your exact specifications.' } },
     { '@type': 'Question', name: 'What is the typical response time?', acceptedAnswer: { '@type': 'Answer', text: 'We respond within 24-48 business hours. For urgent matters, call us directly.' } },
-    { '@type': 'Question', name: 'Where are you located and can I visit?', acceptedAnswer: { '@type': 'Answer', text: 'IDA Mankhal, Maheshwaram, Hyderabad (T.S). Visits welcome — schedule an appointment first.' } },
+    { '@type': 'Question', name: 'Where are you located and can I visit?', acceptedAnswer: { '@type': 'Answer', text: 'IDA Mankhal, Maheshwaram, Hyderabad (T.S). Visits welcome. Please schedule an appointment first.' } },
   ],
 }
 
@@ -87,6 +92,37 @@ function AppInner() {
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/garbage-bags" element={<GarbageBagsIndex openQuote={openQuote} />} />
         <Route path="/products/garbage-bags/:subSlug" element={<GarbageBagSubPage openQuote={openQuote} />} />
+
+        {/* Bags on rolls cluster */}
+        <Route path="/products/bags-on-rolls" element={<BagsOnRollsIndex openQuote={openQuote} />} />
+        <Route path="/products/bags-on-rolls/:subSlug" element={
+          <ProductSubPage
+            openQuote={openQuote}
+            pages={bagsOnRollsPages}
+            getFactoryAlt={getBagsOnRollsAlt}
+            clusterSlug="bags-on-rolls"
+            clusterName="Bags on Rolls"
+            clusterPath="/products/bags-on-rolls"
+            mainProductUrl="/products/plastic-bags-on-rolls-manufacturer/"
+            mainProductName="bags on rolls product page"
+          />
+        } />
+
+        {/* Biomedical bags cluster */}
+        <Route path="/products/biomedical-bags" element={<BiomedicalBagsIndex openQuote={openQuote} />} />
+        <Route path="/products/biomedical-bags/:subSlug" element={
+          <ProductSubPage
+            openQuote={openQuote}
+            pages={biomedicalBagsPages}
+            getFactoryAlt={getBiomedicalFactoryAlt}
+            clusterSlug="biomedical-bags"
+            clusterName="Biomedical Bags"
+            clusterPath="/products/biomedical-bags"
+            mainProductUrl="/products/biomedical-waste-bags-bmwm-compliant/"
+            mainProductName="biomedical waste bags product page"
+          />
+        } />
+
         <Route path="/products/:productSlug" element={<ProductDetail openQuote={openQuote} />} />
 
         {/* Industry routes */}

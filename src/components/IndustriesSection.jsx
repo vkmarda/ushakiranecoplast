@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+﻿import { useNavigate } from 'react-router-dom'
 import { useRef, useState, useEffect } from 'react'
 import { industries } from '../data/industries'
 import './IndustriesSection.css'
@@ -80,7 +80,7 @@ export default function IndustriesSection() {
       <div className="is-header">
         <div className="section-label">Industries We Serve</div>
         <h2>Solutions built for your industry</h2>
-        <p>From hospitals to highways, hotels to farms — our recycled LDPE products are trusted across India's key industries.</p>
+        <p>From hospitals to highways, hotels to farms, our recycled LDPE products are trusted across India's key industries.</p>
       </div>
 
       <div className="is-grid">

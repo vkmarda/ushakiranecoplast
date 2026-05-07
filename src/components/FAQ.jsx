@@ -1,11 +1,11 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 
 const faqs = [
   { q: 'How can I get in touch for inquiries?', a: 'Reach us at enquiry@ushakiranecoplast.com or call +91 8919428973. Our team responds within 24-48 hours.' },
   { q: 'What information do I need to provide for a quote?', a: 'Please include the product type, quantity, size, material preferences, and any specific requirements.' },
-  { q: 'Do you offer customized packaging solutions?', a: 'Yes — from design to material selection, we tailor every order to your exact specifications.' },
+  { q: 'Do you offer customized packaging solutions?', a: 'Yes, from design to material selection, we tailor every order to your exact specifications.' },
   { q: 'What is the typical response time?', a: 'We respond within 24-48 business hours. For urgent matters, call us directly.' },
-  { q: 'Where are you located and can I visit?', a: 'IDA Mankhal, Maheshwaram, Hyderabad (T.S). Visits welcome — schedule an appointment first.' },
+  { q: 'Where are you located and can I visit?', a: 'IDA Mankhal, Maheshwaram, Hyderabad (T.S). Visits welcome. Please schedule an appointment first.' },
 ]
 
 export default function FAQ() {

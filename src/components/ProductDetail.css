@@ -26,16 +26,17 @@
 /* Specs */
 .pd-specs-section { background: var(--green-pale); padding: 80px 60px; }
 .pd-specs-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; max-width: 1200px; margin: 0 auto; align-items: start; }
-.pd-specs-left h2, .pd-specs-right h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--dark); margin: 8px 0 24px; }
+.pd-specs-left h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--dark); margin: 8px 0 24px; }
 .pd-specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.pd-spec { background: #fff; border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; border: 1px solid rgba(45,106,79,.08); transition: transform .2s, box-shadow .2s; }
-.pd-spec:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(45,106,79,.1); }
+.pd-spec { background: #fff; border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; border: 1px solid rgba(45,106,79,.08); }
 .pd-spec-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--green); }
 .pd-spec-value { font-size: 14px; color: var(--dark); font-weight: 500; line-height: 1.4; }
 .pd-customers-grid { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
-.pd-customer-tag { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--dark); font-weight: 500; padding: 12px 18px; background: #fff; border-radius: 10px; border: 1px solid rgba(45,106,79,.08); transition: transform .2s, background .2s; }
-.pd-customer-tag:hover { background: #e0f4ec; transform: translateX(4px); }
+.pd-customer-tag { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--dark); font-weight: 500; padding: 12px 18px; background: #fff; border-radius: 10px; border: 1px solid rgba(45,106,79,.08); }
 .pd-customer-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+.pd-specs-factory { margin-bottom: 20px; }
+.pd-specs-factory-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--green); margin-bottom: 10px; }
+.pd-specs-factory-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 16px; display: block; }
 .pd-specs-cta { background: var(--green); border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; }
 .pd-specs-cta p { font-size: 14px; color: rgba(255,255,255,.85); line-height: 1.6; margin: 0; }
 
