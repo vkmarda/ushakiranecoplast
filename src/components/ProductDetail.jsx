@@ -128,7 +128,7 @@ export default function ProductDetail({ openQuote }) {
     name: product.name,
     description: product.description,
     image: [`https://ushakiranecoplast.com${product.img}`],
-    url: `https://ushakiranecoplast.com/products/${product.slug}`,
+    url: `https://ushakiranecoplast.com/products/${product.slug}/`,
     brand: { '@type': 'Brand', name: 'Ushakiran Ecoplast' },
     manufacturer: {
       '@type': 'Organization',
@@ -167,8 +167,8 @@ export default function ProductDetail({ openQuote }) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
-      { '@type': 'ListItem', position: 3, name: product.name, item: `https://ushakiranecoplast.com/products/${product.slug}` }
+      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products/' },
+      { '@type': 'ListItem', position: 3, name: product.name, item: `https://ushakiranecoplast.com/products/${product.slug}/` }
     ]
   }
 
@@ -183,7 +183,7 @@ export default function ProductDetail({ openQuote }) {
         <meta property="og:image" content={`https://ushakiranecoplast.com${product.img}`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://ushakiranecoplast.com/products/${product.slug}`} />
+        <meta property="og:url" content={`https://ushakiranecoplast.com/products/${product.slug}/`} />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -202,7 +202,7 @@ export default function ProductDetail({ openQuote }) {
       <nav className="pd-breadcrumb" aria-label="breadcrumb">
         <Link to="/">Home</Link>
         <span className="pd-bc-sep">›</span>
-        <Link to="/products">Products</Link>
+        <Link to="/products/">Products</Link>
         <span className="pd-bc-sep">›</span>
         <span>{product.name}</span>
       </nav>

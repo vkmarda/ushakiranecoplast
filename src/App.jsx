@@ -21,6 +21,7 @@ import AboutPage from './components/Aboutpage'
 import GarbageBagStory from './components/testimonials/Garbagebagstory'
 import ContactModal from './components/ContactModal'
 import IndustriesSection from './components/Industriessection'
+import GarbageBagChips from './components/GarbageBagChips'
 import GarbageBagsIndex from './components/GarbageBagsIndex'
 import GarbageBagSubPage from './components/GarbageBagSubPage'
 import BagsOnRollsIndex from './components/BagsOnRollsIndex'
@@ -56,6 +57,7 @@ function HomePage({ setPage, openQuote }) {
       <Hero setPage={setPage} openQuote={openQuote} />
       <About />
       <Products setPage={setPage} />
+      <GarbageBagChips />
       <IndustriesSection />
       {/* <Features /> */}
       <Testimonials />

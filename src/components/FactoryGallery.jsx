@@ -76,6 +76,34 @@ function ProcessStep({ s, index, onClick }) {
     </div>
   )
 }
+const videoSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: 'Ushakiran Ecoplast — Recycled Plastic Bag Manufacturing Process, Hyderabad',
+  description: 'Inside our IDA Mankhal, Hyderabad facility: from post-consumer plastic waste collection through sorting, washing, granulation, extrusion, cutting, sealing and quality inspection to final dispatch. 11 steps, one ISO certified manufacturing cycle.',
+  thumbnailUrl: 'https://ushakiranecoplast.com/images/hero-bg.webp',
+  contentUrl: 'https://ushakiranecoplast.com/images/gallery/Usha.mp4',
+  uploadDate: '2024-06-01',
+  duration: 'PT2M',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Ushakiran Ecoplast',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://ushakiranecoplast.com/logo.webp',
+    },
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Factory & Manufacturing Process', item: 'https://ushakiranecoplast.com/gallery/' },
+  ],
+}
+
 export default function FactoryGallery({ setPage, openQuote }) {
   const [lightbox, setLightbox] = useState(null)
   const { pathname } = useLocation()
@@ -84,10 +112,24 @@ export default function FactoryGallery({ setPage, openQuote }) {
   return (
     <div className="gallery-page">
       <Helmet>
-        <title>Gallery | Ushakiran Ecoplast</title>
-        <meta name="description" content="See inside Ushakiran Ecoplast's recycling and manufacturing facility in Hyderabad. Watch our 11-step process from plastic waste to finished eco-friendly product." />
+        <title>Factory &amp; Manufacturing Process | Ushakiran Ecoplast Hyderabad</title>
+        <meta name="description" content="See inside Ushakiran Ecoplast's ISO certified recycling and manufacturing facility in Hyderabad. An 11-step process turning post-consumer plastic waste into finished garbage bags and LDPE products." />
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
+        <meta property="og:title" content="Factory &amp; Manufacturing Process | Ushakiran Ecoplast Hyderabad" />
+        <meta property="og:description" content="See inside Ushakiran Ecoplast's ISO certified recycling and manufacturing facility in Hyderabad. An 11-step process turning post-consumer plastic waste into finished garbage bags and LDPE products." />
+        <meta property="og:image" content="https://ushakiranecoplast.com/images/hero-bg.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://ushakiranecoplast.com/gallery/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ushakiran Ecoplast" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Factory &amp; Manufacturing Process | Ushakiran Ecoplast Hyderabad" />
+        <meta name="twitter:description" content="See inside Ushakiran Ecoplast's ISO certified recycling and manufacturing facility in Hyderabad. An 11-step process turning post-consumer plastic waste into finished garbage bags and LDPE products." />
+        <meta name="twitter:image" content="https://ushakiranecoplast.com/images/hero-bg.webp" />
         <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{JSON.stringify(videoSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero */}
@@ -117,6 +159,22 @@ export default function FactoryGallery({ setPage, openQuote }) {
   poster="/images/hero-bg.webp"
   className="gallery-video"
 />
+        </div>
+      </section>
+
+      {/* Facility overview */}
+      <section className="gallery-overview">
+        <div className="gallery-overview-inner">
+          <h2>Our Manufacturing Facility in Hyderabad</h2>
+          <p>
+            Ushakiran Ecoplast operates an ISO 9001:2015 certified manufacturing facility at IDA Mankhal, Maheshwaram, Hyderabad. The facility has been in continuous operation since 2013 and has processed over 5 crore kilograms of post-consumer plastic waste into finished LDPE products. Every bag, roll, film and sheet that leaves our facility is manufactured from 100% recycled LDPE — not virgin plastic.
+          </p>
+          <p>
+            The facility houses the full manufacturing cycle under one roof: incoming material inspection, washing and shredding, granulation, extrusion, cutting and sealing, quality inspection and packing. Keeping the entire process in-house gives us direct control over material quality and specification consistency at every step, which is why our clients see the same product on order ten as they approved in the initial sample.
+          </p>
+          <p>
+            The facility supplies buyers across Hyderabad, Telangana, Andhra Pradesh and pan-India. It is open for visits by appointment. Buyers placing large first orders are welcome to review the facility and production process before confirming. Contact us on <a href="tel:+918919428973">+91 8919428973</a> or at <a href="mailto:enquiry@ushakiranecoplast.com">enquiry@ushakiranecoplast.com</a> to arrange a visit.
+          </p>
         </div>
       </section>
 

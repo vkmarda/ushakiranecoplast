@@ -55,23 +55,54 @@ export default function Footer({ setPage }) {
           <h4>Quick Links</h4>
           <ul>
       <li><Link to="/" className="footer-link-btn">Home</Link></li>
-      <li><Link to="/aboutus" className="footer-link-btn">About Us</Link></li>
-      <li><Link to="/products" className="footer-link-btn">Our Products</Link></li>
+      <li><Link to="/aboutus/" className="footer-link-btn">About Us</Link></li>
+      <li><Link to="/products/" className="footer-link-btn">Our Products</Link></li>
       <li><a href="/#contact" className="footer-link-btn">Contact Us</a></li>
-      <li><Link to="/gallery" className="footer-link-btn">Gallery</Link></li>
+      <li><Link to="/gallery/" className="footer-link-btn">Gallery</Link></li>
     </ul>
         </div>
         <div>
           <h4>Our Products</h4>
           <ul>
-        <li><Link to="/products/recycled-garbage-bags-hyderabad" className="footer-link-btn">Garbage Bags</Link></li>
-        <li><Link to="/products/biomedical-waste-bags-bmwm-compliant" className="footer-link-btn">Bio-Hazard Bags</Link></li>
-        <li><Link to="/products/plastic-bags-on-rolls-manufacturer" className="footer-link-btn">Bags on Rolls</Link></li>
-        <li><Link to="/products/ldpe-shrink-film-manufacturer-hyderabad" className="footer-link-btn">Shrink Films</Link></li>
-        <li><Link to="/products/stretch-wrap-film-pallet-wrapping" className="footer-link-btn">Stretch Films</Link></li>
-        <li><Link to="/products/ldpe-sheets-manufacturer-hyderabad" className="footer-link-btn">LDPE Sheet</Link></li>
-        <li><Link to="/products/ldpe-cover-industrial-packaging" className="footer-link-btn">LDPE Cover</Link></li>
-        <li><Link to="/products/mulch-film-uv-resistant-agriculture" className="footer-link-btn">Mulch Film</Link></li>
+        <li>
+          <Link to="/products/recycled-garbage-bags-hyderabad/" className="footer-link-btn">Garbage Bags</Link>
+          <ul className="footer-sub-links">
+            <li><Link to="/products/garbage-bags/garbage-bags-wholesale-hyderabad/">Wholesale Garbage Bags</Link></li>
+            <li><Link to="/products/garbage-bags/black-garbage-bags-hyderabad/">Black Garbage Bags</Link></li>
+            <li><Link to="/products/garbage-bags/hotel-garbage-bags-hyderabad/">Hotel Garbage Bags</Link></li>
+            <li><Link to="/products/garbage-bags/hospital-garbage-bags-hyderabad/">Hospital Garbage Bags</Link></li>
+            <li><Link to="/products/garbage-bags/biodegradable-garbage-bags-manufacturer/">Biodegradable Bags</Link></li>
+            <li><Link to="/products/garbage-bags/" className="footer-sub-view-all">View All →</Link></li>
+          </ul>
+        </li>
+        <li>
+          <Link to="/products/biomedical-waste-bags-bmwm-compliant/" className="footer-link-btn">Bio-Hazard Bags</Link>
+          <ul className="footer-sub-links">
+            <li><Link to="/products/biomedical-bags/yellow-biomedical-bags-india/">Yellow Biomedical Bags</Link></li>
+            <li><Link to="/products/biomedical-bags/red-biomedical-bags-india/">Red Biomedical Bags</Link></li>
+            <li><Link to="/products/biomedical-bags/bmwm-compliant-bags-india/">BMWM Compliant Bags</Link></li>
+            <li><Link to="/products/biomedical-bags/" className="footer-sub-view-all">View All →</Link></li>
+          </ul>
+        </li>
+        <li>
+          <Link to="/products/plastic-bags-on-rolls-manufacturer/" className="footer-link-btn">Bags on Rolls</Link>
+          <ul className="footer-sub-links">
+            <li><Link to="/products/bags-on-rolls/hotel-bags-on-rolls-hyderabad/">Hotel Bags on Rolls</Link></li>
+            <li><Link to="/products/bags-on-rolls/housekeeping-bags-on-rolls-india/">Housekeeping Rolls</Link></li>
+            <li><Link to="/products/bags-on-rolls/perforated-bags-on-rolls-hyderabad/">Perforated Rolls</Link></li>
+            <li><Link to="/products/bags-on-rolls/" className="footer-sub-view-all">View All →</Link></li>
+          </ul>
+        </li>
+      </ul>
+        </div>
+        <div>
+          <h4>More Products</h4>
+          <ul>
+        <li><Link to="/products/ldpe-shrink-film-manufacturer-hyderabad/" className="footer-link-btn">Shrink Films</Link></li>
+        <li><Link to="/products/stretch-wrap-film-pallet-wrapping/" className="footer-link-btn">Stretch Films</Link></li>
+        <li><Link to="/products/ldpe-sheets-manufacturer-hyderabad/" className="footer-link-btn">LDPE Sheet</Link></li>
+        <li><Link to="/products/ldpe-cover-industrial-packaging/" className="footer-link-btn">LDPE Cover</Link></li>
+        <li><Link to="/products/mulch-film-uv-resistant-agriculture/" className="footer-link-btn">Mulch Film</Link></li>
       </ul>
         </div>
         <div>

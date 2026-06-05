@@ -9,8 +9,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
-    { '@type': 'ListItem', position: 3, name: 'Bags on Rolls', item: 'https://ushakiranecoplast.com/products/bags-on-rolls' },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products/' },
+    { '@type': 'ListItem', position: 3, name: 'Bags on Rolls', item: 'https://ushakiranecoplast.com/products/bags-on-rolls/' },
   ],
 }
 
@@ -68,12 +68,12 @@ export default function BagsOnRollsIndex({ openQuote }) {
   return (
     <div className="gbi-page">
       <Helmet>
-        <title>Bags on Rolls Manufacturer Hyderabad | All Types | Ushakiran Ecoplast</title>
-        <meta name="description" content="Ushakiran Ecoplast manufactures bags on rolls in Hyderabad for hotels, hospitals, supermarkets, restaurants and industrial buyers. ISO certified, custom core sizes, pan-India supply." />
+        <title>Bags on Rolls Manufacturer India | Ushakiran Ecoplast</title>
+        <meta name="description" content="Ushakiran Ecoplast manufactures bags on rolls in Hyderabad. Perforated LDPE rolls for hotels, hospitals and supermarkets. ISO certified, pan-India supply." />
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
-        <meta property="og:title" content="Bags on Rolls Manufacturer Hyderabad | All Types | Ushakiran Ecoplast" />
+        <meta property="og:title" content="Bags on Rolls Manufacturer India | Ushakiran Ecoplast" />
         <meta property="og:description" content="ISO certified manufacturer of LDPE bags on rolls in Hyderabad. Custom core sizes, perforation specifications, pan-India supply." />
-        <meta property="og:url" content="https://ushakiranecoplast.com/products/bags-on-rolls" />
+        <meta property="og:url" content="https://ushakiranecoplast.com/products/bags-on-rolls/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
         <meta name="robots" content="index, follow" />
@@ -83,7 +83,7 @@ export default function BagsOnRollsIndex({ openQuote }) {
       <nav className="gbi-breadcrumb" aria-label="breadcrumb">
         <Link to="/">Home</Link>
         <span className="gbi-bc-sep">›</span>
-        <Link to="/products">Products</Link>
+        <Link to="/products/">Products</Link>
         <span className="gbi-bc-sep">›</span>
         <span>Bags on Rolls</span>
       </nav>
@@ -118,7 +118,7 @@ export default function BagsOnRollsIndex({ openQuote }) {
                 return (
                   <Link
                     key={slug}
-                    to={`/products/bags-on-rolls/${slug}`}
+                    to={`/products/bags-on-rolls/${slug}/`}
                     className="gbi-card"
                   >
                     <div className="gbi-card-body">
@@ -151,6 +151,41 @@ export default function BagsOnRollsIndex({ openQuote }) {
           <div className="gbi-cred">
             <span className="gbi-cred-value">Pan</span>
             <span className="gbi-cred-label">India supply from Hyderabad</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Browse All */}
+      <section className="browse-all">
+        <div className="browse-all-inner">
+          <div className="section-label" style={{ color: 'var(--green)' }}>COMPLETE RANGE</div>
+          <h2>Browse All Bags on Rolls Pages</h2>
+          <div className="browse-all-grid">
+            <div>
+              <div className="browse-all-group-label">By Industry</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/bags-on-rolls/hotel-bags-on-rolls-hyderabad/">→ Hotel Bags on Rolls</Link></li>
+                <li><Link to="/products/bags-on-rolls/hospital-bags-on-rolls-india/">→ Hospital Bags on Rolls</Link></li>
+                <li><Link to="/products/bags-on-rolls/supermarket-bags-on-rolls-india/">→ Supermarket Bags on Rolls</Link></li>
+                <li><Link to="/products/bags-on-rolls/restaurant-bags-on-rolls-hyderabad/">→ Restaurant Bags on Rolls</Link></li>
+                <li><Link to="/products/bags-on-rolls/industrial-bags-on-rolls-india/">→ Industrial Bags on Rolls</Link></li>
+                <li><Link to="/products/bags-on-rolls/housekeeping-bags-on-rolls-india/">→ Housekeeping Bags on Rolls</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Product Type</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/bags-on-rolls/perforated-bags-on-rolls-hyderabad/">→ Perforated Bags on Rolls</Link></li>
+                <li><Link to="/products/bags-on-rolls/bags-on-rolls-wholesale-india/">→ Bags on Rolls Wholesale</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Location</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/bags-on-rolls/bags-on-rolls-manufacturer-hyderabad/">→ Hyderabad</Link></li>
+                <li><Link to="/products/bags-on-rolls/bags-on-rolls-manufacturer-india/">→ India</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

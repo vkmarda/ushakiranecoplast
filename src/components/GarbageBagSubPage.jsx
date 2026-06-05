@@ -117,9 +117,9 @@ export default function GarbageBagSubPage({ openQuote }) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
-      { '@type': 'ListItem', position: 3, name: 'Garbage Bags', item: 'https://ushakiranecoplast.com/products/garbage-bags' },
-      { '@type': 'ListItem', position: 4, name: page.h1, item: `https://ushakiranecoplast.com/products/garbage-bags/${page.slug}` }
+      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products/' },
+      { '@type': 'ListItem', position: 3, name: 'Garbage Bags', item: 'https://ushakiranecoplast.com/products/garbage-bags/' },
+      { '@type': 'ListItem', position: 4, name: page.h1, item: `https://ushakiranecoplast.com/products/garbage-bags/${page.slug}/` }
     ]
   }
 
@@ -141,12 +141,16 @@ export default function GarbageBagSubPage({ openQuote }) {
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta property="og:title" content={page.seoTitle} />
         <meta property="og:description" content={page.seoMeta} />
-        <meta property="og:url" content={`https://ushakiranecoplast.com/products/garbage-bags/${page.slug}`} />
+        <meta property="og:url" content={`https://ushakiranecoplast.com/products/garbage-bags/${page.slug}/`} />
+        <meta property="og:image" content={`https://ushakiranecoplast.com${factoryImg ? factoryImg.src : '/images/hero-products-lineup.webp'}`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={page.seoTitle} />
         <meta name="twitter:description" content={page.seoMeta} />
+        <meta name="twitter:image" content={`https://ushakiranecoplast.com${factoryImg ? factoryImg.src : '/images/hero-products-lineup.webp'}`} />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -156,9 +160,9 @@ export default function GarbageBagSubPage({ openQuote }) {
       <nav className="gbsp-breadcrumb" aria-label="breadcrumb">
         <Link to="/">Home</Link>
         <span className="gbsp-bc-sep">›</span>
-        <Link to="/products">Products</Link>
+        <Link to="/products/">Products</Link>
         <span className="gbsp-bc-sep">›</span>
-        <Link to="/products/garbage-bags">Garbage Bags</Link>
+        <Link to="/products/garbage-bags/">Garbage Bags</Link>
         <span className="gbsp-bc-sep">›</span>
         <span>{page.h1}</span>
       </nav>

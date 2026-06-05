@@ -8,8 +8,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
-    { '@type': 'ListItem', position: 3, name: 'Biomedical Bags', item: 'https://ushakiranecoplast.com/products/biomedical-bags' },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products/' },
+    { '@type': 'ListItem', position: 3, name: 'Biomedical Bags', item: 'https://ushakiranecoplast.com/products/biomedical-bags/' },
   ],
 }
 
@@ -53,11 +53,11 @@ export default function BiomedicalBagsIndex({ openQuote }) {
     <div className="gbi-page">
       <Helmet>
         <title>Biomedical Bags Manufacturer Hyderabad | BMWM Compliant | Ushakiran Ecoplast</title>
-        <meta name="description" content="Ushakiran Ecoplast manufactures BMWM 2016 compliant biomedical waste bags in Hyderabad. Yellow, red, blue and black colour categories. PCB approved, non-chlorinated LDPE, pan-India supply." />
+        <meta name="description" content="Ushakiran Ecoplast manufactures BMWM 2016 compliant biomedical bags in Hyderabad. Yellow, red, PCB approved, non-chlorinated LDPE. Pan-India supply." />
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta property="og:title" content="Biomedical Bags Manufacturer Hyderabad | BMWM Compliant | Ushakiran Ecoplast" />
         <meta property="og:description" content="PCB approved manufacturer of BMWM 2016 compliant biomedical bags in Hyderabad. Supplying hospitals, clinics and healthcare facilities across India." />
-        <meta property="og:url" content="https://ushakiranecoplast.com/products/biomedical-bags" />
+        <meta property="og:url" content="https://ushakiranecoplast.com/products/biomedical-bags/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
         <meta name="robots" content="index, follow" />
@@ -67,7 +67,7 @@ export default function BiomedicalBagsIndex({ openQuote }) {
       <nav className="gbi-breadcrumb" aria-label="breadcrumb">
         <Link to="/">Home</Link>
         <span className="gbi-bc-sep">›</span>
-        <Link to="/products">Products</Link>
+        <Link to="/products/">Products</Link>
         <span className="gbi-bc-sep">›</span>
         <span>Biomedical Bags</span>
       </nav>
@@ -99,7 +99,7 @@ export default function BiomedicalBagsIndex({ openQuote }) {
               {group.pages.map(page => (
                 <Link
                   key={page.slug}
-                  to={`/products/biomedical-bags/${page.slug}`}
+                  to={`/products/biomedical-bags/${page.slug}/`}
                   className="gbi-card"
                 >
                   <div className="gbi-card-body">
@@ -131,6 +131,45 @@ export default function BiomedicalBagsIndex({ openQuote }) {
           <div className="gbi-cred">
             <span className="gbi-cred-value">Pan</span>
             <span className="gbi-cred-label">India supply from Hyderabad</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Browse All */}
+      <section className="browse-all">
+        <div className="browse-all-inner">
+          <div className="section-label" style={{ color: 'var(--green)' }}>COMPLETE RANGE</div>
+          <h2>Browse All Biomedical Bag Pages</h2>
+          <div className="browse-all-grid">
+            <div>
+              <div className="browse-all-group-label">By Compliance</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/biomedical-bags/bmwm-compliant-bags-india/">→ BMWM Compliant Bags</Link></li>
+                <li><Link to="/products/biomedical-bags/pcb-approved-biomedical-bags-india/">→ PCB Approved Bags</Link></li>
+                <li><Link to="/products/biomedical-bags/colour-coded-biomedical-bags-india/">→ Colour Coded Bags</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Colour</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/biomedical-bags/yellow-biomedical-bags-india/">→ Yellow Biomedical Bags</Link></li>
+                <li><Link to="/products/biomedical-bags/red-biomedical-bags-india/">→ Red Biomedical Bags</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Location</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/biomedical-bags/biomedical-bags-manufacturer-hyderabad/">→ Hyderabad</Link></li>
+                <li><Link to="/products/biomedical-bags/biomedical-bags-manufacturer-india/">→ India</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Application</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/biomedical-bags/hospital-waste-bags-hyderabad/">→ Hospital Waste Bags</Link></li>
+                <li><Link to="/products/garbage-bags/autoclave-bags-manufacturer/">→ Autoclave Bags</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

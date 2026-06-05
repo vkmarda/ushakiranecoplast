@@ -28,6 +28,8 @@
   border-radius: 18px;
   padding: 28px 22px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -45,10 +47,76 @@
 .ii-card-tag { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 20px; text-transform: capitalize; }
 .ii-card-link { font-size: 12px; font-weight: 700; margin-top: 4px; }
 
+/* ── INTRO SECTION ── */
+.ii-intro-section {
+  background: #f8faf9;
+  padding: 60px 60px 20px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.ii-intro-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ii-intro-inner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: var(--dark);
+  line-height: 1.25;
+}
+.ii-intro-inner p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+/* ── BOTTOM SECTION ── */
+.ii-bottom-section {
+  background: #f8faf9;
+  padding: 60px 60px 80px;
+}
+.ii-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ii-bottom-inner > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: var(--dark);
+  margin-bottom: 36px;
+}
+.ii-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.ii-bottom-item {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 24px;
+  border: 1px solid rgba(0,0,0,.06);
+}
+.ii-bottom-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+.ii-bottom-item p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 @media (max-width: 1100px) { .ii-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 900px) {
   .ii-hero { padding: 100px 24px 60px; }
+  .ii-intro-section { padding: 40px 24px 16px; }
   .ii-grid-section { padding: 60px 24px; }
+  .ii-bottom-section { padding: 40px 24px 60px; }
   .ii-grid { grid-template-columns: repeat(2, 1fr); }
+  .ii-bottom-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 500px) { .ii-grid { grid-template-columns: 1fr; } }

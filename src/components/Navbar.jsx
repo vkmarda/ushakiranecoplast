@@ -42,13 +42,13 @@ export default function Navbar({ setPage, setContactOpen }) {
         {/* Desktop links */}
         <ul className="nav-links">
           <li><Link to="/" className="nav-text-btn">Home</Link></li>
-          <li><Link to="/aboutus" className="nav-text-btn">About Us</Link></li>
-          <li><Link to="/products" className="nav-text-btn">Our Products</Link></li>
-          <li><Link to="/industries" className="nav-text-btn">Industries</Link></li>
-          <li><Link to="/team" className="nav-text-btn">Our Team</Link></li>
+          <li><Link to="/aboutus/" className="nav-text-btn">About Us</Link></li>
+          <li><Link to="/products/" className="nav-text-btn">Our Products</Link></li>
+          <li><Link to="/industries/" className="nav-text-btn">Industries</Link></li>
+          <li><Link to="/team/" className="nav-text-btn">Our Team</Link></li>
           <li><a href="https://ushakiranecoplast.com/blog" target="_blank" rel="noreferrer" className="nav-text-btn">Blog</a></li>
           <li><button className="nav-text-btn" onClick={() => setContactOpen(true)}>Contact Us</button></li>
-          <li><Link to="/gallery" className="nav-text-btn">Gallery</Link></li>
+          <li><Link to="/gallery/" className="nav-text-btn">Gallery</Link></li>
         </ul>
 
         {/* Hamburger */}
@@ -76,13 +76,13 @@ export default function Navbar({ setPage, setContactOpen }) {
       {menuOpen && (
         <div className="nav-mobile-menu">
           <Link to="/" className="nav-mobile-item">Home</Link>
-          <Link to="/aboutus" className="nav-mobile-item">About Us</Link>
-          <Link to="/products" className="nav-mobile-item">Our Products</Link>
-          <Link to="/industries" className="nav-mobile-item">Industries</Link>
-          <Link to="/team" className="nav-mobile-item">Our Team</Link>
+          <Link to="/aboutus/" className="nav-mobile-item">About Us</Link>
+          <Link to="/products/" className="nav-mobile-item">Our Products</Link>
+          <Link to="/industries/" className="nav-mobile-item">Industries</Link>
+          <Link to="/team/" className="nav-mobile-item">Our Team</Link>
           <a href="https://ushakiranecoplast.com/blog" target="_blank" rel="noreferrer" className="nav-mobile-item">Blog</a>
           <button className="nav-mobile-item" onClick={() => { setContactOpen(true); setMenuOpen(false) }}>Contact Us</button>
-          <Link to="/gallery" className="nav-mobile-item">Gallery</Link>
+          <Link to="/gallery/" className="nav-mobile-item">Gallery</Link>
         </div>
       )}
 

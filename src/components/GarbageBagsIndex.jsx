@@ -9,8 +9,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products' },
-    { '@type': 'ListItem', position: 3, name: 'Garbage Bags', item: 'https://ushakiranecoplast.com/products/garbage-bags' }
+    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://ushakiranecoplast.com/products/' },
+    { '@type': 'ListItem', position: 3, name: 'Garbage Bags', item: 'https://ushakiranecoplast.com/products/garbage-bags/' }
   ]
 }
 
@@ -34,7 +34,7 @@ export default function GarbageBagsIndex({ openQuote }) {
         <link rel="canonical" href={`https://ushakiranecoplast.com${canonical}`} />
         <meta property="og:title" content="Garbage Bags Manufacturer in Hyderabad | All Types | Ushakiran Ecoplast" />
         <meta property="og:description" content="ISO certified manufacturer of recycled LDPE garbage bags in Hyderabad. Serving hotels, hospitals, factories, FM companies and retail chains across India." />
-        <meta property="og:url" content="https://ushakiranecoplast.com/products/garbage-bags" />
+        <meta property="og:url" content="https://ushakiranecoplast.com/products/garbage-bags/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
         <meta name="robots" content="index, follow" />
@@ -45,7 +45,7 @@ export default function GarbageBagsIndex({ openQuote }) {
       <nav className="gbi-breadcrumb" aria-label="breadcrumb">
         <Link to="/">Home</Link>
         <span className="gbi-bc-sep">›</span>
-        <Link to="/products">Products</Link>
+        <Link to="/products/">Products</Link>
         <span className="gbi-bc-sep">›</span>
         <span>Garbage Bags</span>
       </nav>
@@ -81,7 +81,7 @@ export default function GarbageBagsIndex({ openQuote }) {
             {industrySubPages.map(page => (
               <Link
                 key={page.slug}
-                to={`/products/garbage-bags/${page.slug}`}
+                to={`/products/garbage-bags/${page.slug}/`}
                 className="gbi-card"
               >
                 <span className="gbi-card-icon">{page.icon}</span>
@@ -109,7 +109,7 @@ export default function GarbageBagsIndex({ openQuote }) {
             {productVariantSubPages.map(page => (
               <Link
                 key={page.slug}
-                to={`/products/garbage-bags/${page.slug}`}
+                to={`/products/garbage-bags/${page.slug}/`}
                 className="gbi-card"
               >
                 <div className="gbi-card-body">
@@ -136,7 +136,7 @@ export default function GarbageBagsIndex({ openQuote }) {
             {geoSubPages.map(page => (
               <Link
                 key={page.slug}
-                to={`/products/garbage-bags/${page.slug}`}
+                to={`/products/garbage-bags/${page.slug}/`}
                 className="gbi-card"
               >
                 <div className="gbi-card-body">
@@ -162,7 +162,7 @@ export default function GarbageBagsIndex({ openQuote }) {
             {keywordSubPages.map(page => (
               <Link
                 key={page.slug}
-                to={`/products/garbage-bags/${page.slug}`}
+                to={`/products/garbage-bags/${page.slug}/`}
                 className="gbi-card"
               >
                 <div className="gbi-card-body">
@@ -194,6 +194,97 @@ export default function GarbageBagsIndex({ openQuote }) {
           <div className="gbi-cred">
             <span className="gbi-cred-value">90%</span>
             <span className="gbi-cred-label">Client retention rate</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Browse All */}
+      <section className="browse-all">
+        <div className="browse-all-inner">
+          <div className="section-label" style={{ color: 'var(--green)' }}>COMPLETE RANGE</div>
+          <h2>Browse All Garbage Bag Pages</h2>
+          <div className="browse-all-grid">
+            <div>
+              <div className="browse-all-group-label">By Industry</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/garbage-bags/hotel-garbage-bags-hyderabad/">→ Hotel Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/hospital-garbage-bags-hyderabad/">→ Hospital Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/restaurant-garbage-bags-hyderabad/">→ Restaurant Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/industrial-garbage-bags-hyderabad/">→ Industrial Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/construction-garbage-bags-hyderabad/">→ Construction Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/supermarket-garbage-bags-india/">→ Supermarket Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/facility-management-garbage-bags-india/">→ Facility Management Bags</Link></li>
+                <li><Link to="/products/garbage-bags/office-garbage-bags-hyderabad/">→ Office Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/school-college-garbage-bags-india/">→ School &amp; College Bags</Link></li>
+                <li><Link to="/products/garbage-bags/airport-garbage-bags-india/">→ Airport Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/pharmaceutical-waste-bags-hyderabad/">→ Pharmaceutical Waste Bags</Link></li>
+                <li><Link to="/products/garbage-bags/cold-storage-garbage-bags-india/">→ Cold Storage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/hospital-usage-garbage-bags-manufacturer/">→ Hospital Usage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/healthcare-garbage-bags-manufacturer/">→ Healthcare Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/kitchen-garbage-bags-manufacturer/">→ Kitchen Garbage Bags</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Product Type</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/garbage-bags/black-garbage-bags-hyderabad/">→ Black Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/coloured-garbage-bags-india/">→ Coloured Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/plain-garbage-bags-manufacturer/">→ Plain Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/disposable-garbage-bags-manufacturer/">→ Disposable Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/heavy-duty-garbage-bags-manufacturer/">→ Heavy Duty Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/hdpe-garbage-bags-manufacturer/">→ HDPE Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/biodegradable-garbage-bags-manufacturer/">→ Biodegradable Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/household-garbage-bags-manufacturer/">→ Household Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/large-garbage-bags-manufacturer/">→ Large Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/jumbo-garbage-bags-manufacturer/">→ Jumbo Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/dustbin-bags-hyderabad/">→ Dustbin Bags</Link></li>
+                <li><Link to="/products/garbage-bags/dustbin-covers-manufacturer/">→ Dustbin Covers</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-covers-manufacturer/">→ Garbage Covers</Link></li>
+                <li><Link to="/products/garbage-bags/transparent-garbage-bags-manufacturer/">→ Transparent Bags</Link></li>
+                <li><Link to="/products/garbage-bags/biohazard-bags-manufacturer/">→ Biohazard Bags</Link></li>
+                <li><Link to="/products/garbage-bags/autoclave-bags-manufacturer/">→ Autoclave Bags</Link></li>
+                <li><Link to="/products/garbage-bags/refuse-bags-manufacturer/">→ Refuse Bags</Link></li>
+                <li><Link to="/products/garbage-bags/waste-bags-manufacturer/">→ Waste Bags</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Material</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/garbage-bags/ldpe-garbage-bin-bags-manufacturer/">→ LDPE Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/polythene-bags-manufacturer/">→ Polythene Bags</Link></li>
+                <li><Link to="/products/garbage-bags/poly-bags-manufacturer/">→ Poly Bags</Link></li>
+                <li><Link to="/products/garbage-bags/plastic-garbage-bags-manufacturer/">→ Plastic Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/eco-friendly-garbage-bags-hyderabad/">→ Eco-Friendly Bags</Link></li>
+                <li><Link to="/products/garbage-bags/compostable-garbage-bags-manufacturer/">→ Compostable Bags</Link></li>
+                <li><Link to="/products/garbage-bags/eco-friendly-garbage-bags-manufacturer/">→ Recycled Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/industrial-polyliners-manufacturer/">→ Industrial Polyliners</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bin-bags-manufacturer/">→ Garbage Bin Bags</Link></li>
+              </ul>
+              <div className="browse-all-group-label" style={{ marginTop: '28px' }}>By Buying Intent</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/garbage-bags/garbage-bags-wholesale-hyderabad/">→ Wholesale Garbage Bags</Link></li>
+                <li><Link to="/products/garbage-bags/plastic-bags-supplier-hyderabad/">→ Plastic Bags Supplier</Link></li>
+                <li><Link to="/products/garbage-bags/plastic-bags-manufacturer-india/">→ Plastic Bags Manufacturer India</Link></li>
+                <li><Link to="/products/garbage-bags/plastic-bags-manufacturer-hyderabad/">→ Plastic Bags Manufacturer Hyderabad</Link></li>
+              </ul>
+            </div>
+            <div>
+              <div className="browse-all-group-label">By Location</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/garbage-bags/plastic-bags-manufacturer-hyderabad/">→ Hyderabad</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-secunderabad/">→ Secunderabad</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-telangana/">→ Telangana</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-andhra-pradesh/">→ Andhra Pradesh</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-bangalore/">→ Bangalore</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-chennai/">→ Chennai</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-mumbai/">→ Mumbai</Link></li>
+                <li><Link to="/products/garbage-bags/garbage-bags-south-india/">→ South India</Link></li>
+              </ul>
+              <div className="browse-all-group-label" style={{ marginTop: '28px' }}>Blue Segregation Bags</div>
+              <ul className="browse-all-links">
+                <li><Link to="/products/garbage-bags/blue-hdpe-garbage-bags-manufacturer/">→ Blue HDPE Garbage Bags</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -117,7 +117,7 @@ export default function IndustryPage({ openQuote }) {
     '@type': 'Service',
     name: `${industry.name} Plastic Solutions`,
     description: industry.subheadline,
-    url: `https://ushakiranecoplast.com/industries/${industry.slug}`,
+    url: `https://ushakiranecoplast.com/industries/${industry.slug}/`,
     serviceType:`Plastic waste management and packaging solutions for the ${industry.name.toLowerCase()} industry`,
     provider: {
       '@type': 'Organization',
@@ -147,8 +147,8 @@ export default function IndustryPage({ openQuote }) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ushakiranecoplast.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://ushakiranecoplast.com/industries' },
-      { '@type': 'ListItem', position: 3, name: industry.name, item: `https://ushakiranecoplast.com/industries/${industry.slug}` }
+      { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://ushakiranecoplast.com/industries/' },
+      { '@type': 'ListItem', position: 3, name: industry.name, item: `https://ushakiranecoplast.com/industries/${industry.slug}/` }
     ]
   }
 
@@ -166,7 +166,7 @@ export default function IndustryPage({ openQuote }) {
         <meta property="og:image" content="https://ushakiranecoplast.com/logo.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://ushakiranecoplast.com/industries/${industry.slug}`} />
+        <meta property="og:url" content={`https://ushakiranecoplast.com/industries/${industry.slug}/`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Ushakiran Ecoplast" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -183,7 +183,7 @@ export default function IndustryPage({ openQuote }) {
       <nav className="ip-breadcrumb">
         <Link to="/">Home</Link>
         <span>›</span>
-        <Link to="/industries">Industries</Link>
+        <Link to="/industries/">Industries</Link>
         <span>›</span>
         <span>{industry.name}</span>
       </nav>

@@ -32,7 +32,7 @@ export const products = [
     // SECONDARY: 'recycled LDPE garbage bags India', '100% recycled plastic bags manufacturer India'
     // ECO UNCLAIMED: '100% recycled plastic bags manufacturer India'
     seoTitle: 'Garbage Bags Manufacturer Hyderabad | Ushakiran Ecoplast',
-    seoDescription: 'ISO certified manufacturer of 100% recycled LDPE garbage bags in Hyderabad. Custom sizes 17×19 to 30×37 inches, 30–120 micron. Bulk supply to hotels, airports, MNCs and households across India. Get a quote today.',
+    seoDescription: 'Ushakiran Ecoplast manufactures recycled LDPE garbage bags in Hyderabad. ISO certified, custom sizes, bulk supply for hotels, hospitals and industry. Pan-India since 2013.',
 
     description: 'Our recycled garbage bags are manufactured from 100% post-consumer plastic waste, offering a durable and eco-friendly solution for waste collection across households, hotels, airports, railways, and facility management companies.',
 

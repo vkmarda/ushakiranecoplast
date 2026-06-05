@@ -73,6 +73,17 @@ const routes = [
   '/products/garbage-bags/eco-friendly-garbage-bags-manufacturer',
   '/products/garbage-bags/compostable-garbage-bags-manufacturer',
   '/products/garbage-bags/hospital-usage-garbage-bags-manufacturer',
+  '/products/garbage-bags/biohazard-bags-manufacturer',
+  '/products/garbage-bags/autoclave-bags-manufacturer',
+  '/products/garbage-bags/garbage-bin-bags-manufacturer',
+  '/products/garbage-bags/industrial-polyliners-manufacturer',
+  '/products/garbage-bags/transparent-garbage-bags-manufacturer',
+  '/products/garbage-bags/refuse-bags-manufacturer',
+  '/products/garbage-bags/waste-bags-manufacturer',
+  '/products/garbage-bags/healthcare-garbage-bags-manufacturer',
+  '/products/garbage-bags/ldpe-garbage-bin-bags-manufacturer',
+  '/products/garbage-bags/blue-hdpe-garbage-bags-manufacturer',
+  '/products/garbage-bags/poly-bags-manufacturer',
   '/products/bags-on-rolls',
   '/products/bags-on-rolls/bags-on-rolls-manufacturer-hyderabad',
   '/products/bags-on-rolls/bags-on-rolls-manufacturer-india',
@@ -148,6 +159,19 @@ for (const url of routes) {
     .replace(/<link[^>]*rel=["']canonical["'][^>]*>/g, '')
     .replace(/<meta[^>]*name=["']description["'][^>]*>/g, '')
     .replace(/<meta[^>]*name=["']robots["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:title["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:description["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:url["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:image["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:image:width["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:image:height["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:type["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:site_name["'][^>]*>/g, '')
+    .replace(/<meta[^>]*property=["']og:locale["'][^>]*>/g, '')
+    .replace(/<meta[^>]*name=["']twitter:card["'][^>]*>/g, '')
+    .replace(/<meta[^>]*name=["']twitter:title["'][^>]*>/g, '')
+    .replace(/<meta[^>]*name=["']twitter:description["'][^>]*>/g, '')
+    .replace(/<meta[^>]*name=["']twitter:image["'][^>]*>/g, '')
 
   // Inject other head tags (meta, link, preload) + JSON-LD scripts before </head>
   const headInjection = [otherHeadTags, ...ldJsonScripts].filter(Boolean).join('\n  ')
@@ -166,7 +190,7 @@ for (const url of routes) {
 
 // ── Generate sitemap.xml with trailing slashes ──────────────────────────────
 const BASE    = 'https://ushakiranecoplast.com'
-const LASTMOD = '2026-04-17'
+const LASTMOD = '2026-05-27'
 
 const sitemapRoutes = [
   { path: '/',            changefreq: 'weekly',  priority: '1.0' },
@@ -236,6 +260,17 @@ const sitemapRoutes = [
   { path: '/products/garbage-bags/eco-friendly-garbage-bags-manufacturer/',              changefreq: 'monthly', priority: '0.8' },
   { path: '/products/garbage-bags/compostable-garbage-bags-manufacturer/',               changefreq: 'monthly', priority: '0.8' },
   { path: '/products/garbage-bags/hospital-usage-garbage-bags-manufacturer/',            changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/biohazard-bags-manufacturer/',                         changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/autoclave-bags-manufacturer/',                         changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/garbage-bin-bags-manufacturer/',                       changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/industrial-polyliners-manufacturer/',                  changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/transparent-garbage-bags-manufacturer/',               changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/refuse-bags-manufacturer/',                            changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/waste-bags-manufacturer/',                             changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/healthcare-garbage-bags-manufacturer/',                changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/ldpe-garbage-bin-bags-manufacturer/',                  changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/blue-hdpe-garbage-bags-manufacturer/',                 changefreq: 'monthly', priority: '0.8' },
+  { path: '/products/garbage-bags/poly-bags-manufacturer/',                              changefreq: 'monthly', priority: '0.8' },
   { path: '/products/bags-on-rolls/',                                                         changefreq: 'monthly', priority: '0.8' },
   { path: '/products/bags-on-rolls/bags-on-rolls-manufacturer-hyderabad/',                   changefreq: 'monthly', priority: '0.8' },
   { path: '/products/bags-on-rolls/bags-on-rolls-manufacturer-india/',                       changefreq: 'monthly', priority: '0.8' },
